@@ -63,6 +63,7 @@ const AnimatedHeaderText = (props) => {
                   style={{
                     overflow: "hidden",
                     display: "inline-block",
+                    color:"#fff"
                   }}
                   key={index}
                 >

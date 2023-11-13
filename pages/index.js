@@ -2,8 +2,17 @@ import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.055,
+      },
+    },
+  };
   return (
     <>
+      <div>
+        <div>Ijas</div>
       <motion.div
         initial="hidden"
         whileInView={"visible"}
@@ -13,6 +22,7 @@ export default function Home() {
       >
         <AnimatedHeaderText text="Hi There" />
       </motion.div>
+      </div>
     </>
   );
 }
