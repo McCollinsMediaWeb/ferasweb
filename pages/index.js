@@ -1,14 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <>
-      <h1>Hi There</h1>
+      <motion.div
+        initial="hidden"
+        whileInView={"visible"}
+        variants={container}
+        style={{ marginBottom: "-20px" }}
+        viewport={{ once: true }}
+      >
+        <AnimatedHeaderText text="Hi There" />
+      </motion.div>
     </>
   );
 }
