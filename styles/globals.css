@@ -474,3 +474,24 @@ img{
     color: #fff;
     border-color: #fff;
   }
+
+  .MenuSlider .slick-next, .MenuSlider .slick-prev {
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+  }
+  .MenuSlider .slick-next::before, 
+  .MenuSlider .slick-prev::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    display: inline-block;
+    opacity: 1;
+  }
+  .MenuSlider .slick-next::before{
+    background-image: url(../public/btn-next.png);
+  }
+  .MenuSlider .slick-prev::before{
+    background-image: url(../public/btn-back.png);
+  }

@@ -9,13 +9,13 @@ const HomeMenuListing = () => {
   var settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: true,
     speed: 3000,
     autoplaySpeed: 3000,
     infinite: true,
     touchThreshold: 100,
-    centerMode: true
+    
   };
   const container = {
     visible: {
@@ -81,10 +81,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -110,10 +117,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -139,10 +153,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -168,10 +189,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -197,10 +225,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -226,10 +261,17 @@ const HomeMenuListing = () => {
                     className=""
                   />
                   <div className="MenuItemDetails">
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
                         View Menu
-                    </Link>
+                      </Link>
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
