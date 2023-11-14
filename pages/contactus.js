@@ -1,9 +1,8 @@
 
 
 import HeroBanner from "@/components/HeroBanner";
-import HomeAboutUs from "@/components/HomeAboutus";
-import HomeMenuListing from "@/components/HomeMenuListing";
-export default function Home() {
+
+export default function contactus() {
   const container = {
     visible: {
       transition: {
@@ -15,8 +14,6 @@ export default function Home() {
     <>
       <div>
         <HeroBanner/>
-        <HomeAboutUs/>
-        <HomeMenuListing/>
       
       </div>
     </>
