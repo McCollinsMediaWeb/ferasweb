@@ -3,6 +3,8 @@
 import HeroBanner from "@/components/HeroBanner";
 import HomeAboutUs from "@/components/HomeAboutus";
 import HomeMenuListing from "@/components/HomeMenuListing";
+import HomeBestSeller from "@/components/HomeBestSelling";
+import HomeBanner from "@/components/HomeBanner";
 export default function Home() {
   const container = {
     visible: {
@@ -17,7 +19,8 @@ export default function Home() {
         <HeroBanner/>
         <HomeAboutUs/>
         <HomeMenuListing/>
-      
+        <HomeBestSeller/>
+        <HomeBanner/>
       </div>
     </>
   );

@@ -9,6 +9,14 @@ body {
   font-weight: 400;
   color: #131e48;
 }
+.StickyHeader header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+}
 .container{
     max-width: 1300px;
 }
@@ -413,10 +421,7 @@ img{
     margin-bottom: 45px;
     line-height: 1.5;
   }
-  .SliderMenuItem{
-    padding: 0 15px;
-    position: relative;
-  }
+
   .MenuItem{
     position: relative;
   }
@@ -501,4 +506,127 @@ img{
   }
   .MenuSlider .slick-prev::before{
     background-image: url(../public/btn-back.png);
+  }
+  .MenuSlider .slick-dots {
+    position: relative;
+    bottom: auto;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: -20px;
+  }
+  .MenuSlider .slick-dots li button::before{
+    content: none;
+  }
+  .MenuSlider .slick-dots li,
+  .MenuSlider .slick-dots li button {
+    height: auto;
+    width: 40px;
+  }
+  .MenuSlider .slick-dots li button{
+    background-color: #fff;
+    height: 3px;
+    padding: 0;
+    opacity: 0.5;
+  }
+  .MenuSlider .slick-dots li.slick-active button{
+opacity: 1;
+  }
+  .MenuSlider .slick-slide .SliderMenuItem{
+    padding-left: 15px;
+    position: relative;
+  }
+  .MenuSlider .slick-slide:first-child .SliderMenuItem{
+    padding-left: 0;
+  }
+
+  .ExploreMoreBtn {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: .4s;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #643111;
+    min-width: 195px;
+    font-weight: 400;
+    position: relative;
+    padding: 10px 35px 10px 15px;
+    margin-top: -40px;
+  }
+  .ExploreMoreBtn::after {
+    content: "";
+    height: 22px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 20px;
+    background-image: url(../public/rightarrow.png);
+  }
+  .ExploreMoreBtn:hover{
+    background-color: #643111;
+    color: #fff;
+    border-color: #fff;
+  }
+  .ProductGridWrap .ExploreMoreBtn{
+    margin-top: 10px;
+  }
+  .ProductGrid{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .ProductGrid::after{
+    content: "";
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .ProductGridBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    z-index: 2;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .ProductGridTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    z-index: 2;
+  }
+  .LikeBtn{
+    width: 30px;
+    height: 26px;
+    background-size: 100% 100%;
+    background-image: url(../public/like.png);
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .ReviewRow{
+    display: flex;
+  }
+  .ReviewColumn{
+    width: 20px;
+    height: 21px;
+    background-size: 100% 100%;
+    background-image: url(../public/whitereview.png);
+    margin-right: 7px;
+  }
+  .ReviewColumn.gold{
+background-image: url(../public/goldenreview.png);
   }

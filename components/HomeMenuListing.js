@@ -45,14 +45,16 @@ const HomeMenuListing = () => {
           <motion.div
             initial={{ y: 60 }}
             whileInView={{ y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ delay: 0.3, type: "spring" }}
           >
             <div className="HdrT1 text-center color-fff">Our Menu</div>
             <div className="HdrT2 text-center color-fff">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do{" "}
+              Firas Sweets uses only the highest quality ingredients. We don’t
+              use chemicals or add preservatives to our products, as we believe
+              fresh products have the best taste! Our team continuously
+              supervises the quality, which helps keep our products to the
+              highest standards
             </div>
           </motion.div>
         </div>
@@ -60,156 +62,195 @@ const HomeMenuListing = () => {
         <div className="MenuSlider">
           <Slider {...settings}>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu1.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu1.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu2.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu2.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu1.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu1.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu2.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu2.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu1.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Restaurant</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu1.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Restaurant</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <div className="MenuItem">
-                <Image
-                  src="/menu2.jpg"
-                  layout="responsive"
-                  height={"245"}
-                  width={"583"}
-                  priority={true}
-                  className=""
-                />
-                <div className="MenuItemDetails">
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="MenuItemTitle">Sweets</div>
-                    <Link href={"/"} className="MenuItemLink">
-                      View Menu
-                    </Link>
-                  </motion.div>
+              <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
+                <div className="MenuItem">
+                  <Image
+                    src="/menu2.jpg"
+                    layout="responsive"
+                    height={"245"}
+                    width={"583"}
+                    priority={true}
+                    className=""
+                  />
+                  <div className="MenuItemDetails">
+                    <motion.div
+                      initial={{ y: 60 }}
+                      whileInView={{ y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.3, type: "spring" }}
+                    >
+                      <div className="MenuItemTitle">Sweets</div>
+                      <Link href={"/"} className="MenuItemLink">
+                        View Menu
+                      </Link>
+                    </motion.div>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </Slider>
+          <Link href={"/"} className="ExploreMoreBtn">
+            Explore More
+          </Link>
         </div>
       </div>
     </div>
