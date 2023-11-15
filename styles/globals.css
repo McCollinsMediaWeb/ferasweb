@@ -488,6 +488,7 @@ img{
     background: #fff;
     border-radius: 50%;
     display: none !important;
+    margin-top: -25px;
   }
   .MenuSlider:hover .slick-next, 
   .MenuSlider:hover .slick-prev{
