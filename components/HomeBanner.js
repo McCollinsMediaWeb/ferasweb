@@ -39,21 +39,38 @@ const HomeBanner = () => {
     transition: { type: "tween", duration: 1.5 },
   };
   return (
-    <div className="HomeBannerBox">
-       <motion.div
+    <div className="HomeBannerBox position-relative">
+      <motion.div
         className="SliderWrt1"
         {...animation}
         viewport={{ once: true }}
       >
         <Image
-            src="/banner1.jpg"
-            layout="responsive"
-            height={"562"}
-            width={"1200"}
-            priority={true}
-            className=""
-          />
+          src="/banner1.jpg"
+          layout="responsive"
+          height={"562"}
+          width={"1200"}
+          priority={true}
+          className=""
+        />
+      </motion.div>
+      <div className="HomeBannerContent">
+        <div className="container">
+          <motion.div
+            initial={{ x: -60 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, type: "spring" }}
+          >
+            <div className="HbCt1">Discount</div>
+            <div className="HbCt2">50% OFF</div>
+            <div className="HbCt1">Upto 24hrs</div>
+            <Link href={"/"} className="HbCLink">
+              Explore More
+            </Link>
           </motion.div>
+        </div>
+      </div>
     </div>
   );
 };

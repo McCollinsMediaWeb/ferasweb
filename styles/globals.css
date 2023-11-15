@@ -16,6 +16,7 @@ body {
   z-index: 99;
   width: 100%;
   background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0,0,0,.17);
 }
 .container{
     max-width: 1300px;
@@ -384,7 +385,7 @@ img{
     text-align: center;
   }
   .pd-common{
-    padding: 60px 0px;
+    padding: 70px 0px;
   }
   .bg1{
     background-color: #003554;
@@ -631,4 +632,46 @@ opacity: 1;
   }
   .ReviewColumn.gold{
 background-image: url(../public/goldenreview.png);
+  }
+  .HomeBannerContent{
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 25px;
+  }
+  .HbCt1{
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  .HbCt2{
+    font-size: 65px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .HbCLink{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: .4s;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #131e48;
+    min-width: 195px;
+    font-weight: 400;
+    position: relative;
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .HbCLink:hover{
+    border-color: #fff;
+    color: #fff;
   }
