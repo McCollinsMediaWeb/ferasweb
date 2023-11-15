@@ -5,6 +5,8 @@ import HomeAboutUs from "@/components/HomeAboutus";
 import HomeMenuListing from "@/components/HomeMenuListing";
 import HomeBestSeller from "@/components/HomeBestSelling";
 import HomeBanner from "@/components/HomeBanner";
+import CustomerReviews from "@/components/CustomerReviews";
+import InstagramBox from "@/components/InstagramBox";
 export default function Home() {
   const container = {
     visible: {
@@ -21,6 +23,8 @@ export default function Home() {
         <HomeMenuListing/>
         <HomeBestSeller/>
         <HomeBanner/>
+        <CustomerReviews/>
+        <InstagramBox/>
       </div>
     </>
   );
