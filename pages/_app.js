@@ -9,6 +9,7 @@ import '@/styles/globals.css';
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 function Loading() {
   const router = useRouter();
 
@@ -74,6 +75,11 @@ export default function App({ Component, pageProps }) {
   return <>
     <div>
       <Header/>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+      </Head>
       <Loading />
     <Component {...pageProps} />
     <Footer/>
