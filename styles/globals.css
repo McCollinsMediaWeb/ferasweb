@@ -220,8 +220,6 @@ img{
     top: 0;
     z-index: 1000;
     width: 500px;
-    border-top-left-radius: 120px;
-    border-bottom-left-radius: 120px;
     padding: 40px;
     display: flex;
     align-items: center;
