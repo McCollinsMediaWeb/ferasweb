@@ -948,4 +948,13 @@ background-color: #1D1D1B;
     .MobileLogoBox{
       width: 130px;
     }
+    header {
+      background-color: #1c2b60 !important;
+    }
+    .HbT1{
+      font-size: 26px;
+    }
+    .layer2{
+      padding: 15px;
+    }
   }

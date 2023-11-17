@@ -123,12 +123,12 @@ const Header = () => {
       </motion.div>
       )}
       {!isDesktop && (
-        <div className="container">
+        <div className="MobileHeaderWrap">
           <div className="MobileHeaderFlex">
             <div className="MobileLogoBox">
               <Link href={"/"} className="">
                   <Image
-                    src="/mobilelogo.jpg"
+                    src="/mobilelogo1.png"
                     layout="responsive"
                     height={"78"}
                     width={"200"}
