@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   line-height: 1.3;
   font-weight: 400;
-  color: #131e48;
+  color: #1c2b60;
   letter-spacing: 1.2px;
 }
 .StickyHeader header{
@@ -28,16 +28,61 @@ a {
   transition: 0.4s !important;
 }
 a:hover{
-    color: #131e48;
+    color: #1c2b60;
 }
 
 * {
   box-sizing: border-box;
 }
+.font-arabic{
+  font-family: 'Cairo', sans-serif;
+}
+.HeaderItem.font-arabic{
+  font-weight: 500;
+  padding-right: 25px;
+  position: relative;
+}
+.HeaderItem.font-arabic a{
+  min-width: 80px;
+}
+.HeaderItem.font-arabic::after{
+  content: "";
+  width: 21px;
+  height: 13px;
+  background-size: 100% 100%;
+  background-image: url(../public/uae.png);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -5px;
+}
 header{
     position: relative;
     z-index: 9;
     background-color: #fff;
+}
+.SubNaBox{
+  position: absolute;
+  left: 0;
+  top: 99%;
+  background-color: #fff;
+  min-width: 220px;
+  display: none;
+}
+.HeaderItem .SubNaBox a{
+  min-width: 100%;
+  text-align: left;
+  height: auto;
+  padding: 15px 15px;
+  font-size: 15px;
+  border-bottom: 1px solid #e4e4e4;
+  display: block;
+}
+.HeaderItem:hover .SubNaBox{
+  display: block;
+}
+.HeaderItem .SubNaBox a::after{
+  content: none !important;
 }
 .LoadingT1{
     font-size: 13px;
@@ -61,13 +106,16 @@ header{
     right: 0;
     cursor: pointer;
 }
+.HeaderItem{
+  position: relative;
+}
 .HeaderItem a{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 140px;
+    min-width: 125px;
     height: 60px;
-    color: #131e48;
+    color: #1c2b60;
     position: relative;
 }
 .HeaderItem a.link1.active::after ,
@@ -75,20 +123,20 @@ header{
     content: "";
     width: 40%;
     height: 3px;
-    background-color: #131e48;
+    background-color: #1c2b60;
     position: absolute;
     left: 30%;
     bottom: 0;
 }
 .HeaderItem a.link1.active ,
 .HeaderItem a.link1:hover{
-    color: #131e48;
+    color: #1c2b60;
     font-weight: 600;
 }
 .HeroLogo{
     width: 100%;
     position: relative;
-    
+    max-width: 110px;
 }
 .HeaderItem.LogoLink a{
     align-items: baseline;
@@ -150,7 +198,7 @@ header{
   border: 2px solid transparent;
   display: inline-block;
   border-radius: 25px;
-  background-color: #131e48;
+  background-color: #1c2b60;
   min-width: 195px;
   font-weight: 400;
   position: relative;
@@ -168,11 +216,11 @@ header{
   background-image: url(../public/rightarrow.png);
 }
 .BannerBtns a:hover{
-  background-color: #643111;
+  background-color: #bf9b5f;
   border-color: #fff;
 }
 img{
-  background-color: #131e48;
+  background-color: #1c2b60;
 }
 .HeroBanner{
     overflow-x: hidden;
@@ -220,7 +268,7 @@ img{
     top: 0;
     z-index: 1000;
     width: 500px;
-    padding: 40px;
+    padding: 25px;
     display: flex;
     align-items: center;
   
@@ -234,7 +282,7 @@ img{
     padding: 25px;
     color: #242424;
     font-weight: 600;
-    font-size: 27px;
+    font-size: 25px;
     line-height: 1;
     position: relative;
     padding-top: 0;
@@ -267,7 +315,7 @@ img{
   .SideNavMiddle a {
     display: block;
     color: #212121;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     padding: 8px 0px;
     transition: 0.5s;
@@ -276,14 +324,14 @@ img{
   }
   
   .hover1:hover {
-    color: #131e48;
+    color: #1c2b60;
   }
   
 
   
   .SideNavFooter {
     padding: 25px;
-    color: #131e48;
+    color: #1c2b60;
     padding-bottom: 0;
   }
   
@@ -339,10 +387,10 @@ img{
   
   .socialItems .SocialItem {
     margin-right: 20px;
-    border: 2px solid #131e48;
+    border: 2px solid #1c2b60;
     padding: 10px;
     border-radius: 50%;
-    background-color: #131e48;
+    background-color: #1c2b60;
   }
   
   .socialItems .SocialItem:hover {
@@ -351,19 +399,21 @@ img{
   
   .ScrollPart {
     overflow-y: scroll;
-    max-height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
   }
   .SideNavMiddle a:hover{
-    color: #643111;
+    color: #bf9b5f;
   }
   .SideNavMiddle a.active{
-    color: #643111 !important;
+    color: #bf9b5f !important;
   display: inline-block;
   margin-bottom: 10px;
-  border-bottom: 2px solid #643111;
+  border-bottom: 2px solid #bf9b5f;
   }
   .loadingMainDiv {
-    background-color: #131e48;
+    background-color: #1c2b60;
     position: fixed;
     left: 0;
     top: 0;
@@ -389,12 +439,16 @@ img{
   .bg1{
     background-color: #003554;
     background-image: url(../public/bg1.png);
+    background-repeat: repeat;
   }
   .bg2{
-    background-color: #131e48;
+    background-color: #1c2b60;
+    background-image: url(../public/bg1.png);
+    background-repeat: repeat;
   }
   .bg3{
     background-color: #F9F7F2;
+    
   }
 
   .color-fff{
@@ -460,7 +514,7 @@ img{
     border: 2px solid transparent;
     display: inline-block;
     border-radius: 25px;
-    background-color: #131e48;
+    background-color: #1c2b60;
     font-weight: 400;
     position: relative;
     padding: 10px 35px 10px 15px;
@@ -479,7 +533,7 @@ img{
     background-image: url(../public/rightarrow.png);
   }
   .MenuItemLink:hover{
-    background-color: #643111;
+    background-color: #bf9b5f;
     color: #fff;
     border-color: #fff;
   }
@@ -550,7 +604,7 @@ opacity: 1;
     border: 2px solid transparent;
     display: inline-block;
     border-radius: 25px;
-    background-color: #643111;
+    background-color: #bf9b5f;
     min-width: 195px;
     font-weight: 400;
     position: relative;
@@ -568,7 +622,7 @@ opacity: 1;
     background-image: url(../public/rightarrow.png);
   }
   .ExploreMoreBtn:hover{
-    background-color: #643111;
+    background-color: #bf9b5f;
     color: #fff;
     border-color: #fff;
   }
@@ -662,7 +716,7 @@ background-image: url(../public/goldenreview.png);
     border: 2px solid transparent;
     display: inline-block;
     border-radius: 25px;
-    background-color: #131e48;
+    background-color: #1c2b60;
     min-width: 195px;
     font-weight: 400;
     position: relative;
@@ -816,7 +870,7 @@ background-color: #1D1D1B;
     top: 7px;
   }
   footer{
-    background-color: #003554;
+    background-color: #1b2b61;
   }
   .FooterBottomWrap{
     background-color: #000;
@@ -832,7 +886,7 @@ background-color: #1D1D1B;
     color: #fff !important;
   }
   footer img{
-    background-color: #003554;
+    background-color: #1b2b61;
   }
   .FtrT1{
     font-size: 22px;
@@ -881,4 +935,17 @@ background-color: #1D1D1B;
   .FooterLinksBox a:hover{
     color: #fff;
     opacity: 0.5;
+  }
+  .MobileHeaderFlex{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 1000px) {
+    html,
+    body{
+      overflow-x: hidden;
+    }
+    .MobileLogoBox{
+      width: 130px;
+    }
   }

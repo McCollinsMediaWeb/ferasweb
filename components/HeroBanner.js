@@ -112,17 +112,15 @@ const HeroBanner = () => {
           <div className="SliderImage">
             {isDesktop && (
               <Image
-                src="/herodesk1.jpg"
+                src="/herodesk2.jpg"
                 layout="fill"
-                priority={true}
                 className="MainBanner"
               />
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile1.jpg"
+                src="/heromobile2.jpg"
                 layout="fill"
-                priority={true}
                 className="MainBanner"
               />
             )}
@@ -180,7 +178,7 @@ const HeroBanner = () => {
           <div className="SliderImage">
             {isDesktop && (
               <Image
-                src="/herodesk1.jpg"
+                src="/herodesk3.jpg"
                 layout="fill"
                 priority={true}
                 className="MainBanner"
@@ -188,7 +186,7 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile1.jpg"
+                src="/heromobile3.jpg"
                 layout="fill"
                 priority={true}
                 className="MainBanner"
@@ -248,7 +246,7 @@ const HeroBanner = () => {
           <div className="SliderImage">
             {isDesktop && (
               <Image
-                src="/herodesk1.jpg"
+                src="/herodesk4.jpg"
                 layout="fill"
                 priority={true}
                 className="MainBanner"
@@ -256,7 +254,7 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile1.jpg"
+                src="/heromobile4.jpg"
                 layout="fill"
                 priority={true}
                 className="MainBanner"

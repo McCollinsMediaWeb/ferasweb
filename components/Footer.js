@@ -28,31 +28,31 @@ const Footer = () => {
                     <Link href={"/"}>Home</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>About Us</Link>
+                    <Link href={"/aboutus"}>About Us</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>Our Menu</Link>
+                    <Link href={"/restaurentmenu"}>Restaurent Menu</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>Catering</Link>
+                    <Link href={"/sweetmenu"}>Sweets Menu</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>Our Locations</Link>
+                    <Link href={"/catering"}>Catering</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>Contact Us</Link>
+                    <Link href={"/locations"}>Our Locations</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"}>Customer Reviews</Link>
+                    <Link href={"/contactus"}>Contact Us</Link>
+                  </div>
+                  <div className="col-md-6">
+                    <Link href={"/customerreviews"}>Customer Reviews</Link>
                   </div>
                   <div className="col-md-6">
                     <Link href={"/"}>Privacy & Policy</Link>
                   </div>
                   <div className="col-md-6">
                     <Link href={"/"}>Terms & Conditions</Link>
-                  </div>
-                  <div className="col-md-6">
-                    <Link href={"/"}>Gallery</Link>
                   </div>
                 </div>
               </div>
