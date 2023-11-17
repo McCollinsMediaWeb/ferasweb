@@ -1037,4 +1037,20 @@ background-color: #1D1D1B;
       height: 17px;
       width: 16px;
     }
+    .MobileLang a{
+      position: relative;
+      min-width: 65px;
+      display: inline-block;
+    }
+    .MobileLang a::after{
+      content: "";
+      width: 21px;
+      height: 13px;
+      background-size: 100% 100%;
+      background-image: url(../public/uae.png);
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      margin-top: -5px;
+    }
   }

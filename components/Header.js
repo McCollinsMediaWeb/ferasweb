@@ -137,7 +137,13 @@ const Header = () => {
                   />
               </Link>
             </div>
-            <div className="MobileLang">Arabic</div>
+            <div className="MobileLang">
+              <div className="font-arabic color-fff">
+                <Link href={"/"} className="">
+                عربي      
+                </Link>
+              </div>
+            </div>
             <div className="MobileMenuLink">
               <div className="HamberMenu" onClick={() => setOpen(true)}>
                 <div className="HamberMenuLine">&nbsp;</div>
