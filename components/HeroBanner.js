@@ -16,7 +16,7 @@ const HeroBanner = () => {
     autoplaySpeed:3000,
     infinite: true,
     touchThreshold: 100,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover:false
   };
   const container = {

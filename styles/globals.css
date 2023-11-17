@@ -939,11 +939,25 @@ background-color: #1D1D1B;
   .MobileHeaderFlex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
   }
   @media only screen and (max-width: 1000px) {
+    
     html,
     body{
       overflow-x: hidden;
+      font-size: 15px;
+    }
+    body {
+      position: relative;
+      overflow-x: hidden !important;
+    }
+    html {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      position: relative;
     }
     .MobileLogoBox{
       width: 130px;
@@ -954,7 +968,73 @@ background-color: #1D1D1B;
     .HbT1{
       font-size: 26px;
     }
+    .HbT2{
+      font-size: 16px;
+    }
     .layer2{
       padding: 15px;
+    }
+    .BannerBtns a {
+      font-size: 15px;
+      min-width: 180px;
+      padding: 8px 35px 8px 8px;
+    }
+    .MobileMenuLink{
+      width: 27px;
+    }
+    .HamberMenuLine{
+      height: 2px;
+      background-color: #fff;
+      line-height: 1;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+    .HamberMenuLine.mid{
+      width: 70%;
+      margin-left: auto;
+    }
+    .MobileMenuLink .HamberMenuLine:last-child{
+      margin-bottom: 0;
+    }
+    .SideNav {
+      padding: 20px;
+      display: block;
+      width: 100%;
+      background: #bf9b5f;
+    }
+    .ScrollPart{
+      display: block;
+    }
+    .SideNavMiddle a:hover,
+    .SideNavMiddle a.active {
+      color: #1b2b61 !important;
+      border-bottom: 2px solid #1b2b61;
+      font-weight: 500;
+    }
+    .CloseBtn{
+      right: 0;
+    }
+    .SideNavMiddle {
+      padding: 0px;
+      margin: 20px 0px;
+    }
+    .SideNavHeader{
+      padding: 0;
+    }
+    .SideNavMiddle a{
+      margin-bottom: 5px !important;
+      display: inline-block !important;
+      border-bottom: 2px solid;
+    }
+    .HdrRow1 .col-md-4{
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+    .SideNavFooter{
+      padding: 0;
+    }
+    .BannerBtns a::after{
+      height: 17px;
+      width: 16px;
     }
   }

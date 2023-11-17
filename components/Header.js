@@ -138,7 +138,13 @@ const Header = () => {
               </Link>
             </div>
             <div className="MobileLang">Arabic</div>
-            <div className="MobileMenuLink"><span>&nbsp;</span></div>
+            <div className="MobileMenuLink">
+              <div className="HamberMenu" onClick={() => setOpen(true)}>
+                <div className="HamberMenuLine">&nbsp;</div>
+                <div className="HamberMenuLine mid">&nbsp;</div>
+                <div className="HamberMenuLine">&nbsp;</div>
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -298,7 +304,6 @@ const Header = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="SideNavFooter">
-                      {isDesktop && (
                         <div>
                           <div className="row HdrRow1">
                             <div className="col-md-4">
@@ -334,36 +339,7 @@ const Header = () => {
                             offers, and a taste of our vibrant dining experience
                           </div>
                         </div>
-                      )}
-                      <div className="SocialBoxWrp">
-                        <div className="socialItems">
-                          <div className="SocialItem">
-                            <a href="#" target="_blank">
-                              <span className="Icon instagram">&nbsp;</span>
-                            </a>
-                          </div>
-                          <div className="SocialItem">
-                            <a href="#" target="_blank">
-                              <span className="Icon facebook">&nbsp;</span>
-                            </a>
-                          </div>
-                          {/* <div className="SocialItem">
-                          <a href="#" target="_blank">
-                            <span className="Icon twitter">&nbsp;</span>
-                          </a>
-                        </div>
-                        <div className="SocialItem">
-                          <a href="#" target="_blank">
-                            <span className="Icon youtube">&nbsp;</span>
-                          </a>
-                        </div> */}
-                          <div className="SocialItem">
-                            <a href="#" target="_blank">
-                              <span className="Icon whatsapp">&nbsp;</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                   </motion.div>
                 </div>
