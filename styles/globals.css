@@ -1362,4 +1362,7 @@ background-color: #1D1D1B;
       text-align: center;
       line-height: 1.5;
     }
+    .SliderImage, .SliderItem{
+      height: auto;
+    }
   }

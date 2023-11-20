@@ -16,7 +16,7 @@ const HeroBanner = () => {
     autoplaySpeed:3000,
     infinite: true,
     touchThreshold: 100,
-    autoplay: false,
+    autoplay: true,
     pauseOnHover:false
   };
   const container = {
@@ -52,11 +52,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile1.jpg"
-                layout="fill"
-                priority={true}
-                className="MainBanner"
-              />
+              src="/heromobile1.jpg"
+              layout="responsive"
+              height="900"
+              width="708"
+              priority={true}
+              className=""
+            />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -119,10 +121,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile2.jpg"
-                layout="fill"
-                className="MainBanner"
-              />
+              src="/heromobile2.jpg"
+              layout="responsive"
+              height="900"
+              width="708"
+              priority={true}
+              className=""
+            />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -186,79 +191,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/heromobile3.jpg"
-                layout="fill"
-                priority={true}
-                className="MainBanner"
-              />
-            )}
-            <div className="layer1">&nbsp;</div>
-            <div className="layer2">
-              <div className="fullWidth">
-                <div className="sliderContent">
-                  <div className="HbT1 font-p">
-                    <motion.div
-                      initial="hidden"
-                      whileInView={"visible"}
-                      variants={container}
-                      viewport={{ once: false }}
-                    >
-                      <AnimatedHeaderText text="A TASTE OF REAL" />
-                    </motion.div>
-                    <motion.div
-                      initial="hidden"
-                      whileInView={"visible"}
-                      variants={container}
-                      viewport={{ once: false }}
-                    >
-                      <AnimatedHeaderText text="DISTINCTIVENESS" />
-                    </motion.div>
-                  </div>
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="HbT2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-                    <div className="BannerBtns">
-                      <Link href={"/"} className="BannerBtn">
-                        View Menus
-                      </Link>
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="SliderItem">
-          <div className="SliderImage">
-            {isDesktop && (
-              <Image
-                src="/herodesk4.jpg"
-                layout="fill"
-                priority={true}
-                className="MainBanner"
-              />
-            )}
-            {!isDesktop && (
-              <Image
-                src="/heromobile4.jpg"
-                layout="fill"
-                priority={true}
-                className="MainBanner"
-              />
+              src="/heromobile3.jpg"
+              layout="responsive"
+              height="900"
+              width="708"
+              priority={true}
+              className=""
+            />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
