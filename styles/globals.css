@@ -1321,4 +1321,45 @@ background-color: #1D1D1B;
     .ReviewItemT1{
       font-size: 16px;
     }
+    .FtrLogoBx {
+      max-width: 55%;
+      margin-bottom: 20px;
+    }
+    .FtrT1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .FooterLinksBox .row{
+      margin: 0 -5px;
+    }
+    .FooterLinksBox .col-md-6{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 5px;
+    }
+    .FooterLinksBox a {
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .FooterLinksBox{
+      margin-bottom: 20px;
+    }
+    .FtrT2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .FtrSocialMediaFlex {
+      justify-content: center;
+    }
+    .FooterBottomWrap {
+      margin-bottom: 60px;
+    }
+    .FooterBottom {
+      display: block;
+      text-align: center;
+      line-height: 1.5;
+    }
   }
