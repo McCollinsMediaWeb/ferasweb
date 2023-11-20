@@ -7,7 +7,9 @@ import HomeBestSeller from "@/components/HomeBestSelling";
 import HomeBanner from "@/components/HomeBanner";
 import CustomerReviews from "@/components/CustomerReviews";
 import InstagramBox from "@/components/InstagramBox";
+import useMediaQuery from "@/hooks/useMediaQuery";
 export default function Home() {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const container = {
     visible: {
       transition: {
@@ -19,9 +21,20 @@ export default function Home() {
     <>
       <div>
         <HeroBanner/>
+        {isDesktop && (
         <HomeAboutUs/>
+        )}
+        
         <HomeMenuListing/>
+        {!isDesktop && (
         <HomeBestSeller/>
+        )}
+        {!isDesktop && (
+        <HomeAboutUs/>
+        )}
+         {isDesktop && (
+        <HomeBestSeller/>
+        )}
         <HomeBanner/>
         <CustomerReviews/>
         <InstagramBox/>

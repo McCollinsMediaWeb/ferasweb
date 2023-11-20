@@ -15,6 +15,18 @@ const HomeMenuListing = () => {
     autoplaySpeed: 1500,
     infinite: true,
     touchThreshold: 100,
+    responsive: [
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+        },
+      },
+    ],
   };
   const container = {
     visible: {
@@ -70,9 +82,9 @@ const HomeMenuListing = () => {
                 <div className="MenuItem">
                   <Image
                     src="/menu1.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -99,11 +111,11 @@ const HomeMenuListing = () => {
                 viewport={{ once: true }}
               >
                 <div className="MenuItem">
-                  <Image
+                <Image
                     src="/menu2.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -130,11 +142,11 @@ const HomeMenuListing = () => {
                 viewport={{ once: true }}
               >
                 <div className="MenuItem">
-                  <Image
+                <Image
                     src="/menu1.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -161,11 +173,11 @@ const HomeMenuListing = () => {
                 viewport={{ once: true }}
               >
                 <div className="MenuItem">
-                  <Image
+                <Image
                     src="/menu2.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -192,11 +204,11 @@ const HomeMenuListing = () => {
                 viewport={{ once: true }}
               >
                 <div className="MenuItem">
-                  <Image
+                <Image
                     src="/menu1.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -223,11 +235,11 @@ const HomeMenuListing = () => {
                 viewport={{ once: true }}
               >
                 <div className="MenuItem">
-                  <Image
+                <Image
                     src="/menu2.jpg"
-                    layout="responsive"
-                    height={"245"}
-                    width={"583"}
+                    layout={isDesktop ? "responsive" : "fill"}
+                    height={isDesktop ? "245" : ""}
+                    width={isDesktop ? "583" : ""}
                     priority={true}
                     className=""
                   />
@@ -248,9 +260,11 @@ const HomeMenuListing = () => {
               </motion.div>
             </div>
           </Slider>
+          <div className="ExpBtn">
           <Link href={"/"} className="ExploreMoreBtn">
             Explore More
           </Link>
+          </div>
         </div>
       </div>
     </div>

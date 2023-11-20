@@ -27,7 +27,7 @@ const Header = () => {
         viewport={{ once: false }}
         transition={{ delay: 0.3, type: "spring" }}
       >
-      <div className="container">
+      <div className="container" style={{ display: isDesktop ? "block" : "none"}}>
         <div className="HeaderFlex">
           <div className="HeaderItem">
             <Link
@@ -123,7 +123,7 @@ const Header = () => {
       </motion.div>
       )}
       {!isDesktop && (
-        <div className="MobileHeaderWrap">
+        <div className="MobileHeaderWrap" style={{ display: isDesktop ? "none" : "block"}}>
           <div className="MobileHeaderFlex">
             <div className="MobileLogoBox">
               <Link href={"/"} className="">

@@ -434,7 +434,8 @@ img{
     text-align: center;
   }
   .pd-common{
-    padding: 70px 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .bg1{
     background-color: #003554;
@@ -942,7 +943,80 @@ background-color: #1D1D1B;
     align-items: center;
     padding: 0 10px;
   }
-  @media only screen and (max-width: 1000px) {
+  .halo-sticky-toolbar-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0 0 9px #0000001f;
+    transition: transform .6s;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+  .bottom-bar {
+    padding: 3px 15px;
+    min-height: 60px;
+  }
+  .bottom-bar--list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+  .bottom-bar--list li > a {
+    padding: 7px 2px;
+    display: block;
+    pointer-events: auto;
+    text-align: center;
+    color: #1D1D1B;
+  }
+  
+  .bottom-bar--list li{
+    position: relative;
+  }
+  .bottom-bar--list .icon + .text {
+    margin-top: 6px;
+    line-height: 1;
+    font-size: 11px;
+  }
+  .FtrIconH{
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .bottom-bar--list li.activeLink::after{
+    content: "";
+    width: 120%;
+    height: 3px;
+    background-color: #bf9b5f;
+    position: absolute;
+    top: -4px;
+    left: -10%;
+  }
+  .FtrIconH.home{
+    background-image: url(../public/icons/fhome.png);
+  }
+  
+  .FtrIconH.reserve{
+    background-image: url(../public/icons/freservenow.png );
+  }
+  .FtrIconH.location{
+    background-image: url(../public/icons/location.png );
+  }
+  .FtrIconH.order{
+    background-image: url(../public/icons/fordernow.png );
+  }
+  .FtrIconH.whatsapp{
+    background-image: url(../public/icons/fwhatsapp.png );
+  }
+  .FtrIconH.call{
+    background-image: url(../public/icons/fcall.png );
+  }
+  @media only screen and (max-width: 960px) {
     
     html,
     body{
@@ -1059,14 +1133,91 @@ background-color: #1D1D1B;
       margin: 0 8px;
     }
     .pd-common {
-      padding: 20px 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     .PdLft40 {
       padding-left: 0;
     }
-    .ProductGrids .col-md-3{
+    .ProductGrids > .row{
+      margin: 0 -10px;
+    }
+    .ProductGrids > .row >  .col-md-3{
       flex: 0 0 50%;
       max-width: 50%;
       padding: 0 5px;
+    }
+    .HeaderBox .HdrT1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .MenuItem{
+      height: 180px;
+    }
+    .MenuSlider{
+      margin: 0 -20px;
+    }
+    .HeaderBox .HdrT2 {
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .MenuSlider:hover .slick-next, .MenuSlider:hover .slick-prev {
+      display:none !important;
+    }
+    .MenuItem::after {
+      background-color: rgba(255,255,255,0.4);
+    }
+    .MenuItemTitle {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+    .MenuItemLink {
+      padding: 8px 25px 8px 10px;
+      font-size: 10px;
+    }
+    .MenuItemLink::after{
+      
+    }
+    .MenuSlider .slick-slide .SliderMenuItem {
+      padding: 0px 5px;
+    }
+    .MenuItemLink::after {
+      height: 14px;
+      right: 10px;
+      top: 8px;
+      width: 10px;
+    }
+    .ExpBtn{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .ExploreMoreBtn {
+      padding: 8px 25px 8px 10px;
+    }
+    .bg1.abtBoxHome{
+      background-color: #1b2b61;
+    }
+    .ProductGridTop .col-md-9{
+      flex: 0 0 77%;
+      max-width: 77%;
+    }
+    .ProductGridTop .col-md-3{
+      flex: 0 0 23%;
+      max-width: 23%;
+    }
+    
+    .ReviewColumn {
+      width: 14px;
+      height: 16px;
+    }
+    .LikeBtn {
+      width: 20px;
+      height: 18px;
+    }
+    .ProductGridBottom .text-right{
+      text-align: left !important;
+    }
+    .ProductGridBottom{
+      font-size: 15px;
     }
   }

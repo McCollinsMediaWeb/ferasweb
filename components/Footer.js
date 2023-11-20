@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { useRouter } from "next/router";
 const Footer = () => {
+  const router = useRouter();
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <div>
       <footer>
@@ -59,7 +63,11 @@ const Footer = () => {
             </div>
             <div className="col-md-3">
               <div className="FtrT1">Connect with us</div>
-              <div className="FtrT2 color-fff">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+              <div className="FtrT2 color-fff">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </div>
               <div className="FtrSocialMedia">
                 <div className="FtrSocialMediaFlex">
                   <a href="#">
@@ -92,6 +100,62 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {!isDesktop && (
+        <div class="halo-sticky-toolbar-mobile">
+          <div class="bottom-bar">
+            <ul class="bottom-bar--list">
+              <li className={router.pathname == "/" ? "activeLink" : ""}>
+                <Link
+                  href={"/"}
+                >
+                  <div class="icon">
+                    <div class="FtrIconH home">&nbsp;</div>
+                  </div>
+                  <div class="text">Home</div>
+                </Link>
+              </li>
+              <li  className={router.pathname == "/restaurentmenu" ? "activeLink" : ""}>
+                <Link
+                  href={"/restaurentmenu"}
+                >
+                  <div class="icon">
+                    <div class="FtrIconH reserve">&nbsp;</div>
+                  </div>
+                  <div class="text">Menu</div>
+                </Link>
+              </li>
+              <li className={router.pathname == "/catering" ? "activeLink" : ""}>
+                <Link
+                  href={"/catering"}
+                >
+                  <div class="icon">
+                    <div class="FtrIconH order">&nbsp;</div>
+                  </div>
+                  <div class="text">Catering</div>
+                </Link>
+              </li>
+              <li className={router.pathname == "/locations" ? "activeLink" : ""}>
+                <Link
+                  href={"/locations"}
+                >
+                  <div class="icon">
+                    <div class="FtrIconH location">&nbsp;</div>
+                  </div>
+                  <div class="text">Locations</div>
+                </Link>
+              </li>
+              <li>
+                <a href="tel:+971565518844">
+                  <div class="icon">
+                    <div class="FtrIconH whatsapp">&nbsp;</div>
+                  </div>
+                  <div class="text">WhatsApp</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
