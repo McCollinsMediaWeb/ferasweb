@@ -1,6 +1,6 @@
 
 
-import HeroBanner from "@/components/HeroBanner";
+import CoomonHeader from "@/components/CommonHeader";
 
 export default function sweetmenu() {
   const container = {
@@ -13,7 +13,7 @@ export default function sweetmenu() {
   return (
     <>
       <div>
-        <HeroBanner/>
+      <CoomonHeader desktopBanner="/herodesk4.jpg" MobileBanner ="/heromobile3.jpg" Title="SWEET MENU" MenuName="" MenuLink=""/>
       
       </div>
     </>

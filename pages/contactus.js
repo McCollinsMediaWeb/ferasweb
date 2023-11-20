@@ -1,6 +1,6 @@
 
 
-import HeroBanner from "@/components/HeroBanner";
+import CoomonHeader from "@/components/CommonHeader";
 
 export default function contactus() {
   const container = {
@@ -13,7 +13,7 @@ export default function contactus() {
   return (
     <>
       <div>
-        <HeroBanner/>
+      <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="CONTACT FERAS" MenuName="" MenuLink=""/>
       
       </div>
     </>

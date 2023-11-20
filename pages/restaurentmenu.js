@@ -1,6 +1,6 @@
 
 
-import HeroBanner from "@/components/HeroBanner";
+import CoomonHeader from "@/components/CommonHeader";
 
 export default function ourmenu() {
   const container = {
@@ -13,7 +13,7 @@ export default function ourmenu() {
   return (
     <>
       <div>
-        <HeroBanner/>
+      <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="RESTAURENT MENU" MenuName="" MenuLink=""/>
       
       </div>
     </>

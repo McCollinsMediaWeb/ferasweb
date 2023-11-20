@@ -39,7 +39,8 @@ const CoomonHeader = (props) => {
   };
   return (
     <div className="HeroBanner slider1 CommonHeader1">
-      <div className="SliderItem">
+      <Slider {...settings}>
+        <div className="SliderItem">
           <div className="SliderImage">
             {isDesktop && (
               <Image
@@ -101,6 +102,7 @@ const CoomonHeader = (props) => {
             </div>
           </div>
         </div>
+      </Slider>
     </div>
   );
 };
