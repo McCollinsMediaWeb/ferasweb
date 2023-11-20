@@ -91,7 +91,7 @@ const HomeBestSeller = () => {
             </div>
           </div>
           <div className="ExpBtn">
-          <Link href={"/"} className="ExploreMoreBtn">
+          <Link href={"/restaurentmenu"} className="ExploreMoreBtn">
             Explore More
           </Link>
           </div>

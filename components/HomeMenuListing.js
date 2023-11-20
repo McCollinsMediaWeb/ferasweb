@@ -95,7 +95,7 @@ const HomeMenuListing = () => {
                       transition={{ delay: 0.3, type: "spring" }}
                     >
                       <div className="MenuItemTitle">Restaurant</div>
-                      <Link href={"/"} className="MenuItemLink">
+                      <Link href={"/restaurentmenu"} className="MenuItemLink">
                         View Menu
                       </Link>
                     </motion.div>
