@@ -78,13 +78,13 @@ const InstagramBox = () => {
       </motion.div>
       <div className="ReviewSlider">
         <div className="container">
-          <Slider {...settings}>
-            <div>
-              <motion.div
+        <motion.div
                 className="SliderWrt1"
                 {...animation}
                 viewport={{ once: true }}
               >
+          <Slider {...settings}>
+            <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -99,14 +99,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div>
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -121,14 +115,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div>
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -143,14 +131,9 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div>
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+              
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -165,14 +148,9 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div>
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+              
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -187,9 +165,9 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-              </motion.div>
             </div>
           </Slider>
+          </motion.div>
         </div>
       </div>
     </div>
