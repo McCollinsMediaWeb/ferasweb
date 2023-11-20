@@ -16,8 +16,9 @@ const HeroBanner = () => {
     autoplaySpeed:3000,
     infinite: true,
     touchThreshold: 100,
-    autoplay: false,
-    pauseOnHover:false
+    autoplay: true,
+    pauseOnHover:false,
+    fade: true,
   };
   const container = {
     visible: {
@@ -89,8 +90,7 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et
+                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
                     </div>
                   </motion.div>
                   <motion.div
@@ -158,8 +158,7 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et
+                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
                     </div>
                   </motion.div>
                   <motion.div
@@ -228,8 +227,7 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et
+                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
                     </div>
                   </motion.div>
                   <motion.div
