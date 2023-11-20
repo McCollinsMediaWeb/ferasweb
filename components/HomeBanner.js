@@ -40,11 +40,7 @@ const HomeBanner = () => {
   };
   return (
     <div className="HomeBannerBox position-relative">
-      <motion.div
-        className="SliderWrt1"
-        {...animation}
-        viewport={{ once: true }}
-      >
+      
         {isDesktop && (
         <Image
           src="/banner1.jpg"
@@ -65,6 +61,11 @@ const HomeBanner = () => {
           className=""
         />
         )}
+        <motion.div
+        className="SliderWrt1"
+        {...animation}
+        viewport={{ once: true }}
+      >
       <div className="HomeBannerContent">
         <div className="container">
           <motion.div
