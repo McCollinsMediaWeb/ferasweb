@@ -92,7 +92,7 @@ const CoomonHeader = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link href={"/"} className="BannerBtn">
+                      <Link href={"/restaurentmenu"} className="BannerBtn">
                         View Menus
                       </Link>
                     </div>
