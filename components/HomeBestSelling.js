@@ -90,9 +90,11 @@ const HomeBestSeller = () => {
               </div>
             </div>
           </div>
+          <div className="ExpBtn">
           <Link href={"/"} className="ExploreMoreBtn">
             Explore More
           </Link>
+          </div>
         </div>
       </div>
     </div>

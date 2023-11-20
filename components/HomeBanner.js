@@ -45,6 +45,7 @@ const HomeBanner = () => {
         {...animation}
         viewport={{ once: true }}
       >
+        {isDesktop && (
         <Image
           src="/banner1.jpg"
           layout="responsive"
@@ -53,6 +54,17 @@ const HomeBanner = () => {
           priority={true}
           className=""
         />
+        )}
+        {!isDesktop && (
+        <Image
+          src="/bannermobile1.jpg"
+          layout="responsive"
+          height={"561"}
+          width={"489"}
+          priority={true}
+          className=""
+        />
+        )}
       </motion.div>
       <div className="HomeBannerContent">
         <div className="container">

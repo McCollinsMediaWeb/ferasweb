@@ -88,7 +88,7 @@ const ProductGid = (props) => {
         >
           <div className="row align-items-center">
             <div className="col-md-8">{props.productname}</div>
-            <div className="col-md-4 text-right">AED 50</div>
+            <div className="col-md-4 text-right"><span className="PriceBox1">AED 50</span></div>
           </div>
         </motion.div>
       </div>

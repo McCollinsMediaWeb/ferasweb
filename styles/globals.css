@@ -1220,4 +1220,50 @@ background-color: #1D1D1B;
     .ProductGridBottom{
       font-size: 15px;
     }
+    .ProductGrid{
+      margin-bottom: 10px;
+    }
+    .PriceBox1{
+      background: #bf9b5f;
+      padding: 3px 5px;
+      line-height: 1;
+      border-radius: 3px;
+    }
+    .ProductGridBottom .col-md-8{
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .ProductGridWrap .ExploreMoreBtn {
+      margin-top: 0;
+    }
+    .ft1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+    }
+    .ft2 {
+      margin-bottom: 10px;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .MobileImage1,{
+      margin-top: 15px;
+    }
+    .TxtBx2{
+      margin-top: 20px;
+    }
+    .HbCt1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+      line-height: 1;
+    }
+    .HbCt2{
+      font-size: 35px;
+    }
+    .HbCLink {
+      min-width: 160px;
+      padding: 10px;
+    }
   }

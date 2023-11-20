@@ -34,7 +34,9 @@ const HomeAboutUs = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <motion.div
+          {isDesktop && (
+            <div>
+              <motion.div
               initial={{ y: 60 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
@@ -49,6 +51,9 @@ const HomeAboutUs = () => {
                 className=""
               />
             </motion.div>
+            </div>
+          )}
+            
           </div>
           <div className="col-md-8">
             <div className="PdLft40">
@@ -72,7 +77,7 @@ const HomeAboutUs = () => {
               operations.
             </div>
             </motion.div>
-            <div className="ft1 color-fff">
+            <div className="ft1 color-fff TxtBx2">
               <motion.div
                 initial="hidden"
                 whileInView={"visible"}
@@ -101,6 +106,25 @@ const HomeAboutUs = () => {
             </div>
             </motion.div>
             </div>
+            {!isDesktop && (
+            <div>
+              <motion.div
+              initial={{ y: 60 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, type: "spring" }}
+            >
+              <Image
+                src="/about1mobile.jpg"
+                layout="responsive"
+                height={"315"}
+                width={"295"}
+                priority={true}
+                className="MobileImage1"
+              />
+            </motion.div>
+            </div>
+          )}
           </div>
         </div>
       </div>
