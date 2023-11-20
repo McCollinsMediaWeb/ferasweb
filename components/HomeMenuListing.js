@@ -35,7 +35,7 @@ const HomeMenuListing = () => {
       },
     },
   };
-  const animation = {
+  const animation =  {
     variants: {
       hidden: { opacity: 0 },
       visible: { opacity: 1 },
@@ -70,15 +70,14 @@ const HomeMenuListing = () => {
             </div>
           </motion.div>
         </div>
-
-        <div className="MenuSlider">
-          <Slider {...settings}>
-            <div className="SliderMenuItem">
-              <motion.div
+        <motion.div
                 className="SliderWrt1"
                 {...animation}
                 viewport={{ once: true }}
               >
+        <div className="MenuSlider">
+          <Slider {...settings}>
+            <div className="SliderMenuItem">
                 <div className="MenuItem">
                   <Image
                     src="/menu1.jpg"
@@ -102,14 +101,8 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
                 <div className="MenuItem">
                 <Image
                     src="/menu2.jpg"
@@ -133,14 +126,8 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
                 <div className="MenuItem">
                 <Image
                     src="/menu1.jpg"
@@ -164,14 +151,8 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
                 <div className="MenuItem">
                 <Image
                     src="/menu2.jpg"
@@ -195,14 +176,9 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+              
                 <div className="MenuItem">
                 <Image
                     src="/menu1.jpg"
@@ -226,14 +202,9 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
             <div className="SliderMenuItem">
-              <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+             
                 <div className="MenuItem">
                 <Image
                     src="/menu2.jpg"
@@ -257,7 +228,6 @@ const HomeMenuListing = () => {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
             </div>
           </Slider>
           <div className="ExpBtn">
@@ -266,6 +236,7 @@ const HomeMenuListing = () => {
           </Link>
           </div>
         </div>
+        </motion.div>
       </div>
     </div>
   );

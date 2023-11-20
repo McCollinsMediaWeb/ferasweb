@@ -1237,7 +1237,7 @@ background-color: #1D1D1B;
       margin-top: 0;
     }
     .ft1 {
-      font-size: 25px;
+      font-size: 24px;
       margin-bottom: 10px;
       text-transform: uppercase;
       text-align: center;
@@ -1265,5 +1265,60 @@ background-color: #1D1D1B;
     .HbCLink {
       min-width: 160px;
       padding: 10px;
+    }
+    .CrT1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .RevRowFlex {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    .RevRowColumn {
+      width: 23px;
+      height: 24px;
+    }
+    .CrT2{
+      text-align: center;
+    }
+    .ReviewSlider {
+      margin-top: 20px;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .ReviewSlider:hover .slick-next, .ReviewSlider:hover .slick-prev{
+      display: none !important;
+    }
+    .ReviewItemT2{
+      line-height: 1.4;
+    }
+    .Rname {
+      font-size: 16px;
+    }
+    .ReviewAddress::after {
+      content: "";
+      width: 26px;
+      height: 24px;
+    }
+    .ReviewColumn1 {
+      margin: 0px 5px;
+    }
+    .ReviewItem{
+      padding: 20px;
+    }
+    .InstaIcon{
+      padding-left: 0;
+    }
+    .InstaIcon::after{
+      content: none;
+    }
+    .InstaItemBox::after {
+      content: "";
+      width: 85px;
+      height: 18px;
+    }
+    .ReviewItemT1{
+      font-size: 16px;
     }
   }

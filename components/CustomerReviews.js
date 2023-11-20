@@ -16,6 +16,18 @@ const CustomerReviews = () => {
     autoplaySpeed: 1500,
     infinite: true,
     touchThreshold: 100,
+    responsive: [
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+        },
+      },
+    ],
   };
   const container = {
     visible: {

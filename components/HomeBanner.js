@@ -65,7 +65,6 @@ const HomeBanner = () => {
           className=""
         />
         )}
-      </motion.div>
       <div className="HomeBannerContent">
         <div className="container">
           <motion.div
@@ -83,6 +82,7 @@ const HomeBanner = () => {
           </motion.div>
         </div>
       </div>
+      </motion.div>
     </div>
   );
 };

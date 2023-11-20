@@ -106,25 +106,7 @@ const HomeAboutUs = () => {
             </div>
             </motion.div>
             </div>
-            {!isDesktop && (
-            <div>
-              <motion.div
-              initial={{ y: 60 }}
-              whileInView={{ y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, type: "spring" }}
-            >
-              <Image
-                src="/about1mobile.jpg"
-                layout="responsive"
-                height={"315"}
-                width={"295"}
-                priority={true}
-                className="MobileImage1"
-              />
-            </motion.div>
-            </div>
-          )}
+           
           </div>
         </div>
       </div>
