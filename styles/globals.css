@@ -1016,6 +1016,9 @@ background-color: #1D1D1B;
   .FtrIconH.call{
     background-image: url(../public/icons/fcall.png );
   }
+  .CommonHeader1 .sliderContent{
+    max-width: 650px;
+  }
   @media only screen and (max-width: 960px) {
     
     html,
