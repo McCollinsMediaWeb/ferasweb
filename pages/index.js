@@ -21,17 +21,13 @@ export default function Home() {
     <>
       <div>
         <HeroBanner/>
-        {isDesktop && (
         <HomeAboutUs/>
-        )}
         
         <HomeMenuListing/>
         {!isDesktop && (
         <HomeBestSeller/>
         )}
-        {!isDesktop && (
-        <HomeAboutUs/>
-        )}
+        
          {isDesktop && (
         <HomeBestSeller/>
         )}
