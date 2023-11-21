@@ -64,9 +64,7 @@ const Footer = () => {
             <div className="col-md-3">
               <div className="FtrT1">Connect with us</div>
               <div className="FtrT2 color-fff">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
+              Discover the daily extravaganza of deliciousness! Follow our social media for a delectable journey through the irresistible flavors served from the highest quality ingredients.
               </div>
               <div className="FtrSocialMedia">
                 <div className="FtrSocialMediaFlex">

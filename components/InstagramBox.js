@@ -66,11 +66,7 @@ const InstagramBox = () => {
             </div>
             <div className="col-md-8">
               <div className="CrT2">
-                Firas Sweets uses only the highest quality ingredients. We don’t
-                use chemicals or add preservatives to our products, as we
-                believe fresh products have the best taste! Our team
-                continuously supervises the quality, which helps keep our
-                products to the highest standards
+              Discover the daily extravaganza of deliciousness! Follow our Instagram page for a delectable journey through the irresistible flavors served from the highest quality ingredients.
               </div>
             </div>
           </div>
