@@ -1040,6 +1040,9 @@ background-color: #1D1D1B;
   .MenuBoxWrap{
     padding-bottom: 35px;
   }
+  .MobileMenuListing .SliderMenuItem{
+    overflow: hidden;
+  }
   @media only screen and (max-width: 960px) {
     
     html,
