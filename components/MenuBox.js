@@ -6,16 +6,23 @@ import Slider from "react-slick";
 const MenuBox = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    speed: 3000,
-    autoplaySpeed:3000,
+    arrows: true,
+    dots: false,
     infinite: true,
-    autoplay: true,
-    pauseOnHover:false,
-    fade: true,
+    responsive: [
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+        },
+      },
+    ],
   };
   const container = {
     visible: {
@@ -38,23 +45,65 @@ const MenuBox = () => {
     initial: ["hidden", "slideStart"],
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
-    
   };
   return (
     <div className="sectionBox pd-common bg1 abtBoxHome">
       <div className="container">
         <div className="MenuHeaderWrap">
-            <div className="MenuHeaderFlex row">
-                <div className="col-md-4">
-                    <div className="MenuHeaderT1 color-fff">Sweets Menu</div>
-                </div>
-                <div className="col-md-8">
-                    <div className="MenuHeaderT2 color-fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </div>
-                </div>
+          <div className="MenuHeaderFlex row">
+            <div className="col-md-4">
+              <motion.div
+                initial={{ y: 60 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: false }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <div className="MenuHeaderT1 color-fff">Sweets Menu</div>
+              </motion.div>
             </div>
+            <div className="col-md-8">
+              <motion.div
+                initial={{ y: 60 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: false }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <div className="MenuHeaderT2 color-fff">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do{" "}
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
-        ijas
+        <motion.div
+          initial={{ y: 60 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, type: "spring" }}
+        >
+          <Slider {...settings}>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem active">Arabic Sweets</div>
+            </div>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem">Manakeesh</div>
+            </div>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem">Pizza</div>
+            </div>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem">Shawarma</div>
+            </div>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem">Sandwich</div>
+            </div>
+            <div className="MenuSliderItem">
+              <div className="MenuLinkItem">Burger</div>
+            </div>
+          </Slider>
+        </motion.div>
       </div>
     </div>
   );

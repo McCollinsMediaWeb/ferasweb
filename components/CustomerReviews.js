@@ -12,8 +12,6 @@ const CustomerReviews = () => {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    speed: 1500,
-    autoplaySpeed: 1500,
     infinite: true,
     responsive: [
       {

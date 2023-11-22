@@ -1024,6 +1024,19 @@ background-color: #1D1D1B;
     font-weight: 600;
     text-transform: capitalize;
   }
+  .MenuLinkItem{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 35px 8px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .MenuLinkItem:hover , 
+  .MenuLinkItem.active{
+    background-color: #bf9b5f;
+  }
   @media only screen and (max-width: 960px) {
     
     html,
