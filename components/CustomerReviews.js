@@ -15,7 +15,6 @@ const CustomerReviews = () => {
     speed: 1500,
     autoplaySpeed: 1500,
     infinite: true,
-    touchThreshold: 100,
     responsive: [
       {
         breakpoint: 786,

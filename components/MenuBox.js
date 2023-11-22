@@ -2,10 +2,21 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
+import Slider from "react-slick";
 const MenuBox = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
-
+  var settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    speed: 3000,
+    autoplaySpeed:3000,
+    infinite: true,
+    autoplay: true,
+    pauseOnHover:false,
+    fade: true,
+  };
   const container = {
     visible: {
       transition: {

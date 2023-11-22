@@ -15,11 +15,11 @@ const HeroBanner = () => {
     speed: 3000,
     autoplaySpeed:3000,
     infinite: true,
-    touchThreshold: 100,
     autoplay: true,
     pauseOnHover:false,
     fade: true,
   };
+
   const container = {
     visible: {
       transition: {
