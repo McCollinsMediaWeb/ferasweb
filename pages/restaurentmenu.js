@@ -17,7 +17,7 @@ export default function ourmenu() {
     <>
       <div>
       <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="RESTAURENT MENU" MenuName="" MenuLink=""/>
-      <MenuBox/>
+      <MenuBox Title="RESTAURENT MENU"/>
       <MenuBanner/>
       <CustomerReviews/>
       <InstagramBox/>

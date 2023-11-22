@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import ProductGid from "./ProductGrid";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
-const MenuBox = () => {
+const MenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 5,
@@ -63,7 +63,7 @@ const MenuBox = () => {
                   variants={container}
                   viewport={{ once: false }}
                 >
-                  <AnimatedHeaderText text="Sweets Menu" />
+                  <AnimatedHeaderText text={props.Title} />
                 </motion.div>
               </div>
             </div>
