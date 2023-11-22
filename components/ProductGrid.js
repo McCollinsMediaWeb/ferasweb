@@ -57,12 +57,6 @@ const ProductGid = (props) => {
         </div>
       </motion.div>
       <div className="ProductGridTop">
-        <motion.div
-          initial={{ x: -60 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, type: "spring" }}
-        >
           <div className="row">
             <div className="col-md-9">
               <div className="ReviewRow">
@@ -77,20 +71,12 @@ const ProductGid = (props) => {
               <div className="LikeBtn">&nbsp;</div>
             </div>
           </div>
-        </motion.div>
       </div>
       <div className="ProductGridBottom">
-        <motion.div
-          initial={{ x: 60 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, type: "spring" }}
-        >
           <div className="row align-items-center">
             <div className="col-md-8">{props.productname}</div>
             <div className="col-md-4 text-right"><span className="PriceBox1">AED 50</span></div>
           </div>
-        </motion.div>
       </div>
     </div>
   );

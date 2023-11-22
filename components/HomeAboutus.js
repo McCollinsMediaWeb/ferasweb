@@ -82,7 +82,9 @@ const HomeAboutUs = () => {
               operations.
             </div>
             </motion.div>
-            <div className="ft1 color-fff TxtBx2">
+            {isDesktop && (
+            <div>
+              <div className="ft1 color-fff TxtBx2">
               <motion.div
                 initial="hidden"
                 whileInView={"visible"}
@@ -115,6 +117,8 @@ const HomeAboutUs = () => {
               enhance the general taste.
             </div>
             </motion.div>
+            </div>
+            )}
             </div>
            
           </div>

@@ -1037,6 +1037,9 @@ background-color: #1D1D1B;
   .MenuLinkItem.active{
     background-color: #bf9b5f;
   }
+  .MenuBoxWrap{
+    padding-bottom: 35px;
+  }
   @media only screen and (max-width: 960px) {
     
     html,
@@ -1386,4 +1389,13 @@ background-color: #1D1D1B;
     .SliderImage, .SliderItem{
       height: auto;
     }
+    .MobileMenuListing {
+      padding: 15px;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    .MobileMenuListing .SliderMenuItem:first-child{
+      margin-bottom: 15px;
+    }
+    
   }

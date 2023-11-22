@@ -3,6 +3,7 @@ import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
+import ProductGid from "./ProductGrid";
 const MenuBox = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
@@ -47,7 +48,7 @@ const MenuBox = () => {
     transition: { type: "tween", duration: 1.5 },
   };
   return (
-    <div className="sectionBox pd-common bg1 abtBoxHome">
+    <div className="sectionBox pd-common bg1 abtBoxHome MenuBoxWrap">
       <div className="container">
         <div className="MenuHeaderWrap">
           <div className="MenuHeaderFlex row">
@@ -104,6 +105,34 @@ const MenuBox = () => {
             </div>
           </Slider>
         </motion.div>
+        <div className="ProductGrids">
+            <div className="row">
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa"/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu2.jpg" productname="Baklava’s"/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul"/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu4.jpg" productname="Warbat"/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu5.jpg" productname="Jordanian Mansaf "/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu6.jpg" productname="Palestinian Musakhan Rolls "/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu7.jpg" productname="Maklouba With Cauliflower Potato"/>
+              </div>
+              <div className="col-md-3">
+                <ProductGid imageurl="/products/menu8.jpg" productname="Chicken Liver"/>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   );

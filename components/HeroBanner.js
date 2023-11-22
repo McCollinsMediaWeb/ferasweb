@@ -90,7 +90,8 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
+                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. 
+                      {isDesktop && (<span>Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.</span>)}
                     </div>
                   </motion.div>
                   <motion.div
@@ -158,7 +159,8 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
+                    {isDesktop && (<span>Step into a world where every bite of narrates the story of UAE’s culinary heritage.</span>)}
+                       Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
                     </div>
                   </motion.div>
                   <motion.div
