@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import ProductGid from "./ProductGrid";
+import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 const MenuBox = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
@@ -22,6 +23,7 @@ const MenuBox = () => {
           dots: false,
           centerMode: true,
           arrows: false,
+          variableWidth: true,
         },
       },
     ],
@@ -54,86 +56,98 @@ const MenuBox = () => {
         <div className="MenuHeaderWrap">
           <div className="MenuHeaderFlex row">
             <div className="col-md-4">
-            <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
-                <div className="MenuHeaderT1 color-fff">Sweets Menu</div>
-              </motion.div>
+              <div className="MenuHeaderT1 color-fff">
+                <motion.div
+                  initial="hidden"
+                  whileInView={"visible"}
+                  variants={container}
+                  viewport={{ once: false }}
+                >
+                  <AnimatedHeaderText text="Sweets Menu" />
+                </motion.div>
+              </div>
             </div>
             <div className="col-md-8">
-            <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
-                <div className="MenuHeaderT2 color-fff">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do{" "}
-                </div>
-              </motion.div>
+              <div className="MenuHeaderT2 color-fff">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do{" "}
+              </div>
             </div>
           </div>
         </div>
         <div className="MobileMargin1">
-        <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
-          <Slider {...settings}>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem active">Arabic Sweets</div>
-            </div>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem">Manakeesh</div>
-            </div>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem">Pizza</div>
-            </div>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem">Shawarma</div>
-            </div>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem">Sandwich</div>
-            </div>
-            <div className="MenuSliderItem">
-              <div className="MenuLinkItem">Burger</div>
-            </div>
-          </Slider>
-        </motion.div>
+          <motion.div
+            className="SliderWrt1"
+            {...animation}
+            viewport={{ once: true }}
+          >
+            <Slider {...settings}>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem active">Arabic Sweets</div>
+              </div>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem">Manakeesh</div>
+              </div>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem">Pizza</div>
+              </div>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem">Shawarma</div>
+              </div>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem">Sandwich</div>
+              </div>
+              <div className="MenuSliderItem">
+                <div className="MenuLinkItem">Burger</div>
+              </div>
+            </Slider>
+          </motion.div>
         </div>
-        
+
         <div className="ProductGrids ">
-            <div className="row">
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa"/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu2.jpg" productname="Baklava’s"/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul"/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu4.jpg" productname="Warbat"/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu5.jpg" productname="Jordanian Mansaf "/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu6.jpg" productname="Palestinian Musakhan Rolls "/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu7.jpg" productname="Maklouba With Cauliflower Potato"/>
-              </div>
-              <div className="col-md-3">
-                <ProductGid imageurl="/products/menu8.jpg" productname="Chicken Liver"/>
-              </div>
+          <div className="row">
+            <div className="col-md-3">
+              <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa" />
+            </div>
+            <div className="col-md-3">
+              <ProductGid
+                imageurl="/products/menu2.jpg"
+                productname="Baklava’s"
+              />
+            </div>
+            <div className="col-md-3">
+              <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul" />
+            </div>
+            <div className="col-md-3">
+              <ProductGid imageurl="/products/menu4.jpg" productname="Warbat" />
+            </div>
+            <div className="col-md-3">
+              <ProductGid
+                imageurl="/products/menu5.jpg"
+                productname="Jordanian Mansaf "
+              />
+            </div>
+            <div className="col-md-3">
+              <ProductGid
+                imageurl="/products/menu6.jpg"
+                productname="Palestinian Musakhan Rolls "
+              />
+            </div>
+            <div className="col-md-3">
+              <ProductGid
+                imageurl="/products/menu7.jpg"
+                productname="Maklouba With Cauliflower Potato"
+              />
+            </div>
+            <div className="col-md-3">
+              <ProductGid
+                imageurl="/products/menu8.jpg"
+                productname="Chicken Liver"
+              />
             </div>
           </div>
+        </div>
       </div>
     </div>
   );

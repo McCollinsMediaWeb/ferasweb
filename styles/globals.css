@@ -1020,7 +1020,7 @@ background-color: #1D1D1B;
     max-width: 650px;
   }
   .MenuHeaderT1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -1043,8 +1043,35 @@ background-color: #1D1D1B;
   .MobileMenuListing .SliderMenuItem{
     overflow: hidden;
   }
+  .MobileMargin1 .slick-list{
+    margin: 0px 25px;
+  }
+  .MobileMargin1 .slick-prev {
+    left: 0;
+  }
+
+  .MobileMargin1 .slick-next {
+    right: 0;
+  }
+  .overlayr1::after{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+background-color: rgba(255,255,255,0.1);
+  }
+  .overlayr1 .HomeBannerContent{
+    z-index: 1;
+  }
   @media only screen and (max-width: 960px) {
-    
+    .overlayr1::after{
+      background-color: rgba(255,255,255,0.1);
+    }
+    .MobileMargin1 .slick-list{
+      margin: 0px 0px;
+    }
     html,
     body{
       overflow-x: hidden;
@@ -1411,7 +1438,7 @@ background-color: #1D1D1B;
     .MenuLinkItem {
       color: #fff;
       border: 2px solid #fff;
-      padding: 10px 6px;
+      padding: 10px 18px;
       margin: 20px 4px;
       border-radius: 30px;
       text-align: center;

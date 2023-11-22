@@ -3,6 +3,8 @@
 import CoomonHeader from "@/components/CommonHeader";
 import CustomerReviews from "@/components/CustomerReviews";
 import MenuBox from "@/components/MenuBox";
+import MenuBanner from "@/components/MenuBanner";
+import InstagramBox from "@/components/InstagramBox";
 export default function ourmenu() {
   const container = {
     visible: {
@@ -16,8 +18,9 @@ export default function ourmenu() {
       <div>
       <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="RESTAURENT MENU" MenuName="" MenuLink=""/>
       <MenuBox/>
+      <MenuBanner/>
       <CustomerReviews/>
-      
+      <InstagramBox/>
       </div>
     </>
   );
