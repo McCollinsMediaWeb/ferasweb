@@ -1,7 +1,8 @@
 
 
 import CoomonHeader from "@/components/CommonHeader";
-
+import CustomerReviews from "@/components/CustomerReviews";
+import MenuBox from "@/components/MenuBox";
 export default function ourmenu() {
   const container = {
     visible: {
@@ -14,6 +15,8 @@ export default function ourmenu() {
     <>
       <div>
       <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="RESTAURENT MENU" MenuName="" MenuLink=""/>
+      <MenuBox/>
+      <CustomerReviews/>
       
       </div>
     </>

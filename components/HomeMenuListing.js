@@ -14,7 +14,6 @@ const HomeMenuListing = () => {
     speed: 1500,
     autoplaySpeed: 1500,
     infinite: true,
-    touchThreshold: 100,
     responsive: [
       {
         breakpoint: 786,
@@ -71,10 +70,11 @@ const HomeMenuListing = () => {
           </motion.div>
         </div>
         <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
         <div className="MenuSlider">
           <Slider {...settings}>
             <div className="SliderMenuItem">

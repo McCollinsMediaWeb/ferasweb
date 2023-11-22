@@ -68,12 +68,12 @@ const HomeBanner = () => {
       >
       <div className="HomeBannerContent">
         <div className="container">
-          <motion.div
-            initial={{ x: -60 }}
-            whileInView={{ x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, type: "spring" }}
-          >
+        <motion.div
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
             <div className="HbCt1">Discount</div>
             <div className="HbCt2">50% OFF</div>
             <div className="HbCt1">Upto 24hrs</div>

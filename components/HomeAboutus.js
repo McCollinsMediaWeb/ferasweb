@@ -67,7 +67,12 @@ const HomeAboutUs = () => {
                 <AnimatedHeaderText text="Our journey begins…" />
               </motion.div>
             </div>
-            <motion.div {...animation} viewport={{ once: true }}>
+            <motion.div
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
             <div className="ft2 color-fff">
               Earlier in 1993, a traditional Palestinian sweets shop opened in
               Dubai with the vision of offering homemade quality sweets to the
@@ -87,7 +92,12 @@ const HomeAboutUs = () => {
                 <AnimatedHeaderText text="with a taste…" />
               </motion.div>
             </div>
-            <motion.div className="SliderWrt1" {...animation} viewport={{ once: true }}>
+            <motion.div
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
             <div className="ft2 color-fff">
               Firas Sweets uses only the highest quality ingredients. We don’t
               use chemicals or add preservatives to our products, as we believe

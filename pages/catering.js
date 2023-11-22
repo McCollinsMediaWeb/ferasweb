@@ -1,6 +1,7 @@
 
 
 import CoomonHeader from "@/components/CommonHeader";
+import InstagramBox from "@/components/InstagramBox";
 
 export default function catering() {
   const container = {
@@ -14,7 +15,7 @@ export default function catering() {
     <>
       <div>
       <CoomonHeader desktopBanner="/herodesk2.jpg" MobileBanner ="/heromobile2.jpg" Title="CATERING SERVICES" MenuName="" MenuLink=""/>
-      
+      <InstagramBox/>
       </div>
     </>
   );

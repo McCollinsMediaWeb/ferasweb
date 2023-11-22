@@ -21,12 +21,7 @@ const Header = () => {
   return (
     <header>
       {isDesktop && (
-        <motion.div
-        initial={{ x: -60 }}
-        whileInView={{ x: 0 }}
-        viewport={{ once: false }}
-        transition={{ delay: 0.3, type: "spring" }}
-      >
+       
       <div className="container" style={{ display: isDesktop ? "block" : "none"}}>
         <div className="HeaderFlex">
           <div className="HeaderItem">
@@ -120,7 +115,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      </motion.div>
       )}
       {!isDesktop && (
         <div className="MobileHeaderWrap" style={{ display: isDesktop ? "none" : "block"}}>

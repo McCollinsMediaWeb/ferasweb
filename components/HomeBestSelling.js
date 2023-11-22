@@ -43,11 +43,12 @@ const HomeBestSeller = () => {
     <div className="sectionBox pd-common bg1">
       <div className="container">
         <div className="HeaderBox">
-          <motion.div
-            className="SliderWrt1"
-            {...animation}
-            viewport={{ once: true }}
-          >
+        <motion.div
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
             <div className="HdrT1 text-center color-fff">
               Feras Best Selling
             </div>
