@@ -1248,6 +1248,9 @@ background-color: rgba(255,255,255,0.1);
     .ExploreMoreBtn {
       padding: 7px 25px 7px 10px;
     }
+    .ExploreMoreBtn::after{
+      top: 8px;
+    }
     .bg1.abtBoxHome{
       background-color: #003554;
     }
