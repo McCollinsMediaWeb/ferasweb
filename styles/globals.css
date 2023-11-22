@@ -1395,7 +1395,24 @@ background-color: #1D1D1B;
       padding-top: 0;
     }
     .MobileMenuListing .SliderMenuItem:first-child{
-      margin-bottom: 15px;
+      margin-bottom: 15p
     }
-    
+    .MenuHeaderT1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .MobileMargin1{
+      margin: 0 -20px;
+    }
+    .MenuLinkItem {
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 10px 6px;
+      margin: 20px 4px;
+      border-radius: 30px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 13px;
+    }
   }

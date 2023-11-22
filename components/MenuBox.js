@@ -21,6 +21,7 @@ const MenuBox = () => {
           infinite: true,
           dots: false,
           centerMode: true,
+          arrows: false,
         },
       },
     ],
@@ -78,6 +79,7 @@ const MenuBox = () => {
             </div>
           </div>
         </div>
+        <div className="MobileMargin1">
         <motion.div
           initial={{ y: 60 }}
           whileInView={{ y: 0 }}
@@ -105,7 +107,9 @@ const MenuBox = () => {
             </div>
           </Slider>
         </motion.div>
-        <div className="ProductGrids">
+        </div>
+        
+        <div className="ProductGrids ">
             <div className="row">
               <div className="col-md-3">
                 <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa"/>
