@@ -54,21 +54,19 @@ const MenuBox = () => {
         <div className="MenuHeaderWrap">
           <div className="MenuHeaderFlex row">
             <div className="col-md-4">
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: false }}
-                transition={{ delay: 0.3, type: "spring" }}
+            <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
               >
                 <div className="MenuHeaderT1 color-fff">Sweets Menu</div>
               </motion.div>
             </div>
             <div className="col-md-8">
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: false }}
-                transition={{ delay: 0.3, type: "spring" }}
+            <motion.div
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
               >
                 <div className="MenuHeaderT2 color-fff">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -81,11 +79,10 @@ const MenuBox = () => {
         </div>
         <div className="MobileMargin1">
         <motion.div
-          initial={{ y: 60 }}
-          whileInView={{ y: 0 }}
-          viewport={{ once: false }}
-          transition={{ delay: 0.3, type: "spring" }}
-        >
+                className="SliderWrt1"
+                {...animation}
+                viewport={{ once: true }}
+              >
           <Slider {...settings}>
             <div className="MenuSliderItem">
               <div className="MenuLinkItem active">Arabic Sweets</div>
