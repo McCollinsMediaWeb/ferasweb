@@ -4,7 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const MenuBanner = () => {
+const MenuBanner = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 2,
@@ -43,7 +43,7 @@ const MenuBanner = () => {
       
         {isDesktop && (
         <Image
-          src="/banner2.jpg"
+          src={props.DesktopBanner}
           layout="responsive"
           height={"562"}
           width={"1200"}
@@ -53,7 +53,7 @@ const MenuBanner = () => {
         )}
         {!isDesktop && (
         <Image
-          src="/bannermobile2.jpg"
+          src={props.MobileBanner}
           layout="responsive"
           height={"561"}
           width={"489"}
