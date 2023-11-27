@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
 import ProductGid from "./ProductGrid";
-const HomeBestSeller = () => {
+const HomeBestSeller = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 2,
@@ -40,19 +40,19 @@ const HomeBestSeller = () => {
     transition: { type: "tween", duration: 1.5 },
   };
   return (
-    <div className="sectionBox pd-common bg1">
+    <div className={`sectionBox pd-common ${!props.lp ? "bg1" : "bgLP"}`}>
       <div className="container">
         <div className="HeaderBox">
-        <motion.div
-                    initial={{ y: 60 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: false }}
-                    transition={{ delay: 0.3, type: "spring" }}
-                  >
-            <div className="HdrT1 text-center color-fff">
+          <motion.div
+            initial={{ y: 60 }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: false }}
+            transition={{ delay: 0.3, type: "spring" }}
+          >
+            <div className={`HdrT1 text-center ${!props.lp && "color-fff"}`}>
               Feras Best Selling
             </div>
-            <div className="HdrT2 text-center color-fff">
+            <div className={`HdrT2 text-center ${!props.lp && "color-fff"}`}>
               Firas Sweets uses only the highest quality ingredients. We don’t
               use chemicals or add preservatives to our products, as we believe
               fresh products have the best taste! Our team continuously
@@ -66,35 +66,59 @@ const HomeBestSeller = () => {
           <div className="ProductGrids">
             <div className="row">
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa"/>
+                <ProductGid
+                  imageurl="/products/menu1.jpg"
+                  productname="Kunafa"
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu2.jpg" productname="Baklava’s"/>
+                <ProductGid
+                  imageurl="/products/menu2.jpg"
+                  productname="Baklava’s"
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul"/>
+                <ProductGid
+                  imageurl="/products/menu3.jpg"
+                  productname="Ma’mul"
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu4.jpg" productname="Warbat"/>
+                <ProductGid
+                  imageurl="/products/menu4.jpg"
+                  productname="Warbat"
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu5.jpg" productname="Jordanian Mansaf "/>
+                <ProductGid
+                  imageurl="/products/menu5.jpg"
+                  productname="Jordanian Mansaf "
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu6.jpg" productname="Palestinian Musakhan Rolls "/>
+                <ProductGid
+                  imageurl="/products/menu6.jpg"
+                  productname="Palestinian Musakhan Rolls "
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu7.jpg" productname="Maklouba With Cauliflower Potato"/>
+                <ProductGid
+                  imageurl="/products/menu7.jpg"
+                  productname="Maklouba With Cauliflower Potato"
+                />
               </div>
               <div className="col-md-3">
-                <ProductGid imageurl="/products/menu8.jpg" productname="Chicken Liver"/>
+                <ProductGid
+                  imageurl="/products/menu8.jpg"
+                  productname="Chicken Liver"
+                />
               </div>
             </div>
           </div>
           <div className="ExpBtn">
-          <Link href={"/restaurentmenu"} className="ExploreMoreBtn">
-            Explore More
-          </Link>
+            <Link href={"/restaurentmenu"} className="ExploreMoreBtn">
+              Explore More
+            </Link>
           </div>
         </div>
       </div>

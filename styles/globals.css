@@ -570,7 +570,7 @@ img{
   .MenuSlider .slick-dots {
     position: relative;
     bottom: auto;
-    text-align: right;
+    text-align: center;
     margin-top: 30px;
     margin-bottom: -20px;
   }
@@ -1065,6 +1065,14 @@ background-color: rgba(255,255,255,0.1);
   .overlayr1 .HomeBannerContent{
     z-index: 1;
   }
+
+      .lpBnrBtn .BannerBtn {
+      background-color: #AA6F38;
+      margin-top: 30px;
+    }
+    .lpBnrBtn .BannerBtn:hover {
+      background-color: #1c2b60;
+    }
   @media only screen and (max-width: 960px) {
     .overlayr1::after{
       background-color: rgba(255,255,255,0.3);
@@ -1107,6 +1115,7 @@ background-color: rgba(255,255,255,0.1);
       min-width: 180px;
       padding: 8px 35px 8px 8px;
     }
+
     .MobileMenuLink{
       width: 27px;
     }
@@ -1165,6 +1174,15 @@ background-color: rgba(255,255,255,0.1);
       height: 17px;
       width: 16px;
     }
+    .lpBnrBtn a::after {
+      background-image: none !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+    .lpBnrBtn a {
+      padding: 8px !important;
+    }
+
     .MobileLang a{
       position: relative;
       min-width: 65px;
@@ -1305,7 +1323,7 @@ background-color: rgba(255,255,255,0.1);
       line-height: 1.4;
       text-align: center;
     }
-    .MobileImage1,{
+    .MobileImage1{
       margin-top: 15px;
     }
     .TxtBx2{
@@ -1447,5 +1465,176 @@ background-color: rgba(255,255,255,0.1);
       text-align: center;
       cursor: pointer;
       font-size: 13px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Salman CSS */
+
+  .branchList {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .branchList li {
+    color: #fff;
+    padding: 15px 25px;
+    border-left: 1px solid #0492E5;
+  }
+
+  .branchList .BLactive {
+    font-size: 22px;
+    padding-left: 20px;
+    border-left: 3px solid #AA6F38;
+  }
+
+
+  .branchWhiteBox {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px;
+  }
+
+  .branchWhiteBox h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+
+  .branchWhiteBox .branchName {
+    font-size: 18px;
+    color: #AA6F38;
+    min-width: 200px;
+  }
+
+  .branchWhiteBox .branchNo img , .branchWhiteBox .branchTime img {
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+  }
+
+  .branchWhiteBox .branchBtn img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .branchWhiteBox .branchNo, .branchWhiteBox .branchTime  {
+    font-size: 18px;
+    color: #707070;
+  }
+
+  .branchWhiteBox .branchBtn button {
+    background: #003554;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .branchWhiteBox .d-flex {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .branchWhiteBox .bracnhListBox {
+    max-height: 450px;
+    overflow: auto;
+    padding-right: 20px;
+  }
+
+
+  
+#bracnh-style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#bracnh-style-2::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#bracnh-style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #707070;
+}
+
+
+.contactForm {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 35px;
+  margin: 30px 0;
+}
+
+.contactForm h3 {
+  font-size: 30px;
+  color: #AA6F38;
+  margin-bottom: 20px;
+}
+
+.contactForm input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #707070;
+}
+
+.contactForm button {
+  background-color: #AA6F38;
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bgLP {
+  background: #F0F0F0;
+}
+
+
+
+  @media only screen and (max-width: 960px) {
+    .branchList {
+      display: flex;
+      overflow: auto;
+    }
+
+    .branchList li {
+      height: 60px;
+    }
+    .branchList .BLactive , .branchList li {
+      font-size: 20px;
+      min-width: fit-content;
+      border: none;
+    }
+    .branchList .BLactive {
+      border: 3px solid #AA6F38;
+      border-radius: 10px;
+    }
+
+    .bracnhListBox .d-flex {
+      flex-direction: column;
+    }
+    .bracnhListBox .d-flex div {
+      margin-bottom: 10px;
     }
   }
