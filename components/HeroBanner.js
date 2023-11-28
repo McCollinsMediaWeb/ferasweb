@@ -13,10 +13,10 @@ const HeroBanner = () => {
     arrows: false,
     dots: true,
     speed: 3000,
-    autoplaySpeed:3000,
+    autoplaySpeed: 3000,
     infinite: true,
     autoplay: true,
-    pauseOnHover:false,
+    pauseOnHover: false,
     fade: true,
   };
 
@@ -53,13 +53,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-              src="/heromobile1.jpg"
-              layout="responsive"
-              height="900"
-              width="708"
-              priority={true}
-              className=""
-            />
+                src="/heromobile1.jpg"
+                layout="responsive"
+                height="900"
+                width="708"
+                priority={true}
+                className=""
+              />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -90,8 +90,15 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. 
-                      {isDesktop && (<span>Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.</span>)}
+                      Step into a world where every bite of narrates the story
+                      of UAE’s culinary heritage.
+                      {isDesktop && (
+                        <span>
+                          Indulge in our handcrafted sweet and savory surprises
+                          - a fusion of tradition, innovation, and unparalleled
+                          quality.
+                        </span>
+                      )}
                     </div>
                   </motion.div>
                   <motion.div
@@ -101,7 +108,7 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link href={"/restaurentmenu"} className="BannerBtn">
+                      <Link href={"/sweetmenu"} className="BannerBtn">
                         View Menus
                       </Link>
                     </div>
@@ -122,13 +129,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-              src="/heromobile2.jpg"
-              layout="responsive"
-              height="900"
-              width="708"
-              priority={true}
-              className=""
-            />
+                src="/heromobile2.jpg"
+                layout="responsive"
+                height="900"
+                width="708"
+                priority={true}
+                className=""
+              />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -159,8 +166,14 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                    {isDesktop && (<span>Step into a world where every bite of narrates the story of UAE’s culinary heritage.</span>)}
-                       Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
+                      {isDesktop && (
+                        <span>
+                          Step into a world where every bite of narrates the
+                          story of UAE’s culinary heritage.
+                        </span>
+                      )}
+                      Indulge in our handcrafted sweet and savory surprises - a
+                      fusion of tradition, innovation, and unparalleled quality.
                     </div>
                   </motion.div>
                   <motion.div
@@ -192,13 +205,13 @@ const HeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-              src="/heromobile3.jpg"
-              layout="responsive"
-              height="900"
-              width="708"
-              priority={true}
-              className=""
-            />
+                src="/heromobile3.jpg"
+                layout="responsive"
+                height="900"
+                width="708"
+                priority={true}
+                className=""
+              />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -229,7 +242,15 @@ const HeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Step into a world where every bite of narrates the story of UAE’s culinary heritage. Indulge in our handcrafted sweet and savory surprises - a fusion of tradition, innovation, and unparalleled quality.
+                      Step into a world where every bite of narrates the story
+                      of UAE’s culinary heritage.
+                      {isDesktop && (
+                        <span>
+                          Indulge in our handcrafted sweet and savory surprises
+                          - a fusion of tradition, innovation, and unparalleled
+                          quality.
+                        </span>
+                      )}
                     </div>
                   </motion.div>
                   <motion.div

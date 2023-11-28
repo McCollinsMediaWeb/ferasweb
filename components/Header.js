@@ -21,120 +21,147 @@ const Header = () => {
   return (
     <header>
       {isDesktop && (
-       
-      <div className="container" style={{ display: isDesktop ? "block" : "none"}}>
-        <div className="HeaderFlex">
-          <div className="HeaderItem">
-            <Link
-              href={"/"}
-              className={router.pathname == "/" ? "link1 active" : "link1"}
-            >
-              Home
-            </Link>
-          </div>
-          <div className="HeaderItem">
-            <Link
-              href={"/aboutus"}
-              className={
-                router.pathname == "/aboutus" ? "link1 active" : "link1"
-              }
-            >
-              About Us
-            </Link>
-          </div>
-          <div className="HeaderItem">
-            <Link
-              href={"/catering"}
-              className={
-                router.pathname == "/catering" ? "link1 active" : "link1"
-              }
-            >
-              Catering
-            </Link>
-          </div>
-          <div className="HeaderItem LogoLink">
-            <Link href={"/"} className="">
-              <div className="HeroLogo">
-                <Image
-                  src="/logo3.png"
-                  layout="responsive"
-                  height={"240"}
-                  width={"240"}
-                  priority={true}
-                  className=""
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="HeaderItem">
-            <Link
-              href={"/restaurentmenu"}
-              className={
-                router.pathname == "/restaurentmenu" ? "link1 active" : "link1"
-              }
-            >
-              Our Menu
-            </Link>
-            <div className="SubNaBox">
-              <Link href={"/restaurentmenu"} className="link1">
-                Restaurent Menu
-              </Link>
-              <Link href={"/sweetmenu"} className="link1">
-                Sweet Menu
+        <div
+          className="container"
+          style={{ display: isDesktop ? "block" : "none" }}
+        >
+          <div className="HeaderFlex">
+            <div className="HeaderItem">
+              <Link
+                href={"/"}
+                className={router.pathname == "/" ? "link1 active" : "link1"}
+              >
+                Home
               </Link>
             </div>
-          </div>
-          
-          <div className="HeaderItem">
-            <Link
-              href={"/locations"}
-              className={
-                router.pathname == "/locations" ? "link1 active" : "link1"
-              }
-            >
-              Locations
-            </Link>
-          </div>
-          <div className="HeaderItem">
-            <Link
-              href={"/contactus"}
-              className={
-                router.pathname == "/contactus" ? "link1 active" : "link1"
-              }
-            >
-              Contact Us
-            </Link>
-          </div>
-          <div className="HeaderItem font-arabic">
-            <Link href={"/contactus"} className="link1">
-              عربي
-            </Link>
-          </div>
-          <div className="MenuClick" onClick={() => setOpen(true)}>
-            <div className="menu1">&nbsp;</div>
+            <div className="HeaderItem">
+              <Link
+                href={"/aboutus"}
+                className={
+                  router.pathname == "/aboutus" ? "link1 active" : "link1"
+                }
+              >
+                About Us
+              </Link>
+            </div>
+            <div className="HeaderItem">
+              <Link
+                href={"/catering"}
+                className={
+                  router.pathname == "/catering" ? "link1 active" : "link1"
+                }
+              >
+                Catering
+              </Link>
+            </div>
+            <div className="HeaderItem LogoLink">
+              <Link href={"/"} className="">
+                <div className="HeroLogo">
+                  {router.pathname === "/sweetmenu" ? (
+                    <Image
+                      src="/icons/ferassweet.png"
+                      layout="responsive"
+                      height={"240"}
+                      width={"240"}
+                      priority={true}
+                      className=""
+                    />
+                  ) : router.pathname === "/restaurentmenu" ? (
+                    <Image
+                      src="/icons/FerasRes.png"
+                      layout="responsive"
+                      height={"240"}
+                      width={"240"}
+                      priority={true}
+                      className=""
+                    />
+                  ) : (
+                    <Image
+                      src="/logo3.png"
+                      layout="responsive"
+                      height={"240"}
+                      width={"240"}
+                      priority={true}
+                      className=""
+                    />
+                  )}
+                </div>
+              </Link>
+            </div>
+            <div className="HeaderItem">
+              <Link
+                href={"/restaurentmenu"}
+                className={
+                  router.pathname == "/restaurentmenu"
+                    ? "link1 active"
+                    : "link1"
+                }
+              >
+                Our Menu
+              </Link>
+              <div className="SubNaBox">
+                <Link href={"/restaurentmenu"} className="link1">
+                  Restaurent Menu
+                </Link>
+                <Link href={"/sweetmenu"} className="link1">
+                  Sweet Menu
+                </Link>
+              </div>
+            </div>
+
+            <div className="HeaderItem">
+              <Link
+                href={"/locations"}
+                className={
+                  router.pathname == "/locations" ? "link1 active" : "link1"
+                }
+              >
+                Locations
+              </Link>
+            </div>
+            <div className="HeaderItem">
+              <Link
+                href={"/contactus"}
+                className={
+                  router.pathname == "/contactus" ? "link1 active" : "link1"
+                }
+              >
+                Contact Us
+              </Link>
+            </div>
+            <div className="HeaderItem font-arabic">
+              <Link href={"/contactus"} className="link1">
+                عربي
+              </Link>
+            </div>
+            <div className="MenuClick" onClick={() => setOpen(true)}>
+              <div className="menu1">&nbsp;</div>
+            </div>
           </div>
         </div>
-      </div>
       )}
       {!isDesktop && (
-        <div className="MobileHeaderWrap" style={{ display: isDesktop ? "none" : "block"}}>
+        <div
+          className="MobileHeaderWrap"
+          style={{ display: isDesktop ? "none" : "block" }}
+        >
           <div className="MobileHeaderFlex">
             <div className="MobileLogoBox">
               <Link href={"/"} className="">
-                  <Image
-                    src="/mobilelogo1.png"
-                    layout="responsive"
-                    height={"78"}
-                    width={"200"}
-                    priority={true}
-                    className=""
-                  />
+                <Image
+                  src="/mobilelogo1.png"
+                  layout="responsive"
+                  height={"78"}
+                  width={"200"}
+                  priority={true}
+                  className=""
+                />
               </Link>
             </div>
             <div className="MobileLang">
               <div className="font-arabic color-fff">
                 <Link href={"/"} className="">
-                عربي      
+                  عربي
                 </Link>
               </div>
             </div>
@@ -304,42 +331,41 @@ const Header = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="SideNavFooter">
-                        <div>
-                          <div className="row HdrRow1">
-                            <div className="col-md-4">
-                              <Image
-                                src="/heromobile1.jpg"
-                                layout="responsive"
-                                width={"400"}
-                                height={"449"}
-                                className=""
-                              />
-                            </div>
-                            <div className="col-md-4">
-                              <Image
-                                src="/heromobile1.jpg"
-                                layout="responsive"
-                                width={"400"}
-                                height={"449"}
-                                className=""
-                              />
-                            </div>
-                            <div className="col-md-4">
-                              <Image
-                                src="/heromobile1.jpg"
-                                layout="responsive"
-                                width={"400"}
-                                height={"449"}
-                                className=""
-                              />
-                            </div>
+                      <div>
+                        <div className="row HdrRow1">
+                          <div className="col-md-4">
+                            <Image
+                              src="/heromobile1.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
                           </div>
-                          <div className="T4">
-                            Follow us for mouthwatering food photos, special
-                            offers, and a taste of our vibrant dining experience
+                          <div className="col-md-4">
+                            <Image
+                              src="/heromobile1.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
+                          </div>
+                          <div className="col-md-4">
+                            <Image
+                              src="/heromobile1.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
                           </div>
                         </div>
-                      
+                        <div className="T4">
+                          Follow us for mouthwatering food photos, special
+                          offers, and a taste of our vibrant dining experience
+                        </div>
+                      </div>
                     </div>
                   </motion.div>
                 </div>

@@ -1,6 +1,6 @@
-
-
 import CoomonHeader from "@/components/CommonHeader";
+import HomeBestSeller from "@/components/HomeBestSelling";
+import HomeMenuListing from "@/components/HomeMenuListing";
 import InstagramBox from "@/components/InstagramBox";
 
 export default function catering() {
@@ -14,8 +14,16 @@ export default function catering() {
   return (
     <>
       <div>
-      <CoomonHeader desktopBanner="/herodesk2.jpg" MobileBanner ="/heromobile2.jpg" Title="CATERING SERVICES" MenuName="" MenuLink=""/>
-      <InstagramBox/>
+        <CoomonHeader
+          desktopBanner="/herodesk2.jpg"
+          MobileBanner="/heromobile2.jpg"
+          Title="CATERING SERVICES"
+          MenuName=""
+          MenuLink=""
+        />
+        <HomeMenuListing bg={true} />
+        <HomeBestSeller />
+        <InstagramBox />
       </div>
     </>
   );

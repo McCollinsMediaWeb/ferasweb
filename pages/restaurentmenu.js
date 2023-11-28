@@ -1,5 +1,3 @@
-
-
 import CoomonHeader from "@/components/CommonHeader";
 import CustomerReviews from "@/components/CustomerReviews";
 import MenuBox from "@/components/MenuBox";
@@ -16,11 +14,20 @@ export default function ourmenu() {
   return (
     <>
       <div>
-      <CoomonHeader desktopBanner="/herodesk3.jpg" MobileBanner ="/heromobile3.jpg" Title="RESTAURENT MENU" MenuName="" MenuLink=""/>
-      <MenuBox Title="RESTAURENT MENU"/>
-      <MenuBanner DesktopBanner="/banner2.jpg" MobileBanner="/bannermobile2.jpg"/>
-      <CustomerReviews/>
-      <InstagramBox/>
+        <CoomonHeader
+          desktopBanner="/herodesk3.jpg"
+          MobileBanner="/heromobile3.jpg"
+          Title="RESTAURENT MENU"
+          MenuName=""
+          MenuLink="/restaurentmenu"
+        />
+        <MenuBox Title="RESTAURENT MENU" />
+        <MenuBanner
+          DesktopBanner="/banner2.jpg"
+          MobileBanner="/bannermobile2.jpg"
+        />
+        <CustomerReviews />
+        <InstagramBox />
       </div>
     </>
   );

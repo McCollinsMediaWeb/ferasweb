@@ -59,11 +59,13 @@ const InstagramBox = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="CrT1 InstaIcon">#connectFirasSweets </div>
+              <div className="CrT1 InstaIcon">#connectFerasSweets </div>
             </div>
             <div className="col-md-8">
               <div className="CrT2">
-              Discover the daily extravaganza of deliciousness! Follow our Instagram page for a delectable journey through the irresistible flavors served from the highest quality ingredients.
+                Discover the daily extravaganza of deliciousness! Follow our
+                Instagram page for a delectable journey through the irresistible
+                flavors served from the highest quality ingredients.
               </div>
             </div>
           </div>
@@ -71,13 +73,13 @@ const InstagramBox = () => {
       </motion.div>
       <div className="ReviewSlider">
         <div className="container">
-        <motion.div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
-          <Slider {...settings}>
-            <div>
+          <motion.div
+            className="SliderWrt1"
+            {...animation}
+            viewport={{ once: true }}
+          >
+            <Slider {...settings}>
+              <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -92,8 +94,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -108,8 +110,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -124,9 +126,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-            </div>
-            <div>
-              
+              </div>
+              <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -141,9 +142,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-            </div>
-            <div>
-              
+              </div>
+              <div>
                 <div className="ReviewColumn1">
                   <div className="InstaItemBox position-relative">
                     <a href="#">
@@ -158,8 +158,8 @@ const InstagramBox = () => {
                     </a>
                   </div>
                 </div>
-            </div>
-          </Slider>
+              </div>
+            </Slider>
           </motion.div>
         </div>
       </div>

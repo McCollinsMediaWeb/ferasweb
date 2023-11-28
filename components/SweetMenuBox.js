@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import ProductGid from "./ProductGrid";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
-const MenuBox = (props) => {
+const SweetMenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 5,
@@ -76,57 +76,23 @@ const MenuBox = (props) => {
             </div>
           </div>
         </div>
-        <div className="MobileMargin1">
-          <motion.div
-            className="SliderWrt1"
-            {...animation}
-            viewport={{ once: true }}
-          >
-            <Slider {...settings}>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem active">Manakeesh</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Pizza</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Shawarma</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Sandwich</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Burger</div>
-              </div>
-            </Slider>
-          </motion.div>
-        </div>
 
-        <div className="ProductGrids ">
+        <div className="ProductGrids mt-5">
           <div className="row">
             <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu5.jpg"
-                productname="Jordanian Mansaf "
-              />
+              <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa" />
             </div>
             <div className="col-md-3">
               <ProductGid
-                imageurl="/products/menu6.jpg"
-                productname="Palestinian Musakhan Rolls "
+                imageurl="/products/menu2.jpg"
+                productname="Baklava’s"
               />
             </div>
             <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu7.jpg"
-                productname="Maklouba With Cauliflower Potato"
-              />
+              <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul" />
             </div>
             <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu8.jpg"
-                productname="Chicken Liver"
-              />
+              <ProductGid imageurl="/products/menu4.jpg" productname="Warbat" />
             </div>
           </div>
         </div>
@@ -134,4 +100,4 @@ const MenuBox = (props) => {
     </div>
   );
 };
-export default MenuBox;
+export default SweetMenuBox;

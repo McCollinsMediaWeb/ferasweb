@@ -13,11 +13,11 @@ const CoomonHeader = (props) => {
     arrows: false,
     dots: true,
     speed: 3000,
-    autoplaySpeed:3000,
+    autoplaySpeed: 3000,
     infinite: true,
     touchThreshold: 100,
     autoplay: false,
-    pauseOnHover:false
+    pauseOnHover: false,
   };
   const container = {
     visible: {
@@ -52,13 +52,13 @@ const CoomonHeader = (props) => {
             )}
             {!isDesktop && (
               <Image
-              src={props.MobileBanner}
-              layout="responsive"
-              height="900"
-              width="708"
-              priority={true}
-              className=""
-            />
+                src={props.MobileBanner}
+                layout="responsive"
+                height="900"
+                width="708"
+                priority={true}
+                className=""
+              />
             )}
             <div className="layer1">&nbsp;</div>
             <div className="layer2">
@@ -81,8 +81,9 @@ const CoomonHeader = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et
+                      {props.Desc
+                        ? props.Desc
+                        : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"}
                     </div>
                   </motion.div>
                   <motion.div
@@ -92,7 +93,12 @@ const CoomonHeader = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link href={"/restaurentmenu"} className="BannerBtn">
+                      <Link
+                        href={
+                          props.MenuLink ? props.MenuLink : "/restaurentmenu"
+                        }
+                        className="BannerBtn"
+                      >
                         View Menus
                       </Link>
                     </div>

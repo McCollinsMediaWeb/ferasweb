@@ -66,7 +66,7 @@ const OurGallery = () => {
         >
           <div className="HdrT1 text-center color-fff">Our Gallery</div>
           <div className="HdrT2 text-center color-fff">
-            Firas Sweets uses only the highest quality ingredients. We don’t use
+            Feras Sweets uses only the highest quality ingredients. We don’t use
             chemicals or add preservatives to our products, as we believe fresh
             products have the best taste!
           </div>

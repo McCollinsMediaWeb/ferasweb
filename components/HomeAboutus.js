@@ -75,7 +75,7 @@ const HomeAboutUs = (props) => {
                   Earlier in 1993, a traditional Palestinian sweets shop opened
                   in Dubai with the vision of offering homemade quality sweets
                   to the neighboring surrounding. Fast forward to 20 years
-                  later, Firas Sweets is now one of the leading and innovating
+                  later, Feras Sweets is now one of the leading and innovating
                   Arabic Oriental Sweet companies keeping its traditional
                   identity with professional operations.
                 </div>
@@ -99,7 +99,7 @@ const HomeAboutUs = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      Firas Sweets uses only the highest quality ingredients. We
+                      Feras Sweets uses only the highest quality ingredients. We
                       don’t use chemicals or add preservatives to our products,
                       as we believe fresh products have the best taste! Our team
                       continuously supervises the quality, which helps keep our

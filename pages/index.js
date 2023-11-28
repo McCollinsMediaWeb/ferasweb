@@ -1,5 +1,3 @@
-
-
 import HeroBanner from "@/components/HeroBanner";
 import HomeAboutUs from "@/components/HomeAboutus";
 import HomeMenuListing from "@/components/HomeMenuListing";
@@ -20,21 +18,16 @@ export default function Home() {
   return (
     <>
       <div>
-        <HeroBanner/>
-        <HomeAboutUs/>
-        
-        <HomeMenuListing/>
-        {!isDesktop && (
-        <HomeBestSeller/>
-        )}
-        
-        
-         {isDesktop && (
-        <HomeBestSeller/>
-        )}
-        <HomeBanner/>
-        <CustomerReviews/>
-        <InstagramBox/>
+        <HeroBanner />
+        <HomeAboutUs lp={true} />
+
+        <HomeMenuListing />
+        {!isDesktop && <HomeBestSeller />}
+
+        {isDesktop && <HomeBestSeller />}
+        <HomeBanner />
+        <CustomerReviews />
+        <InstagramBox />
       </div>
     </>
   );

@@ -64,7 +64,9 @@ const Footer = () => {
             <div className="col-md-3">
               <div className="FtrT1">Connect with us</div>
               <div className="FtrT2 color-fff">
-              Discover the daily extravaganza of deliciousness! Follow our social media for a delectable journey through the irresistible flavors served from the highest quality ingredients.
+                Discover the daily extravaganza of deliciousness! Follow our
+                social media for a delectable journey through the irresistible
+                flavors served from the highest quality ingredients.
               </div>
               <div className="FtrSocialMedia">
                 <div className="FtrSocialMediaFlex">
@@ -89,7 +91,7 @@ const Footer = () => {
       <div className="FooterBottomWrap">
         <div className="container">
           <div className="FooterBottom">
-            <div>© 2023 FirasSweets. All Rights Reserved.</div>
+            <div>© 2023 FerasSweets. All Rights Reserved.</div>
             <div>
               <a href="https://www.mccollinsmedia.com/" target="_blank">
                 Designed & Developed by McCollins
@@ -103,39 +105,39 @@ const Footer = () => {
           <div class="bottom-bar">
             <ul class="bottom-bar--list">
               <li className={router.pathname == "/" ? "activeLink" : ""}>
-                <Link
-                  href={"/"}
-                >
+                <Link href={"/"}>
                   <div class="icon">
                     <div class="FtrIconH home">&nbsp;</div>
                   </div>
                   <div class="text">Home</div>
                 </Link>
               </li>
-              <li  className={router.pathname == "/restaurentmenu" ? "activeLink" : ""}>
-                <Link
-                  href={"/restaurentmenu"}
-                >
+              <li
+                className={
+                  router.pathname == "/restaurentmenu" ? "activeLink" : ""
+                }
+              >
+                <Link href={"/restaurentmenu"}>
                   <div class="icon">
                     <div class="FtrIconH reserve">&nbsp;</div>
                   </div>
                   <div class="text">Menu</div>
                 </Link>
               </li>
-              <li className={router.pathname == "/catering" ? "activeLink" : ""}>
-                <Link
-                  href={"/catering"}
-                >
+              <li
+                className={router.pathname == "/catering" ? "activeLink" : ""}
+              >
+                <Link href={"/catering"}>
                   <div class="icon">
                     <div class="FtrIconH order">&nbsp;</div>
                   </div>
                   <div class="text">Catering</div>
                 </Link>
               </li>
-              <li className={router.pathname == "/locations" ? "activeLink" : ""}>
-                <Link
-                  href={"/locations"}
-                >
+              <li
+                className={router.pathname == "/locations" ? "activeLink" : ""}
+              >
+                <Link href={"/locations"}>
                   <div class="icon">
                     <div class="FtrIconH location">&nbsp;</div>
                   </div>

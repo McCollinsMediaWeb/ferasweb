@@ -72,7 +72,7 @@ const CustomerReviews = () => {
             </div>
             <div className="col-md-8">
               <div className="CrT2">
-                Firas Sweets uses only the highest quality ingredients. We don’t
+                Feras Sweets uses only the highest quality ingredients. We don’t
                 use chemicals or add preservatives to our products, as we
                 believe fresh products have the best taste! Our team
                 continuously supervises the quality, which helps keep our
@@ -94,17 +94,15 @@ const CustomerReviews = () => {
               >
                 <div className="ReviewColumn1">
                   <div className="ReviewItem">
-                    <div className="ReviewItemT1">Lorem ipsum dolo</div>
+                    {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
                     <div className="ReviewItemT2">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      “
+                      “One of the best Konafa you can have . My favourite is the
+                      "kunafa kheshna" كنافه خشنه An amazing way to spend 1
+                      relaxing hour in the afternoon over a cup of black tea and
+                      fresh warm Kunafa “
                     </div>
                     <div className="ReviewAddress">
-                      <div className="Rname">Ali Mohammad</div>
+                      <div className="Rname">Hisham Darwish</div>
                       <div className="RLocation">Duabi</div>
                     </div>
                   </div>
@@ -112,6 +110,78 @@ const CustomerReviews = () => {
               </motion.div>
             </div>
             <div>
+              <motion.div
+                initial={{ y: 60 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <div className="ReviewColumn1">
+                  <div className="ReviewItem">
+                    {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
+                    <div className="ReviewItemT2">
+                      “Feras Aldiyafa Sweets in Dubai is a must-visit! The best
+                      Kunafa in town with a secret cheese ingredient that makes
+                      it incredibly delicious. Friendly staff and a delightful
+                      dining experience. Highly recommended! “
+                    </div>
+                    <div className="ReviewAddress">
+                      <div className="Rname">Bassam Sh</div>
+                      <div className="RLocation">Duabi</div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            <div>
+              <motion.div
+                initial={{ y: 60 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <div className="ReviewColumn1">
+                  <div className="ReviewItem">
+                    {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
+                    <div className="ReviewItemT2">
+                      “Pretty much visible from the Shaikh Zayed Road just after
+                      the Mashreq Metro station enroute Dubai, this place has
+                      one of the best and recommended Manakesh ( Veg and Non Veg
+                      ) and Kunafa ( sweet dish loaded with cheese and honey )“
+                    </div>
+                    <div className="ReviewAddress">
+                      <div className="Rname">Farhan Syed</div>
+                      <div className="RLocation">Duabi</div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            <div>
+              <motion.div
+                initial={{ y: 60 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <div className="ReviewColumn1">
+                  <div className="ReviewItem">
+                    {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
+                    <div className="ReviewItemT2">
+                      “Feras has always served my favorite kunafa and is a great
+                      simple spot to drop by at night with friends. We even had
+                      them serve at a relative's wedding and they provided a
+                      grand experience “
+                    </div>
+                    <div className="ReviewAddress">
+                      <div className="Rname">Stephen Marone</div>
+                      <div className="RLocation">Duabi</div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            {/* <div>
               <motion.div
                 initial={{ y: 60 }}
                 whileInView={{ y: 0 }}
@@ -136,111 +206,7 @@ const CustomerReviews = () => {
                   </div>
                 </div>
               </motion.div>
-            </div>
-            <div>
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, type: "spring" }}
-              >
-                <div className="ReviewColumn1">
-                  <div className="ReviewItem">
-                    <div className="ReviewItemT1">Lorem ipsum dolo</div>
-                    <div className="ReviewItemT2">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      “
-                    </div>
-                    <div className="ReviewAddress">
-                      <div className="Rname">Ali Mohammad</div>
-                      <div className="RLocation">Duabi</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            <div>
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, type: "spring" }}
-              >
-                <div className="ReviewColumn1">
-                  <div className="ReviewItem">
-                    <div className="ReviewItemT1">Lorem ipsum dolo</div>
-                    <div className="ReviewItemT2">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      “
-                    </div>
-                    <div className="ReviewAddress">
-                      <div className="Rname">Ali Mohammad</div>
-                      <div className="RLocation">Duabi</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            <div>
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, type: "spring" }}
-              >
-                <div className="ReviewColumn1">
-                  <div className="ReviewItem">
-                    <div className="ReviewItemT1">Lorem ipsum dolo</div>
-                    <div className="ReviewItemT2">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      “
-                    </div>
-                    <div className="ReviewAddress">
-                      <div className="Rname">Ali Mohammad</div>
-                      <div className="RLocation">Duabi</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            <div>
-              <motion.div
-                initial={{ y: 60 }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, type: "spring" }}
-              >
-                <div className="ReviewColumn1">
-                  <div className="ReviewItem">
-                    <div className="ReviewItemT1">Lorem ipsum dolo</div>
-                    <div className="ReviewItemT2">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      “
-                    </div>
-                    <div className="ReviewAddress">
-                      <div className="Rname">Ali Mohammad</div>
-                      <div className="RLocation">Duabi</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </div>

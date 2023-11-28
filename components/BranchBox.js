@@ -15,7 +15,7 @@ const BranchBox = () => {
             >
               <div className="HdrT1 text-center color-fff">Our Branches</div>
               <div className="HdrT2 text-center color-fff">
-                Firas Sweets uses only the highest quality ingredients. Our team
+                Feras Sweets uses only the highest quality ingredients. Our team
                 continuously supervises the quality, which helps keep our
                 products to the highest standards
               </div>
@@ -25,7 +25,7 @@ const BranchBox = () => {
             <div className="col-md-2">
               <ul className="branchList">
                 <li className="BLactive">Dubai</li>
-                <li>Sharja</li>
+                <li>Sharjah</li>
                 <li>Ajman</li>
                 <li>RAK</li>
                 <li>Abu Dhabi</li>
