@@ -122,7 +122,7 @@ const LPHeroBanner = () => {
                     >
                       <div className={`BannerBtns lpBnrBtn`}>
                         <Link
-                          href={"/restaurentmenu"}
+                          href={"/restaurantmenu"}
                           className="BannerBtn"
                           style={{ minWidth: !isDesktop && "fit-content" }}
                         >
@@ -201,7 +201,7 @@ const LPHeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link href={"/restaurentmenu"} className="BannerBtn">
+                      <Link href={"/restaurantmenu"} className="BannerBtn">
                         View Menus
                       </Link>
                     </div>
@@ -273,7 +273,7 @@ const LPHeroBanner = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link href={"/restaurentmenu"} className="BannerBtn">
+                      <Link href={"/restaurantmenu"} className="BannerBtn">
                         View Menus
                       </Link>
                     </div>

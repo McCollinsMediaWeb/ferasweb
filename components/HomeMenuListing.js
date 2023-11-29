@@ -105,7 +105,7 @@ const HomeMenuListing = (props) => {
                         transition={{ delay: 0.3, type: "spring" }}
                       >
                         <div className="MenuItemTitle">Restaurant</div>
-                        <Link href={"/restaurentmenu"} className="MenuItemLink">
+                        <Link href={"/restaurantmenu"} className="MenuItemLink">
                           View Menu
                         </Link>
                       </motion.div>
@@ -155,7 +155,7 @@ const HomeMenuListing = (props) => {
                         transition={{ delay: 0.3, type: "spring" }}
                       >
                         <div className="MenuItemTitle">Restaurant</div>
-                        <Link href={"/restaurentmenu"} className="MenuItemLink">
+                        <Link href={"/restaurantmenu"} className="MenuItemLink">
                           View Menu
                         </Link>
                       </motion.div>
@@ -259,7 +259,7 @@ const HomeMenuListing = (props) => {
                         transition={{ delay: 0.3, type: "spring" }}
                       >
                         <div className="MenuItemTitle">Restaurant</div>
-                        <Link href={"/restaurentmenu"} className="MenuItemLink">
+                        <Link href={"/restaurantmenu"} className="MenuItemLink">
                           View Menu
                         </Link>
                       </motion.div>

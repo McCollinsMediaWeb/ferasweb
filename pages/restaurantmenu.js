@@ -17,11 +17,12 @@ export default function ourmenu() {
         <CoomonHeader
           desktopBanner="/herodesk3.jpg"
           MobileBanner="/heromobile3.jpg"
-          Title="RESTAURENT MENU"
+          Title="Restaurant MENU"
           MenuName=""
-          MenuLink="/restaurentmenu"
+          MenuLink="/restaurantmenu"
+          Desc="Engage your senses in a culinary symphony, where every dish is a harmonious blend of flavors, aromas, and textures."
         />
-        <MenuBox Title="RESTAURENT MENU" />
+        <MenuBox Title="Restaurant MENU" />
         <MenuBanner
           DesktopBanner="/banner2.jpg"
           MobileBanner="/bannermobile2.jpg"

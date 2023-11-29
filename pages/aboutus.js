@@ -1,5 +1,3 @@
-
-
 import CoomonHeader from "@/components/CommonHeader";
 import HomeAboutUs from "@/components/HomeAboutus";
 import CustomerReviews from "@/components/CustomerReviews";
@@ -15,10 +13,17 @@ export default function aboutus() {
   return (
     <>
       <div>
-        <CoomonHeader desktopBanner="/herodesk4.jpg" MobileBanner ="/heromobile4.jpg" Title="ABOUT FERAS" MenuName="" MenuLink=""/>
-        <HomeAboutUs/>
-        <CustomerReviews/>
-        <InstagramBox/>
+        <CoomonHeader
+          desktopBanner="/herodesk4.jpg"
+          MobileBanner="/heromobile4.jpg"
+          Title="ABOUT FERAS"
+          MenuName=""
+          MenuLink=""
+          Desc="Indulge in a symphony of sweetness with Feras Sweets, where every bite tells a delicious story"
+        />
+        <HomeAboutUs />
+        <CustomerReviews />
+        <InstagramBox />
       </div>
     </>
   );

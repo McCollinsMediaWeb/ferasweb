@@ -55,7 +55,7 @@ const MenuBox = (props) => {
       <div className="container">
         <div className="MenuHeaderWrap">
           <div className="MenuHeaderFlex row">
-            <div className="col-md-4">
+            <div className="col-md-5">
               <div className="MenuHeaderT1 color-fff">
                 <motion.div
                   initial="hidden"
@@ -67,11 +67,11 @@ const MenuBox = (props) => {
                 </motion.div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7">
               <div className="MenuHeaderT2 color-fff">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do{" "}
+                Taste the difference that passion makes with our menu, where
+                each dish is a reflection of our commitment to exceptional
+                dining.
               </div>
             </div>
           </div>

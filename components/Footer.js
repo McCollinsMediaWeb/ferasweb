@@ -13,14 +13,34 @@ const Footer = () => {
             <div className="col-md-3">
               <div className="FtrLogoBx">
                 <Link href={"/"} className="">
-                  <Image
-                    src="/footerlogo1.jpg"
-                    layout="responsive"
-                    height={"268"}
-                    width={"272"}
-                    priority={true}
-                    className=""
-                  />
+                  {router.pathname === "/sweetmenu" ? (
+                    <Image
+                      src="/icons/ferassweet.png"
+                      layout="responsive"
+                      height={"240"}
+                      width={"240"}
+                      priority={true}
+                      className=""
+                    />
+                  ) : router.pathname === "/restaurantmenu" ? (
+                    <Image
+                      src="/icons/FerasRes.png"
+                      layout="responsive"
+                      height={"240"}
+                      width={"240"}
+                      priority={true}
+                      className=""
+                    />
+                  ) : (
+                    <Image
+                      src="/footerlogo1.jpg"
+                      layout="responsive"
+                      height={"268"}
+                      width={"272"}
+                      priority={true}
+                      className=""
+                    />
+                  )}
                 </Link>
               </div>
             </div>
@@ -35,7 +55,7 @@ const Footer = () => {
                     <Link href={"/aboutus"}>About Us</Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/restaurentmenu"}>Restaurent Menu</Link>
+                    <Link href={"/restaurantmenu"}>restaurant Menu</Link>
                   </div>
                   <div className="col-md-6">
                     <Link href={"/sweetmenu"}>Sweets Menu</Link>
@@ -114,10 +134,10 @@ const Footer = () => {
               </li>
               <li
                 className={
-                  router.pathname == "/restaurentmenu" ? "activeLink" : ""
+                  router.pathname == "/restaurantmenu" ? "activeLink" : ""
                 }
               >
-                <Link href={"/restaurentmenu"}>
+                <Link href={"/restaurantmenu"}>
                   <div class="icon">
                     <div class="FtrIconH reserve">&nbsp;</div>
                   </div>

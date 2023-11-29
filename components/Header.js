@@ -26,6 +26,14 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
+            <div
+              className="HeaderItem font-arabic"
+              style={{ visibility: "hidden" }}
+            >
+              <Link href={"/contactus"} className="link1">
+                عربي
+              </Link>
+            </div>
             <div className="HeaderItem">
               <Link
                 href={"/"}
@@ -66,7 +74,7 @@ const Header = () => {
                       priority={true}
                       className=""
                     />
-                  ) : router.pathname === "/restaurentmenu" ? (
+                  ) : router.pathname === "/restaurantmenu" ? (
                     <Image
                       src="/icons/FerasRes.png"
                       layout="responsive"
@@ -90,9 +98,9 @@ const Header = () => {
             </div>
             <div className="HeaderItem">
               <Link
-                href={"/restaurentmenu"}
+                href={"/restaurantmenu"}
                 className={
-                  router.pathname == "/restaurentmenu"
+                  router.pathname == "/restaurantmenu"
                     ? "link1 active"
                     : "link1"
                 }
@@ -100,8 +108,8 @@ const Header = () => {
                 Our Menu
               </Link>
               <div className="SubNaBox">
-                <Link href={"/restaurentmenu"} className="link1">
-                  Restaurent Menu
+                <Link href={"/restaurantmenu"} className="link1">
+                  Restaurant Menu
                 </Link>
                 <Link href={"/sweetmenu"} className="link1">
                   Sweet Menu
@@ -253,14 +261,14 @@ const Header = () => {
                         <div onClick={() => setOpen(false)}>
                           {" "}
                           <Link
-                            href={"/restaurentmenu"}
+                            href={"/restaurantmenu"}
                             className={
-                              router.pathname == "/restaurentmenu"
+                              router.pathname == "/restaurantmenu"
                                 ? "hover1 active"
                                 : "hover1"
                             }
                           >
-                            Restaurent Menu
+                            Restaurant Menu
                           </Link>
                         </div>
                       </motion.div>

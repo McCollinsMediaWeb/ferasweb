@@ -116,7 +116,7 @@ const HomeBestSeller = (props) => {
             </div>
           </div>
           <div className="ExpBtn">
-            <Link href={"/restaurentmenu"} className="ExploreMoreBtn">
+            <Link href={"/restaurantmenu"} className="ExploreMoreBtn">
               Explore More
             </Link>
           </div>

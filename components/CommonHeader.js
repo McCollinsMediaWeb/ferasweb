@@ -95,7 +95,7 @@ const CoomonHeader = (props) => {
                     <div className="BannerBtns">
                       <Link
                         href={
-                          props.MenuLink ? props.MenuLink : "/restaurentmenu"
+                          props.MenuLink ? props.MenuLink : "/restaurantmenu"
                         }
                         className="BannerBtn"
                       >

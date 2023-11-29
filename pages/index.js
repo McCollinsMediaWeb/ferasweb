@@ -1,34 +1,22 @@
-import HeroBanner from "@/components/HeroBanner";
-import HomeAboutUs from "@/components/HomeAboutus";
-import HomeMenuListing from "@/components/HomeMenuListing";
-import HomeBestSeller from "@/components/HomeBestSelling";
-import HomeBanner from "@/components/HomeBanner";
 import CustomerReviews from "@/components/CustomerReviews";
+import HomeAboutUs from "@/components/HomeAboutus";
+import HomeBanner from "@/components/HomeBanner";
+import HomeBestSeller from "@/components/HomeBestSelling";
 import InstagramBox from "@/components/InstagramBox";
-import useMediaQuery from "@/hooks/useMediaQuery";
-export default function Home() {
-  const isDesktop = useMediaQuery("(min-width: 960px)");
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.055,
-      },
-    },
-  };
+import LPHeroBanner from "@/components/LPHeroBanner";
+import React from "react";
+
+const LandingPage = () => {
   return (
     <>
-      <div>
-        <HeroBanner />
-        <HomeAboutUs lp={true} />
-
-        <HomeMenuListing />
-        {!isDesktop && <HomeBestSeller />}
-
-        {isDesktop && <HomeBestSeller />}
-        <HomeBanner />
-        <CustomerReviews />
-        <InstagramBox />
-      </div>
+      <LPHeroBanner />
+      <HomeAboutUs lp={true} />
+      <HomeBestSeller lp={true} />
+      <HomeBanner />
+      <CustomerReviews />
+      <InstagramBox />
     </>
   );
-}
+};
+
+export default LandingPage;
