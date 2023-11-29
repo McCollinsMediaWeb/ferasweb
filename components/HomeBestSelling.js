@@ -67,30 +67,6 @@ const HomeBestSeller = (props) => {
             <div className="row">
               <div className="col-md-3">
                 <ProductGid
-                  imageurl="/products/menu1.jpg"
-                  productname="Kunafa"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu2.jpg"
-                  productname="Baklava’s"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu3.jpg"
-                  productname="Ma’mul"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu4.jpg"
-                  productname="Warbat"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
                   imageurl="/products/menu5.jpg"
                   productname="Jordanian Mansaf "
                 />
@@ -103,14 +79,38 @@ const HomeBestSeller = (props) => {
               </div>
               <div className="col-md-3">
                 <ProductGid
-                  imageurl="/products/menu7.jpg"
-                  productname="Maklouba With Cauliflower Potato"
+                  imageurl="/products/menu8.jpg"
+                  productname="Chicken Liver"
                 />
               </div>
               <div className="col-md-3">
                 <ProductGid
-                  imageurl="/products/menu8.jpg"
-                  productname="Chicken Liver"
+                  imageurl="/products/menu9.jpg"
+                  productname="Qedreh"
+                />
+              </div>
+              <div className="col-md-3">
+                <ProductGid
+                  imageurl="/dishes/manakeesh/Manakeesh - Cheese _ Zaatar.jpg"
+                  productname="Cheese Zaatar"
+                />
+              </div>
+              <div className="col-md-3">
+                <ProductGid
+                  imageurl="/dishes/kaak/Kaak - Cheese Kaak.jpg"
+                  productname="Kaak - Cheese Kaak"
+                />
+              </div>
+              <div className="col-md-3">
+                <ProductGid
+                  productname="Crispy Chicken Fillet"
+                  imageurl="/dishes/burger/Burger - Crispy Chicken Fillet.jpg"
+                />
+              </div>
+              <div className="col-md-3">
+                <ProductGid
+                  imageurl="/dishes/breakfast/Breakfast _ Dinner - Healthy Breakfast.jpg"
+                  productname="Healthy Breakfast"
                 />
               </div>
             </div>
