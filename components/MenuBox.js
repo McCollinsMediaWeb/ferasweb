@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -7,6 +7,7 @@ import ProductGid from "./ProductGrid";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 const MenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const [selectedName, setSelectedName] = useState("Manakeesh");
   var settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -50,6 +51,89 @@ const MenuBox = (props) => {
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
   };
+  const menu = [
+    {
+      name: "Manakeesh",
+      prd: [
+        {
+          name: "Cheese Zaatar",
+          img: "/dishes/manakeesh/Manakeesh - Cheese _ Zaatar.jpg",
+        },
+        {
+          name: "Cheese with Chicken Mashroom",
+          img: "/dishes/manakeesh/Manakeesh - Cheese with Chicken _ Mashroom.jpg",
+        },
+        {
+          name: "Cheese with Egg",
+          img: "/dishes/manakeesh/Manakeesh - Cheese with Egg.jpg",
+        },
+        {
+          name: "Cheese with Hony",
+          img: "/dishes/manakeesh/Manakeesh - Cheese with Hony.jpg",
+        },
+      ],
+    },
+    {
+      name: "Kaak",
+      prd: [
+        {
+          name: "Kaak - Cheese Kaak",
+          img: "/dishes/kaak/Kaak - Cheese Kaak.jpg",
+        },
+        {
+          name: "Cheese wit Hotdog Kaak",
+          img: "/dishes/kaak/Kaak - Cheese wit Hotdog Kaak.jpg",
+        },
+        {
+          name: "Kaak - Cheese Kaak",
+          img: "/dishes/kaak/Kaak - Cheese Kaak.jpg",
+        },
+      ],
+    },
+    {
+      name: "burger",
+      prd: [
+        {
+          name: "Crispy Chicken Fillet",
+          img: "/dishes/burger/Burger - Crispy Chicken Fillet.jpg",
+        },
+        {
+          name: "Burger - Kofta Burger",
+          img: "/dishes/burger/Burger - Kofta Burger.jpg",
+        },
+      ],
+    },
+    {
+      name: "breakfast",
+      prd: [
+        {
+          name: "Healthy Breakfast",
+          img: "/dishes/breakfast/Breakfast _ Dinner - Healthy Breakfast.jpg",
+        },
+        {
+          name: "Special Omelet",
+          img: "/dishes/breakfast/Breakfast _ Dinner - Special Omelet.jpg",
+        },
+      ],
+    },
+    {
+      name: "sandwich",
+      prd: [
+        {
+          name: "Club Sandwich",
+          img: "/dishes/sandwich/Sandwich - Club Sandwich.jpg",
+        },
+        {
+          name: "Philadelphia Steak Sandwich",
+          img: "/dishes/sandwich/Sandwich - Philadelphia Steak Sandwich.jpg",
+        },
+        {
+          name: "Special Chef Sandwich",
+          img: "/dishes/sandwich/Sandwich - Special Chef Sandwich.jpg",
+        },
+      ],
+    },
+  ];
   return (
     <div className="sectionBox pd-common bg1 abtBoxHome MenuBoxWrap" id="menu">
       <div className="container">
@@ -83,51 +167,35 @@ const MenuBox = (props) => {
             viewport={{ once: true }}
           >
             <Slider {...settings}>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem active">Manakeesh</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Pizza</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Shawarma</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Sandwich</div>
-              </div>
-              <div className="MenuSliderItem">
-                <div className="MenuLinkItem">Burger</div>
-              </div>
+              {menu.map((item) => (
+                <div className="MenuSliderItem">
+                  <div
+                    className={`MenuLinkItem ${
+                      selectedName === item.name && "active"
+                    }`}
+                    onClick={() => setSelectedName(item.name)}
+                  >
+                    {item.name}
+                  </div>
+                </div>
+              ))}
             </Slider>
           </motion.div>
         </div>
 
         <div className="ProductGrids ">
           <div className="row">
-            <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu5.jpg"
-                productname="Jordanian Mansaf "
-              />
-            </div>
-            <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu6.jpg"
-                productname="Palestinian Musakhan Rolls "
-              />
-            </div>
-            <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu7.jpg"
-                productname="Maklouba With Cauliflower Potato"
-              />
-            </div>
-            <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu8.jpg"
-                productname="Chicken Liver"
-              />
-            </div>
+            {menu
+              .filter((item) => item.name === selectedName)
+              .map((i) => (
+                <>
+                  {i.prd.map((p) => (
+                    <div className="col-md-3">
+                      <ProductGid imageurl={p.img} productname={p.name} />
+                    </div>
+                  ))}
+                </>
+              ))}
           </div>
         </div>
       </div>

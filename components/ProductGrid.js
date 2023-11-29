@@ -46,37 +46,37 @@ const ProductGid = (props) => {
         viewport={{ once: true }}
       >
         <div className="ImageBox">
-          <Image
+          <img
             src={props.imageurl}
-            layout="responsive"
-            height={"358"}
-            width={"257"}
-            priority={true}
-            className=""
+            height={"410px"}
+            width={"100%"}
+            style={{ objectFit: "cover" }}
           />
         </div>
       </motion.div>
       <div className="ProductGridTop">
-          <div className="row">
-            <div className="col-md-9">
-              <div className="ReviewRow">
-                <div className="ReviewColumn gold">&nbsp;</div>
-                <div className="ReviewColumn gold">&nbsp;</div>
-                <div className="ReviewColumn gold">&nbsp;</div>
-                <div className="ReviewColumn gold">&nbsp;</div>
-                <div className="ReviewColumn">&nbsp;</div>
-              </div>
-            </div>
-            <div className="col-md-3 text-right">
-              <div className="LikeBtn">&nbsp;</div>
+        <div className="row">
+          <div className="col-md-9">
+            <div className="ReviewRow">
+              <div className="ReviewColumn gold">&nbsp;</div>
+              <div className="ReviewColumn gold">&nbsp;</div>
+              <div className="ReviewColumn gold">&nbsp;</div>
+              <div className="ReviewColumn gold">&nbsp;</div>
+              <div className="ReviewColumn">&nbsp;</div>
             </div>
           </div>
+          <div className="col-md-3 text-right">
+            <div className="LikeBtn">&nbsp;</div>
+          </div>
+        </div>
       </div>
       <div className="ProductGridBottom">
-          <div className="row align-items-center">
-            <div className="col-md-8">{props.productname}</div>
-            <div className="col-md-4 text-right"><span className="PriceBox1">AED 50</span></div>
+        <div className="row align-items-center">
+          <div className="col-md-8">{props.productname}</div>
+          <div className="col-md-4 text-right">
+            <span className="PriceBox1">AED 50</span>
           </div>
+        </div>
       </div>
     </div>
   );

@@ -50,6 +50,25 @@ const SweetMenuBox = (props) => {
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
   };
+
+  const menu = [
+    {
+      name: "Ain Al Jamal Caramel",
+      img: "/dishes/sweet/Ain Al Jamal Caramel 500 Gr.jpg",
+    },
+    {
+      name: "Mix Baklawah",
+      img: "/dishes/sweet/Mix Baklawah (Light)-Medium.jpg",
+    },
+    {
+      name: "Fateer with Cheese",
+      img: "/dishes/sweet/Sweets - Fateer with Cheese.jpg",
+    },
+    {
+      name: "Kunafa Baen Naren (Frozen)",
+      img: "/dishes/sweet/Sweets - Kunafa Baen Naren (Frozen).jpg",
+    },
+  ];
   return (
     <div className="sectionBox pd-common bg1 abtBoxHome MenuBoxWrap" id="menu">
       <div className="container">
@@ -78,21 +97,11 @@ const SweetMenuBox = (props) => {
 
         <div className="ProductGrids mt-5">
           <div className="row">
-            <div className="col-md-3">
-              <ProductGid imageurl="/products/menu1.jpg" productname="Kunafa" />
-            </div>
-            <div className="col-md-3">
-              <ProductGid
-                imageurl="/products/menu2.jpg"
-                productname="Baklava’s"
-              />
-            </div>
-            <div className="col-md-3">
-              <ProductGid imageurl="/products/menu3.jpg" productname="Ma’mul" />
-            </div>
-            <div className="col-md-3">
-              <ProductGid imageurl="/products/menu4.jpg" productname="Warbat" />
-            </div>
+            {menu.map((item) => (
+              <div className="col-md-3">
+                <ProductGid imageurl={item.img} productname={item.name} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
