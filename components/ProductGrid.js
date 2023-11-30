@@ -51,6 +51,7 @@ const ProductGid = (props) => {
             height={"410px"}
             width={"100%"}
             style={{ objectFit: "cover" }}
+            className="imgprdH"
           />
         </div>
       </motion.div>

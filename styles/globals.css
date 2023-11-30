@@ -1642,4 +1642,9 @@ background-color: rgba(255,255,255,0.1);
       top: 7px;
       right: 7px;
     }
+    
+  .imgprdH {
+    height: 300px !important;
   }
+  }
+
