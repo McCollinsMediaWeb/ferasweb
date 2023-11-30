@@ -10,11 +10,11 @@ const LandingPage = () => {
   return (
     <>
       <LPHeroBanner />
-      <HomeAboutUs lp={true} />
+      {/* <HomeAboutUs lp={true} />
       <HomeBestSeller lp={true} />
       <HomeBanner />
       <CustomerReviews />
-      <InstagramBox />
+      <InstagramBox /> */}
     </>
   );
 };
