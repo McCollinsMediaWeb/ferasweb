@@ -8,13 +8,15 @@ const BranchBox = () => {
   const [selectedData, setSelectedData] = useState();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/location").then(function (response) {
-      // handle success
-      setData(response.data.data);
-      setSelectedData(
-        response.data.data.filter((item) => item.catName === selectedState)[0]
-      );
-    });
+    axios
+      .get("https://feras-backend.vercel.app/api/location")
+      .then(function (response) {
+        // handle success
+        setData(response.data.data);
+        setSelectedData(
+          response.data.data.filter((item) => item.catName === selectedState)[0]
+        );
+      });
   }, []);
 
   useEffect(() => {

@@ -56,7 +56,7 @@ const SweetMenuBox = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/sweetmenu")
+      .get("https://feras-backend.vercel.app/api/sweetmenu")
       .then((res) => {
         setMenu(res.data.data[0].prd);
       })

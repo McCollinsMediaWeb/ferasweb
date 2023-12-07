@@ -56,7 +56,7 @@ const MenuBox = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/menu")
+      .get("https://feras-backend.vercel.app/api/menu")
       .then((res) => {
         setMenu(res.data.data);
       })
