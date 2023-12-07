@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const BranchBox = () => {
+  const [data, setData] = useState();
+  const [selectedState, setSelectedState] = useState("Dubai");
+  const [selectedData, setSelectedData] = useState();
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/location").then(function (response) {
+      // handle success
+      setData(response.data.data);
+      setSelectedData(
+        response.data.data.filter((item) => item.catName === selectedState)[0]
+      );
+    });
+  }, []);
+
+  useEffect(() => {
+    setSelectedData(data?.filter((item) => item.catName === selectedState)[0]);
+  }, [selectedState]);
+
   return (
     <>
       <div className="sectionBox pd-common bg1">
@@ -24,39 +43,54 @@ const BranchBox = () => {
           <div className="row">
             <div className="col-md-2">
               <ul className="branchList">
-                <li className="BLactive">Dubai</li>
-                <li>Sharjah</li>
-                <li>Ajman</li>
-                <li>RAK</li>
-                <li>Abu Dhabi</li>
-                <li>Al Ain</li>
-                <li>Umm Al Quwain</li>
-                <li>Al Fujairah</li>
-                <li>Khor Fakkan</li>
-                <li>Al Dhaid</li>
+                {data &&
+                  data.map((item) => (
+                    <li
+                      className={selectedState == item.catName && "BLactive"}
+                      onClick={() => {
+                        setSelectedState(item.catName);
+                      }}
+                    >
+                      {item.catName}
+                    </li>
+                  ))}
               </ul>
             </div>
             <div className="col-md-10">
               <div className="branchWhiteBox">
                 <h3>Branches in Dubai</h3>
                 <div className="bracnhListBox" id="bracnh-style-2">
-                  <div className="d-flex">
-                    <div className="branchName">Sheikh Zayad Road</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
+                  {selectedData &&
+                    selectedData.prd.map((i) => (
+                      <div className="d-flex">
+                        <div className="branchName">{i.name}</div>
+                        <div className="branchNo">
+                          <img src="/icons/branchNo.png" alt="Branch Number" />
+                          &nbsp;{i.phone}
+                        </div>
+                        <div className="branchTime">
+                          <img src="/icons/branchTime.png" alt="Branch Time" />
+                          &nbsp; {i.time}
+                        </div>
+                        <div className="branchBtn">
+                          <a
+                            href={i.url}
+                            target="_blank"
+                            style={{ padding: "5px 0" }}
+                          >
+                            <button style={{ cursor: "pointer" }}>
+                              Get Direction &nbsp;
+                              <img
+                                src="/icons/branchBtn.png"
+                                alt="Branch Button"
+                              />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+
+                  {/* <div className="d-flex">
                     <div className="branchName">Al Barsha</div>
                     <div className="branchNo">
                       <img src="/icons/branchNo.png" />
@@ -71,215 +105,7 @@ const BranchBox = () => {
                         Get Direction &nbsp; <img src="/icons/branchBtn.png" />
                       </button>
                     </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Motor City</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Sheikh Zayad Road</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Al Barsha</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Motor City</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Sheikh Zayad Road</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Al Barsha</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Motor City</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Sheikh Zayad Road</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Al Barsha</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Motor City</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Sheikh Zayad Road</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Al Barsha</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="branchName">Motor City</div>
-                    <div className="branchNo">
-                      <img src="/icons/branchNo.png" />
-                      &nbsp;04 - 547 17 77
-                    </div>
-                    <div className="branchTime">
-                      <img src="/icons/branchTime.png" />
-                      &nbsp; Mon - Sun 12pm to12am
-                    </div>
-                    <div className="branchBtn">
-                      <button>
-                        Get Direction &nbsp; <img src="/icons/branchBtn.png" />
-                      </button>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -1488,6 +1488,7 @@ background-color: rgba(255,255,255,0.1);
     color: #fff;
     padding: 15px 25px;
     border-left: 1px solid #0492E5;
+    cursor: pointer;
   }
 
   .branchList .BLactive {
