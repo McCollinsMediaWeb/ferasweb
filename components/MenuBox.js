@@ -8,7 +8,7 @@ import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 import axios from "axios";
 const MenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
-  const [selectedName, setSelectedName] = useState("Manakeesh");
+  const [selectedName, setSelectedName] = useState("Main Course");
   const [menu, setMenu] = useState();
   var settings = {
     slidesToShow: 5,
@@ -97,18 +97,21 @@ const MenuBox = (props) => {
           >
             <Slider {...settings}>
               {menu &&
-                menu.map((item) => (
-                  <div className="MenuSliderItem">
-                    <div
-                      className={`MenuLinkItem ${
-                        selectedName === item.catName && "active"
-                      }`}
-                      onClick={() => setSelectedName(item.catName)}
-                    >
-                      {item.catName}
+                menu
+                  .slice()
+                  .reverse()
+                  .map((item) => (
+                    <div className="MenuSliderItem">
+                      <div
+                        className={`MenuLinkItem ${
+                          selectedName === item.catName && "active"
+                        }`}
+                        onClick={() => setSelectedName(item.catName)}
+                      >
+                        {item.catName}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
             </Slider>
           </motion.div>
         </div>
@@ -122,7 +125,11 @@ const MenuBox = (props) => {
                   <>
                     {i.prd.map((p) => (
                       <div className="col-md-3">
-                        <ProductGid imageurl={p.img} productname={p.name} />
+                        <ProductGid
+                          imageurl={p.img}
+                          productname={p.name}
+                          price={p.price}
+                        />
                       </div>
                     ))}
                   </>
