@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
 import ProductGid from "./ProductGrid";
+import axios from "axios";
 const HomeBestSeller = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const [menu, setMenu] = useState();
   var settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -39,6 +41,15 @@ const HomeBestSeller = (props) => {
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
   };
+
+  useEffect(() => {
+    axios
+      .get("https://feras-backend.vercel.app/api/bestselling")
+      .then((res) => {
+        setMenu(res.data.data[0].prd);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <div className={`sectionBox pd-common ${!props.lp ? "bg1" : "bgLP"}`}>
       <div className="container">
@@ -65,54 +76,18 @@ const HomeBestSeller = (props) => {
         <div className="ProductGridWrap">
           <div className="ProductGrids">
             <div className="row">
-              <div className="col-md-3">
+              {menu &&
+                menu.map((item) => (
+                  <div className="col-md-3">
+                    <ProductGid imageurl={item.img} productname={item.name} />
+                  </div>
+                ))}
+              {/* <div className="col-md-3">
                 <ProductGid
                   imageurl="/products/menu5.jpg"
                   productname="Jordanian Mansaf "
                 />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu6.jpg"
-                  productname="Palestinian Musakhan Rolls "
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu8.jpg"
-                  productname="Chicken Liver"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/products/menu9.jpg"
-                  productname="Qedreh"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/dishes/manakeesh/Manakeesh - Cheese _ Zaatar.jpg"
-                  productname="Cheese Zaatar"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/dishes/kaak/Kaak - Cheese Kaak.jpg"
-                  productname="Kaak - Cheese Kaak"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  productname="Crispy Chicken Fillet"
-                  imageurl="/dishes/burger/Burger - Crispy Chicken Fillet.jpg"
-                />
-              </div>
-              <div className="col-md-3">
-                <ProductGid
-                  imageurl="/dishes/breakfast/Breakfast _ Dinner - Healthy Breakfast.jpg"
-                  productname="Healthy Breakfast"
-                />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="ExpBtn">
