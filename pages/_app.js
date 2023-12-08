@@ -61,11 +61,19 @@ function Loading() {
               className=""
             />
           ) : (
+            // <Image
+            //   src="/footerlogo1.jpg"
+            //   layout="responsive"
+            //   height={"268"}
+            //   width={"272"}
+            //   priority={true}
+            //   className=""
+            // />
             <Image
-              src="/footerlogo1.jpg"
+              src="/icons/ferassweet.png"
               layout="responsive"
-              height={"268"}
-              width={"272"}
+              height={"240"}
+              width={"240"}
               priority={true}
               className=""
             />

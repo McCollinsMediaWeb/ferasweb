@@ -117,6 +117,7 @@ header{
     height: 60px;
     color: #1c2b60;
     position: relative;
+    font-weight: 600;
 }
 .HeaderItem a.link1.active::after ,
 .HeaderItem a.link1:hover::after{

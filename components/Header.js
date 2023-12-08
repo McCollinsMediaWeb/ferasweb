@@ -84,8 +84,16 @@ const Header = () => {
                       className=""
                     />
                   ) : (
+                    // <Image
+                    //   src="/logo3.png"
+                    //   layout="responsive"
+                    //   height={"240"}
+                    //   width={"240"}
+                    //   priority={true}
+                    //   className=""
+                    // />
                     <Image
-                      src="/logo3.png"
+                      src="/icons/ferassweet.png"
                       layout="responsive"
                       height={"240"}
                       width={"240"}
@@ -154,6 +162,13 @@ const Header = () => {
           style={{ display: isDesktop ? "none" : "block" }}
         >
           <div className="MobileHeaderFlex">
+            <div className="MobileLang">
+              <div className="font-arabic color-fff">
+                <Link href={"/"} className="">
+                  عربي
+                </Link>
+              </div>
+            </div>
             <div className="MobileLogoBox">
               <Link href={"/"} className="">
                 <Image
@@ -165,13 +180,6 @@ const Header = () => {
                   className=""
                 />
               </Link>
-            </div>
-            <div className="MobileLang">
-              <div className="font-arabic color-fff">
-                <Link href={"/"} className="">
-                  عربي
-                </Link>
-              </div>
             </div>
             <div className="MobileMenuLink">
               <div className="HamberMenu" onClick={() => setOpen(true)}>

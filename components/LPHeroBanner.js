@@ -76,7 +76,7 @@ const LPHeroBanner = () => {
                       >
                         <img
                           src="/icons/ferassweet.png"
-                          width={isDesktop ? "150px" : "100px"}
+                          width={isDesktop ? "200px" : "100px"}
                         />
                       </motion.div>
                     </div>
@@ -109,7 +109,7 @@ const LPHeroBanner = () => {
                       >
                         <img
                           src="/icons/FerasRes.png"
-                          width={isDesktop ? "150px" : "100px"}
+                          width={isDesktop ? "200px" : "100px"}
                         />
                       </motion.div>
                     </div>
