@@ -19,7 +19,7 @@ export default function catering() {
           MobileBanner="/heromobile2.jpg"
           Title="CATERING SERVICES"
           MenuName=""
-          MenuLink=""
+          MenuLink="/restaurantmenu"
         />
         <HomeMenuListing bg={true} />
         <HomeBestSeller />

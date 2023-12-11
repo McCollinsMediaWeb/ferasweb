@@ -19,7 +19,7 @@ export default function ourmenu() {
           MobileBanner="/heromobile3.jpg"
           Title="Restaurant MENU"
           MenuName=""
-          MenuLink="/restaurantmenu"
+          MenuLink="/restaurantmenu/#menu"
           Desc="Engage your senses in a culinary symphony, where every dish is a harmonious blend of flavors, aromas, and textures."
         />
         <MenuBox Title="Restaurant MENU" />

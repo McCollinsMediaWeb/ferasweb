@@ -80,11 +80,7 @@ const CoomonHeader = (props) => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
-                    <div className="HbT2">
-                      {props.Desc
-                        ? props.Desc
-                        : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"}
-                    </div>
+                    <div className="HbT2">{props.Desc ? props.Desc : ""}</div>
                   </motion.div>
                   <motion.div
                     initial={{ y: 60 }}
@@ -93,14 +89,16 @@ const CoomonHeader = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="BannerBtns">
-                      <Link
-                        href={
-                          props.MenuLink ? props.MenuLink : "/restaurantmenu"
-                        }
-                        className="BannerBtn"
-                      >
-                        View Menus
-                      </Link>
+                      {props.MenuLink && (
+                        <Link
+                          href={
+                            props.MenuLink ? props.MenuLink : "/restaurantmenu"
+                          }
+                          className="BannerBtn"
+                        >
+                          View Menus
+                        </Link>
+                      )}
                     </div>
                   </motion.div>
                 </div>
