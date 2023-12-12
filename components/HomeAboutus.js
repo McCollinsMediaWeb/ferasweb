@@ -42,10 +42,10 @@ const HomeAboutUs = (props) => {
                   transition={{ delay: 0.3, type: "spring" }}
                 >
                   <Image
-                    src="/about1.jpg"
-                    layout="responsive"
+                    src="/abt2.jpg"
                     height={"515"}
                     width={"395"}
+                    style={{ objectFit: "cover" }}
                     priority={true}
                     className=""
                   />
