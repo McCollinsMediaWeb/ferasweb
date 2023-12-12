@@ -13,8 +13,7 @@ const LandingPage = () => {
       {/* <HomeAboutUs lp={true} />
       <HomeBestSeller lp={true} />
       <HomeBanner />
-      <CustomerReviews />
-      <InstagramBox /> */}
+      <CustomerReviews />*/}
     </>
   );
 };

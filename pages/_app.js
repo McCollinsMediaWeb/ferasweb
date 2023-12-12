@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import InstagramBox from "@/components/InstagramBox";
 function Loading() {
   const router = useRouter();
 
@@ -79,6 +80,9 @@ function Loading() {
             />
           )}
           <div className="LoadingT1">Loading</div>
+        </div>
+        <div style={{ display: "none" }}>
+          <InstagramBox />
         </div>
       </div>
     )
