@@ -26,14 +26,14 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            <div
+            {/* <div
               className="HeaderItem font-arabic"
               style={{ visibility: "hidden" }}
             >
               <Link href={"/contactus"} className="link1">
                 عربي
               </Link>
-            </div>
+            </div> */}
             <div className="HeaderItem">
               <Link
                 href={"/"}
@@ -145,11 +145,11 @@ const Header = () => {
                 Contact Us
               </Link>
             </div>
-            <div className="HeaderItem font-arabic">
+            {/* <div className="HeaderItem font-arabic">
               <Link href={"/contactus"} className="link1">
                 عربي
               </Link>
-            </div>
+            </div> */}
             <div className="MenuClick" onClick={() => setOpen(true)}>
               <div className="menu1">&nbsp;</div>
             </div>
