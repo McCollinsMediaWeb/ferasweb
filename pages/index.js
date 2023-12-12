@@ -14,6 +14,9 @@ const LandingPage = () => {
       <HomeBestSeller lp={true} />
       <HomeBanner />
       <CustomerReviews />*/}
+      <div style={{ display: "none" }}>
+        <InstagramBox />
+      </div>
     </>
   );
 };
