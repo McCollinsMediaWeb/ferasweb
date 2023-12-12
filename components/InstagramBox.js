@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Slider from "react-slick";
 
-const InstagramBox = () => {
+const InstagramBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 4,
@@ -57,9 +57,11 @@ const InstagramBox = () => {
         transition={{ delay: 0.3, type: "spring" }}
       >
         <div className="container">
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-md-4">
-              <div className="CrT1 InstaIcon">#connectFerasSweets </div>
+              <div className="CrT1 InstaIcon">
+                {props.restInsta ? "#feras.restaurant" : "#connectFerasSweets"}
+              </div>
             </div>
             <div className="col-md-8">
               <div className="CrT2">
@@ -69,9 +71,34 @@ const InstagramBox = () => {
               </div>
             </div>
           </div>
+          {props.restInsta ? (
+            <>
+              <script
+                src="https://static.elfsight.com/platform/platform.js"
+                data-use-service-core
+                defer
+              ></script>
+              <div
+                class="elfsight-app-45584872-9357-42ed-94cb-8042ea5d4e01"
+                data-elfsight-app-lazy
+              ></div>
+            </>
+          ) : (
+            <>
+              <script
+                src="https://static.elfsight.com/platform/platform.js"
+                data-use-service-core
+                defer
+              ></script>
+              <div
+                className="elfsight-app-5c0c2265-3bba-47f0-87b1-4357178e7c29"
+                data-elfsight-app-lazy
+              ></div>
+            </>
+          )}
         </div>
       </motion.div>
-      <div className="ReviewSlider">
+      {/* <div className="ReviewSlider">
         <div className="container">
           <motion.div
             className="SliderWrt1"
@@ -162,7 +189,7 @@ const InstagramBox = () => {
             </Slider>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

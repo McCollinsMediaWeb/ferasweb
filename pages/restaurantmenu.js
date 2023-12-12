@@ -28,7 +28,7 @@ export default function ourmenu() {
           MobileBanner="/bannermobile2.jpg"
         />
         <CustomerReviews />
-        <InstagramBox />
+        <InstagramBox restInsta={true} />
       </div>
     </>
   );

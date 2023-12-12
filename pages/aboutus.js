@@ -14,8 +14,8 @@ export default function aboutus() {
     <>
       <div>
         <CoomonHeader
-          desktopBanner="/herodesk4.jpg"
-          MobileBanner="/heromobile4.jpg"
+          desktopBanner="/herodesk4.png"
+          MobileBanner="/herodesk4.png"
           Title="ABOUT FERAS"
           MenuName=""
           MenuLink=""

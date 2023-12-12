@@ -23,7 +23,7 @@ export default function catering() {
         />
         <HomeMenuListing bg={true} />
         <HomeBestSeller />
-        <InstagramBox />
+        <InstagramBox restInsta={true} />
       </div>
     </>
   );

@@ -32,7 +32,7 @@ const HomeAboutUs = (props) => {
     <div className={`sectionBox pd-common ${!props.lp && "bg1"} abtBoxHome`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4" style={{ alignSelf: "center" }}>
             {isDesktop && (
               <div>
                 <motion.div
@@ -62,7 +62,7 @@ const HomeAboutUs = (props) => {
                   variants={container}
                   viewport={{ once: true }}
                 >
-                  <AnimatedHeaderText text="Our journey begins…" />
+                  <AnimatedHeaderText text="We Are Feras Hanoun Sweets..." />
                 </motion.div>
               </div>
               <motion.div
@@ -72,12 +72,19 @@ const HomeAboutUs = (props) => {
                 transition={{ delay: 0.3, type: "spring" }}
               >
                 <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                  Earlier in 1993, a traditional Palestinian sweets shop opened
-                  in Dubai with the vision of offering homemade quality sweets
-                  to the neighboring surrounding. Fast forward to 20 years
-                  later, Feras Sweets is now one of the leading and innovating
-                  Arabic Oriental Sweet companies keeping its traditional
-                  identity with professional operations.
+                  We are a manufacturer of Arabic Sweets specialized with
+                  different origin and Kinds to Commitment of finest quality,
+                  the vast variety of sweets and world famous foods starting
+                  from eastern, we also specialized for service of catering in
+                  general, special and seasonal occasions.
+                  <br />
+                  <br /> We have big network of branches with Point Of Sales
+                  system all over the United Arab Emirates.
+                  <br />
+                  <br />
+                  We keep upgrading the level of our products with a view to
+                  achieve the full satisfaction of customers, and our products
+                  undergo continuous improvement.
                 </div>
               </motion.div>
               {isDesktop && (
@@ -89,7 +96,7 @@ const HomeAboutUs = (props) => {
                       variants={container}
                       viewport={{ once: true }}
                     >
-                      <AnimatedHeaderText text="with a taste…" />
+                      <AnimatedHeaderText text="OUR STORY…" />
                     </motion.div>
                   </div>
                   <motion.div
@@ -99,20 +106,21 @@ const HomeAboutUs = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      Feras Sweets uses only the highest quality ingredients. We
-                      don’t use chemicals or add preservatives to our products,
-                      as we believe fresh products have the best taste! Our team
-                      continuously supervises the quality, which helps keep our
-                      products to the highest standards.
+                      Feras Hanoun Sweets started its operation with its first
+                      branch in Sharjah City UAE, after keen observation of non
+                      availability of genuine Kunafa Nabulsi under the
+                      Supervision of Mr. Mohammed Hanoon and Mr. Khalid Hanoon.
                     </div>
                     <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      Our employees are highly competent and they are our brand
-                      ambassadors! We hire only people who are proud and
-                      motivated to deliver the finest products.
+                      This kind of Kunafah is prepared pursuant to traditional
+                      customs existing since hundred of years, with the use of
+                      special materials and well-weighed proportions in order to
+                      give the exact taste and flavor of Kunafah.
                     </div>
                     <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      - A variety of products to cater for the needs of
-                      everybody and enhance the general taste.
+                      We maintained and used this recipe over the years to reach
+                      the lovers of this dish at their different races and
+                      cultures.
                     </div>
                   </motion.div>
                 </div>
