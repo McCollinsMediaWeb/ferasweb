@@ -162,20 +162,28 @@ const Header = () => {
                 عربي
               </Link>
             </div> */}
-            <div
-              className="HeaderItem font-arabic"
-              style={{ cursor: "pointer" }}
-            >
-              {locale === "en" ? (
+
+            {locale === "en" ? (
+              <div
+                className="HeaderItem font-arabic"
+                style={{ cursor: "pointer" }}
+              >
                 <div onClick={handleClick("ar")} className="link1">
                   عربي&nbsp;&nbsp;&nbsp;
                 </div>
-              ) : (
-                <div onClick={handleClick("en")} className="link1">
-                  English&nbsp;&nbsp;&nbsp;
+              </div>
+            ) : (
+              <>
+                <div
+                  className="HeaderItem English-Icon"
+                  style={{ cursor: "pointer" }}
+                >
+                  <div onClick={handleClick("en")} className="link1">
+                    &nbsp;&nbsp;&nbsp;English
+                  </div>
                 </div>
-              )}
-            </div>
+              </>
+            )}
             <div className="MenuClick" onClick={() => setOpen(true)}>
               <div className="menu1">&nbsp;</div>
             </div>
@@ -194,20 +202,27 @@ const Header = () => {
                   عربي
                 </Link>
               </div> */}
-              <div
-                className="HeaderItem font-arabic"
-                style={{ cursor: "pointer" }}
-              >
-                {locale === "en" ? (
+              {locale === "en" ? (
+                <div
+                  className="HeaderItem font-arabic"
+                  style={{ cursor: "pointer" }}
+                >
                   <div onClick={handleClick("ar")} className="link1">
                     عربي&nbsp;&nbsp;&nbsp;
                   </div>
-                ) : (
-                  <div onClick={handleClick("en")} className="link1">
-                    English&nbsp;&nbsp;&nbsp;
+                </div>
+              ) : (
+                <>
+                  <div
+                    className="HeaderItem English-Icon"
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div onClick={handleClick("en")} className="link1">
+                      &nbsp;&nbsp;&nbsp;English
+                    </div>
                   </div>
-                )}
-              </div>
+                </>
+              )}
             </div>
             <div className="MobileLogoBox">
               <Link href={"/"} className="">
