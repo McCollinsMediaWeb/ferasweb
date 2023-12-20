@@ -26,13 +26,13 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            {/* <div
-              className="HeaderItem font-arabic"
+            <div
+              className="HeaderItem English-Icon"
             >
               <Link href={"/contactus"} className="link1">
-                عربي
+                English
               </Link>
-            </div> */}
+            </div>
             <div className="HeaderItem">
               <Link
                 href={"/"}
