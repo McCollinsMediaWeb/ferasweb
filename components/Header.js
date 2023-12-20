@@ -32,7 +32,7 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            <div
+            {/* <div
               className="HeaderItem font-arabic"
               style={{ cursor: "pointer" }}
             >
@@ -45,7 +45,7 @@ const Header = () => {
                   English&nbsp;&nbsp;&nbsp;
                 </div>
               )}
-            </div>
+            </div> */}
             <div className="HeaderItem">
               <Link
                 href={"/"}
@@ -162,6 +162,20 @@ const Header = () => {
                 عربي
               </Link>
             </div> */}
+            <div
+              className="HeaderItem font-arabic"
+              style={{ cursor: "pointer" }}
+            >
+              {locale === "en" ? (
+                <div onClick={handleClick("ar")} className="link1">
+                  عربي&nbsp;&nbsp;&nbsp;
+                </div>
+              ) : (
+                <div onClick={handleClick("en")} className="link1">
+                  English&nbsp;&nbsp;&nbsp;
+                </div>
+              )}
+            </div>
             <div className="MenuClick" onClick={() => setOpen(true)}>
               <div className="menu1">&nbsp;</div>
             </div>
@@ -175,10 +189,24 @@ const Header = () => {
         >
           <div className="MobileHeaderFlex">
             <div className="MobileLang">
-              <div className="font-arabic color-fff">
+              {/* <div className="font-arabic color-fff">
                 <Link href={"/"} className="">
                   عربي
                 </Link>
+              </div> */}
+              <div
+                className="HeaderItem font-arabic"
+                style={{ cursor: "pointer" }}
+              >
+                {locale === "en" ? (
+                  <div onClick={handleClick("ar")} className="link1">
+                    عربي&nbsp;&nbsp;&nbsp;
+                  </div>
+                ) : (
+                  <div onClick={handleClick("en")} className="link1">
+                    English&nbsp;&nbsp;&nbsp;
+                  </div>
+                )}
               </div>
             </div>
             <div className="MobileLogoBox">

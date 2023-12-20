@@ -56,6 +56,21 @@ a:hover{
   top: 50%;
   margin-top: -5px;
 }
+.English-Icon{
+  padding-left: 25px;
+  position: relative;
+}
+.English-Icon::before{
+  content: "";
+  width: 21px;
+  height: 13px;
+  background-size: 100% 100%;
+  background-image: url(../public/menu1.png);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  margin-top: -6px;
+}
 header{
     position: relative;
     z-index: 9;
@@ -113,7 +128,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 125px;
+    min-width: 120px;
     height: 60px;
     color: #1c2b60;
     position: relative;
