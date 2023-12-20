@@ -5,7 +5,9 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
+import { useTranslation } from "next-i18next";
 const LPHeroBanner = () => {
+  const { t: translate } = useTranslation("home");
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 1,
@@ -93,7 +95,7 @@ const LPHeroBanner = () => {
                           className={`BannerBtn`}
                           style={{ minWidth: !isDesktop && "fit-content" }}
                         >
-                          View Menus
+                          {translate("button")}
                         </Link>
                       </div>
                     </motion.div>

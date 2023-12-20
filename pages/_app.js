@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 function Loading() {
   const router = useRouter();
 
@@ -84,7 +85,7 @@ function Loading() {
     )
   );
 }
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 100;
@@ -188,3 +189,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default appWithTranslation(App);
