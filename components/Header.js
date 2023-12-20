@@ -8,8 +8,14 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 const Header = () => {
   const { height, width } = useWindowDimensions();
   const router = useRouter();
+  const { locale, locales, push } = useRouter();
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [open, setOpen] = useState(false);
+
+  const handleClick = (l) => () => {
+    console.log("Switching to locale:", l);
+    push("/", undefined, { locale: l });
+  };
   useEffect(() => {
     if (open) {
       document.body.classList.add("PanelActivated");
@@ -26,14 +32,20 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            {/* <div
+            <div
               className="HeaderItem font-arabic"
-              style={{ visibility: "hidden" }}
+              style={{ cursor: "pointer" }}
             >
-              <Link href={"/contactus"} className="link1">
-                عربي
-              </Link>
-            </div> */}
+              {locale === "en" ? (
+                <div onClick={handleClick("ar")} className="link1">
+                  عربي&nbsp;&nbsp;&nbsp;
+                </div>
+              ) : (
+                <div onClick={handleClick("en")} className="link1">
+                  English&nbsp;&nbsp;&nbsp;
+                </div>
+              )}
+            </div>
             <div className="HeaderItem">
               <Link
                 href={"/"}

@@ -21,7 +21,8 @@ function Loading() {
   // }, []);
 
   useEffect(() => {
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleStart = (url) =>
+      url !== router.asPath && setLoading(!url.includes("/ar"));
     const handleComplete = (url) =>
       url === router.asPath &&
       setTimeout(() => {

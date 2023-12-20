@@ -6,18 +6,12 @@ import InstagramBox from "@/components/InstagramBox";
 import LPHeroBanner from "@/components/LPHeroBanner";
 import React from "react";
 
-import { useRouter } from "next/router";
-
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
-const LandingPage = () => {
-  const { locale, locales, push } = useRouter();
-  const { t: translate } = useTranslation("home");
 
+const LandingPage = () => {
   return (
     <>
       <LPHeroBanner />
-      <h1>Locale: {locale}</h1>
       {/* <HomeAboutUs lp={true} />
       <HomeBestSeller lp={true} />
       <HomeBanner />

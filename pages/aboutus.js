@@ -2,7 +2,12 @@ import CoomonHeader from "@/components/CommonHeader";
 import HomeAboutUs from "@/components/HomeAboutus";
 import CustomerReviews from "@/components/CustomerReviews";
 import InstagramBox from "@/components/InstagramBox";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
+
 export default function aboutus() {
+  const { t: translate } = useTranslation("about");
   const container = {
     visible: {
       transition: {
@@ -16,7 +21,7 @@ export default function aboutus() {
         <CoomonHeader
           desktopBanner="/herodesk4.png"
           MobileBanner="/herodesk4.png"
-          Title="ABOUT FERAS"
+          Title={translate("banner_title")}
           MenuName=""
           MenuLink=""
           Desc="Indulge in a symphony of sweetness with Feras Sweets, where every bite tells a delicious story"
@@ -27,4 +32,13 @@ export default function aboutus() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["about"])),
+      // Will be passed to the page component as props
+    },
+  };
 }
