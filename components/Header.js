@@ -169,7 +169,7 @@ const Header = () => {
                 style={{ cursor: "pointer" }}
               >
                 <div onClick={handleClick("ar")} className="link1">
-                  عربي&nbsp;&nbsp;&nbsp;
+                  عربي
                 </div>
               </div>
             ) : (
@@ -179,7 +179,7 @@ const Header = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <div onClick={handleClick("en")} className="link1">
-                    &nbsp;&nbsp;&nbsp;English
+                   English
                   </div>
                 </div>
               </>
