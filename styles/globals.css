@@ -1631,6 +1631,49 @@ background-color: rgba(255,255,255,0.1);
 }
 
 
+  .cateringCall {
+    padding: 100px;
+    text-align: center;
+    background-image: url("/bg3.png");
+    background-repeat: repeat;
+  }
+
+  .cateringCall button {
+    background: transparent;
+    border: 1px solid #bf9b5f;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px 30px;
+    color: #003554;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .locBtn {
+    text-align: center;
+  }
+
+  .locBtn button {
+    background: #003554;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border: 1px solid #AA6F38;
+    cursor: pointer;
+  }
+
+  .locBtn button.active {
+    background: #AA6F38;
+    
+  }
+
 
   @media only screen and (max-width: 960px) {
     .branchList {
@@ -1666,5 +1709,11 @@ background-color: rgba(255,255,255,0.1);
   .imgprdH {
     height: 300px !important;
   }
+  
+  .cateringCall {
+    
+    padding: 100px 20px;
   }
+  }
+
 

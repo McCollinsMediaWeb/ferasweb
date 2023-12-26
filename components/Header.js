@@ -32,20 +32,29 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            {/* <div
-              className="HeaderItem font-arabic"
-              style={{ cursor: "pointer" }}
-            >
+            <div style={{ visibility: "hidden" }}>
               {locale === "en" ? (
-                <div onClick={handleClick("ar")} className="link1">
-                  عربي&nbsp;&nbsp;&nbsp;
+                <div
+                  className="HeaderItem font-arabic"
+                  style={{ cursor: "pointer" }}
+                >
+                  <div onClick={handleClick("ar")} className="link1">
+                    عربي&nbsp;&nbsp;&nbsp;
+                  </div>
                 </div>
               ) : (
-                <div onClick={handleClick("en")} className="link1">
-                  English&nbsp;&nbsp;&nbsp;
-                </div>
+                <>
+                  <div
+                    className="HeaderItem English-Icon"
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div onClick={handleClick("en")} className="link1">
+                      &nbsp;&nbsp;&nbsp;English
+                    </div>
+                  </div>
+                </>
               )}
-            </div> */}
+            </div>
             <div className="HeaderItem">
               <Link
                 href={"/"}
@@ -169,7 +178,7 @@ const Header = () => {
                 style={{ cursor: "pointer" }}
               >
                 <div onClick={handleClick("ar")} className="link1">
-                  عربي
+                  عربي&nbsp;&nbsp;
                 </div>
               </div>
             ) : (
@@ -179,7 +188,7 @@ const Header = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <div onClick={handleClick("en")} className="link1">
-                   English
+                    &nbsp;&nbsp;English
                   </div>
                 </div>
               </>
@@ -208,7 +217,7 @@ const Header = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <div onClick={handleClick("ar")} className="link1">
-                    عربي&nbsp;&nbsp;&nbsp;
+                    عربي&nbsp;&nbsp;
                   </div>
                 </div>
               ) : (
@@ -218,7 +227,7 @@ const Header = () => {
                     style={{ cursor: "pointer" }}
                   >
                     <div onClick={handleClick("en")} className="link1">
-                      &nbsp;&nbsp;&nbsp;English
+                      &nbsp;&nbsp;English
                     </div>
                   </div>
                 </>

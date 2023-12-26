@@ -4,15 +4,23 @@ import axios from "axios";
 
 const BranchBox = () => {
   const [data, setData] = useState();
+  const [data2, setData2] = useState();
+  const [data3, setData3] = useState();
   const [selectedState, setSelectedState] = useState("Dubai");
   const [selectedData, setSelectedData] = useState();
+  const [selectedType, setSelectedType] = useState("sweet");
 
   useEffect(() => {
     axios
       .get("https://feras-backend.vercel.app/api/location")
       .then(function (response) {
-        // handle success
+        setData3(response.data.data);
+      });
+    axios
+      .get("https://feras-backend.vercel.app/api/sweetlocation")
+      .then(function (response) {
         setData(response.data.data);
+        setData2(response.data.data);
         setSelectedData(
           response.data.data.filter((item) => item.catName === selectedState)[0]
         );
@@ -22,6 +30,18 @@ const BranchBox = () => {
   useEffect(() => {
     setSelectedData(data?.filter((item) => item.catName === selectedState)[0]);
   }, [selectedState]);
+
+  const sweetFun = () => {
+    setSelectedData(data2?.filter((item) => item.catName === selectedState)[0]);
+    setData(data2);
+    setSelectedType("sweet");
+  };
+
+  const restFun = () => {
+    setSelectedData(data3?.filter((item) => item.catName === selectedState)[0]);
+    setData(data3);
+    setSelectedType("resto");
+  };
 
   return (
     <>
@@ -35,12 +55,27 @@ const BranchBox = () => {
               transition={{ delay: 0.3, type: "spring" }}
             >
               <div className="HdrT1 text-center color-fff">Our Branches</div>
+
               <div className="HdrT2 text-center color-fff">
                 Feras Sweets uses only the highest quality ingredients. Our team
                 continuously supervises the quality, which helps keep our
                 products to the highest standards
               </div>
             </motion.div>
+            <div className="locBtn">
+              <button
+                onClick={sweetFun}
+                className={selectedType == "sweet" ? "active" : null}
+              >
+                Sweet Location
+              </button>
+              <button
+                onClick={restFun}
+                className={selectedType != "sweet" ? "active" : null}
+              >
+                Restaurant Location
+              </button>
+            </div>
           </div>
           <div className="row">
             <div className="col-md-2">

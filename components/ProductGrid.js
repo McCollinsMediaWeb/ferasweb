@@ -74,11 +74,11 @@ const ProductGid = (props) => {
       <div className="ProductGridBottom">
         <div className="row align-items-center">
           <div className="col-md-8">{props.productname}</div>
-          <div className="col-md-4 text-right">
-            {props.price && (
-              <span className="PriceBox1">AED {props.price}</span>
-            )}
-          </div>
+          {/* <div className="col-md-4 text-right">
+              {props.price && (
+                <span className="PriceBox1">AED {props.price}</span>
+              )}
+            </div> */}
         </div>
       </div>
     </div>

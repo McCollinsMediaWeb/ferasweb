@@ -40,8 +40,7 @@ const MenuBanner = (props) => {
   };
   return (
     <div className="HomeBannerBox position-relative overlayr1">
-      
-        {isDesktop && (
+      {isDesktop && (
         <Image
           src={props.DesktopBanner}
           layout="responsive"
@@ -50,8 +49,8 @@ const MenuBanner = (props) => {
           priority={true}
           className=""
         />
-        )}
-        {!isDesktop && (
+      )}
+      {!isDesktop && (
         <Image
           src={props.MobileBanner}
           layout="responsive"
@@ -60,16 +59,17 @@ const MenuBanner = (props) => {
           priority={true}
           className=""
         />
-        )}
+      )}
       <div className="HomeBannerContent">
         <div className="container">
-       
-            <div className="HbCt1">Discount</div>
-            <div className="HbCt2">50% OFF</div>
-            <div className="HbCt1">Upto 24hrs</div>
-            <Link href={"/"} className="HbCLink">
-              Explore More
-            </Link>
+          <div className="HbCt1" style={{ fontWeight: "500" }}>
+            {props.title}
+          </div>
+          <div className="HbCt2"></div>
+          <div className="HbCt1"></div>
+          {/* <Link href={"/"} className="HbCLink">
+            Explore More
+          </Link> */}
         </div>
       </div>
     </div>

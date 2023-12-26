@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -40,6 +41,7 @@ const ContactForm = () => {
         setFormData({
           name: "",
           email: "",
+          phone: "",
           message: "",
         });
         // You can add further logic here if needed
@@ -59,13 +61,23 @@ const ContactForm = () => {
             <h3>GET IN TOUCH</h3>
             <form onSubmit={handleSubmit}>
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-12">
                   <input
                     name="name"
                     type="text"
                     required
                     placeholder="Your Name"
                     value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    name="phone"
+                    type="text"
+                    required
+                    placeholder="Your Phone"
+                    value={formData.phone}
                     onChange={handleChange}
                   />
                 </div>

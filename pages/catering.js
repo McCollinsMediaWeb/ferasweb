@@ -1,3 +1,4 @@
+import CateringCall from "@/components/CateringCall";
 import CoomonHeader from "@/components/CommonHeader";
 import HomeBestSeller from "@/components/HomeBestSelling";
 import HomeMenuListing from "@/components/HomeMenuListing";
@@ -19,10 +20,11 @@ export default function catering() {
           MobileBanner="/heromobile2.jpg"
           Title="CATERING SERVICES"
           MenuName=""
-          MenuLink="/restaurantmenu"
+          MenuLink="#cateringDiv"
         />
         <HomeMenuListing bg={true} />
         <HomeBestSeller />
+        <CateringCall />
         <InstagramBox restInsta={true} />
       </div>
     </>

@@ -24,8 +24,9 @@ export default function ourmenu() {
         />
         <MenuBox Title="Restaurant MENU" />
         <MenuBanner
-          DesktopBanner="/banner2.jpg"
-          MobileBanner="/bannermobile2.jpg"
+          DesktopBanner="/JordanianMansaf.jpg"
+          MobileBanner="/JordanianMansaf.jpg"
+          title="Tawasi Menu "
         />
         <CustomerReviews />
         <InstagramBox restInsta={true} />

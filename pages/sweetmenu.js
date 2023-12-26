@@ -28,6 +28,7 @@ export default function sweetmenu() {
         <MenuBanner
           DesktopBanner="/banner3.jpg"
           MobileBanner="/bannermobile3.jpg"
+          title="Mix Baklawa"
         />
         <CustomerReviews />
         <InstagramBox />
