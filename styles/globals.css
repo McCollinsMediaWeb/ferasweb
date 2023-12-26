@@ -133,7 +133,7 @@ header{
     justify-content: center;
     min-width: 125px;
     height: 60px;
-    color: #1c2b60;
+    color: #c18f5c;
     position: relative;
     font-weight: 600;
 }
@@ -217,7 +217,7 @@ header{
   border: 2px solid transparent;
   display: inline-block;
   border-radius: 25px;
-  background-color: #1c2b60;
+  background-color: #c18f5c;
   min-width: 195px;
   font-weight: 400;
   position: relative;
@@ -1091,6 +1091,10 @@ background-color: rgba(255,255,255,0.1);
     }
     .lpBnrBtn .BannerBtn:hover {
       background-color: #1c2b60;
+    }
+
+    .ExpBtn {
+      text-align: center;
     }
   @media only screen and (max-width: 960px) {
     .overlayr1::after{

@@ -76,7 +76,7 @@ const MenuBox = (props) => {
                   variants={container}
                   viewport={{ once: false }}
                 >
-                  <AnimatedHeaderText text={props.Title} />
+                  <AnimatedHeaderText color="#c18f5c" text={props.Title} />
                 </motion.div>
               </div>
             </div>
