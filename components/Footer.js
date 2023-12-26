@@ -33,7 +33,7 @@ const Footer = () => {
                     />
                   ) : (
                     <Image
-                      src="/footerlogo1.png"
+                      src="/icons/ferassweet.png"
                       layout="responsive"
                       height={"268"}
                       width={"272"}
