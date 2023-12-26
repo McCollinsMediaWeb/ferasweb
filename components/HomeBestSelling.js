@@ -60,7 +60,10 @@ const HomeBestSeller = (props) => {
             viewport={{ once: false }}
             transition={{ delay: 0.3, type: "spring" }}
           >
-            <div className={`HdrT1 text-center ${!props.lp && "color-fff"}`}>
+            <div
+              className={`HdrT1 text-center ${!props.lp && "color-fff"}`}
+              style={{ color: "#c18f5c" }}
+            >
               Feras Best Selling
             </div>
             <div className={`HdrT2 text-center ${!props.lp && "color-fff"}`}>

@@ -3,7 +3,7 @@ import React from "react";
 const CateringCall = () => {
   return (
     <div className="cateringCall">
-      <h2>CALL US</h2>
+      <h2 style={{ color: "#c18f5c" }}>CALL US</h2>
       <div>
         <a href="tel:054 584 4844" style={{ border: "none" }}>
           <button>054 584 4844</button>

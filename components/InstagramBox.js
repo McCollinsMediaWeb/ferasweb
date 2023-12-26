@@ -59,7 +59,7 @@ const InstagramBox = (props) => {
         <div className="container">
           <div className="row mb-5">
             <div className="col-md-4">
-              <div className="CrT1 InstaIcon">
+              <div className="CrT1 InstaIcon" style={{ color: "#c18f5c" }}>
                 {props.restInsta ? "#feras.restaurant" : "#connectFerasSweets"}
               </div>
             </div>

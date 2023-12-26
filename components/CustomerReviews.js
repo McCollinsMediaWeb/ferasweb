@@ -59,7 +59,9 @@ const CustomerReviews = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="CrT1">Food Lovers feedback</div>
+              <div className="CrT1" style={{ color: "#c18f5c" }}>
+                Food Lovers feedback
+              </div>
               <div className="RevRow">
                 <div className="RevRowFlex">
                   <div className="RevRowColumn">&nbsp;</div>

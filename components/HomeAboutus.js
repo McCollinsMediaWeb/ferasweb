@@ -62,7 +62,10 @@ const HomeAboutUs = (props) => {
                   variants={container}
                   viewport={{ once: true }}
                 >
-                  <AnimatedHeaderText text="We Are Feras Hanoun Sweets..." />
+                  <AnimatedHeaderText
+                    color="#c18f5c"
+                    text="We Are Feras Hanoun Sweets..."
+                  />
                 </motion.div>
               </div>
               <motion.div
@@ -96,7 +99,7 @@ const HomeAboutUs = (props) => {
                       variants={container}
                       viewport={{ once: true }}
                     >
-                      <AnimatedHeaderText text="OUR STORY…" />
+                      <AnimatedHeaderText color="#c18f5c" text="OUR STORY…" />
                     </motion.div>
                   </div>
                   <motion.div
