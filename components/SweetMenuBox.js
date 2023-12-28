@@ -87,7 +87,7 @@ const SweetMenuBox = (props) => {
         <div className="MenuHeaderWrap">
           <div className="MenuHeaderFlex row">
             <div className="col-md-4">
-              <div className="MenuHeaderT1 color-fff">
+              <div className="MenuHeaderT1 color-gold">
                 <motion.div
                   initial="hidden"
                   whileInView={"visible"}
@@ -99,7 +99,7 @@ const SweetMenuBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="MenuHeaderT2 color-fff">
+              <div className="MenuHeaderT2 color-gold">
                 Our menu spans timeless classics and innovative creations,
                 ensuring there's a sweet surprise for every palate
               </div>

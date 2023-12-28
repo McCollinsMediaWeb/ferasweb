@@ -54,9 +54,9 @@ const BranchBox = () => {
               viewport={{ once: false }}
               transition={{ delay: 0.3, type: "spring" }}
             >
-              <div className="HdrT1 text-center color-fff">Our Branches</div>
+              <div className="HdrT1 text-center color-gold">Our Branches</div>
 
-              <div className="HdrT2 text-center color-fff">
+              <div className="HdrT2 text-center color-gold">
                 Feras Sweets uses only the highest quality ingredients. Our team
                 continuously supervises the quality, which helps keep our
                 products to the highest standards
@@ -67,13 +67,13 @@ const BranchBox = () => {
                 onClick={sweetFun}
                 className={selectedType == "sweet" ? "active" : null}
               >
-                Sweet Location
+                Feras Sweets Location
               </button>
               <button
                 onClick={restFun}
                 className={selectedType != "sweet" ? "active" : null}
               >
-                Restaurant Location
+                Restaurants Location
               </button>
             </div>
           </div>

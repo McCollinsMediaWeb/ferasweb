@@ -141,7 +141,7 @@ const Header = () => {
                   Restaurant Menu
                 </Link>
                 <Link href={"/sweetmenu"} className="link1">
-                  Sweet Menu
+                  Sweets Menu
                 </Link>
               </div>
             </div>

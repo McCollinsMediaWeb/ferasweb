@@ -96,7 +96,7 @@ const CoomonHeader = (props) => {
                           }
                           className="BannerBtn"
                         >
-                          View Menus
+                          View Menu
                         </Link>
                       )}
                     </div>

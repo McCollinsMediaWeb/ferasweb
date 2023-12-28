@@ -81,7 +81,7 @@ const MenuBox = (props) => {
               </div>
             </div>
             <div className="col-md-7">
-              <div className="MenuHeaderT2 color-fff">
+              <div className="MenuHeaderT2" style={{ color: "#c18f5c" }}>
                 Taste the difference that passion makes with our menu, where
                 each dish is a reflection of our commitment to exceptional
                 dining.

@@ -128,7 +128,7 @@ const LPHeroBanner = () => {
                           className="BannerBtn"
                           style={{ minWidth: !isDesktop && "fit-content" }}
                         >
-                          View Menus
+                          View Menu
                         </Link>
                       </div>
                     </motion.div>

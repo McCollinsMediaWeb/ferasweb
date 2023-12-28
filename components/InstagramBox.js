@@ -64,7 +64,7 @@ const InstagramBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2">
+              <div className="CrT2 color-gold">
                 Discover the daily extravaganza of deliciousness! Follow our
                 Instagram page for a delectable journey through the irresistible
                 flavors served from the highest quality ingredients.

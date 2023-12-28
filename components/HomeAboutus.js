@@ -74,32 +74,30 @@ const HomeAboutUs = (props) => {
                 viewport={{ once: false }}
                 transition={{ delay: 0.3, type: "spring" }}
               >
-                <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                  We are a manufacturer of Arabic Sweets specialized with
-                  different origin and Kinds to Commitment of finest quality,
-                  the vast variety of sweets and world famous foods starting
-                  from eastern, we also specialized for service of catering in
-                  general, special and seasonal occasions.
-                  <br />
-                  <br /> We have big network of branches with Point Of Sales
-                  system all over the United Arab Emirates.
+                <div className={`ft2 ${!props.lp && "color-gold"}`}>
+                  Feras Hanoun Sweets is well known for making the world’s best
+                  Kunafa Nabulsiya. The Kunafa Nabulsiya is an Arabic Sweet
+                  which was originated in Nablus, a famous city in Palestine.
+                  Feras Hanoun Sweets is honored to introduce this product to
+                  the U.A.E. since 1984.
                   <br />
                   <br />
-                  We keep upgrading the level of our products with a view to
-                  achieve the full satisfaction of customers, and our products
-                  undergo continuous improvement.
+                  With the progressively increasing number of outlets in the
+                  country, Feras Hanoun Sweets is presently serving a vast scope
+                  of mainstream Arabic desserts, pastries, and fast foods to the
+                  people of the U.A.E.
                 </div>
               </motion.div>
               {isDesktop && (
                 <div>
-                  <div className={`ft1 ${!props.lp && "color-fff"} TxtBx2`}>
+                  <div className={`ft1 ${!props.lp && "color-gold"} TxtBx2`}>
                     <motion.div
                       initial="hidden"
                       whileInView={"visible"}
                       variants={container}
                       viewport={{ once: true }}
                     >
-                      <AnimatedHeaderText color="#c18f5c" text="OUR STORY…" />
+                      <AnimatedHeaderText color="#c18f5c" text="MISSION" />
                     </motion.div>
                   </div>
                   <motion.div
@@ -108,22 +106,35 @@ const HomeAboutUs = (props) => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
-                    <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      Feras Hanoun Sweets started its operation with its first
-                      branch in Sharjah City UAE, after keen observation of non
-                      availability of genuine Kunafa Nabulsi under the
-                      Supervision of Mr. Mohammed Hanoon and Mr. Khalid Hanoon.
+                    <div className={`ft2 ${!props.lp && "color-gold"}`}>
+                      Feras Hanoun Sweets inspires and innovates with a unique &
+                      wide range of sweets along with bakery and fast food
+                      items. This allows us to accommodate consumer wishes and
+                      expectations through high-quality products with authentic
+                      Arabic flavours, appearances and taste sensations.
                     </div>
-                    <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      This kind of Kunafah is prepared pursuant to traditional
-                      customs existing since hundred of years, with the use of
-                      special materials and well-weighed proportions in order to
-                      give the exact taste and flavor of Kunafah.
-                    </div>
-                    <div className={`ft2 ${!props.lp && "color-fff"}`}>
-                      We maintained and used this recipe over the years to reach
-                      the lovers of this dish at their different races and
-                      cultures.
+                  </motion.div>
+                  <div className={`ft1 ${!props.lp && "color-gold"} TxtBx2`}>
+                    <motion.div
+                      initial="hidden"
+                      whileInView={"visible"}
+                      variants={container}
+                      viewport={{ once: true }}
+                    >
+                      <AnimatedHeaderText color="#c18f5c" text="VISION" />
+                    </motion.div>
+                  </div>
+                  <motion.div
+                    initial={{ y: 60 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ delay: 0.3, type: "spring" }}
+                  >
+                    <div className={`ft2 ${!props.lp && "color-gold"}`}>
+                      To build a leading organization passionate about sweets
+                      with the drive to grow and develop the confectionery
+                      market in the U.A.E., through our longstanding traditional
+                      expertise, innovation and empowered talent.
                     </div>
                   </motion.div>
                 </div>

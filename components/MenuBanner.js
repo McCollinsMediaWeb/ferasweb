@@ -62,7 +62,10 @@ const MenuBanner = (props) => {
       )}
       <div className="HomeBannerContent">
         <div className="container">
-          <div className="HbCt1" style={{ fontWeight: "500" }}>
+          <div
+            className="HbCt1"
+            style={{ fontWeight: "500", marginBottom: props.mb && props.mb }}
+          >
             {props.title}
           </div>
           <div className="HbCt2"></div>

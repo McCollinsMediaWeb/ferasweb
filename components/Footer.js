@@ -88,7 +88,7 @@ const Footer = () => {
                 social media for a delectable journey through the irresistible
                 flavors served from the highest quality ingredients.
               </div>
-              {/* <div className="FtrSocialMedia">
+              <div className="FtrSocialMedia">
                 <div className="FtrSocialMediaFlex">
                   <a href="#">
                     <span className="FtrSocialIcon instagram">&nbsp;</span>
@@ -97,13 +97,19 @@ const Footer = () => {
                     <span className="FtrSocialIcon facebook">&nbsp;</span>
                   </a>
                   <a href="#">
+                    <span className="FtrSocialIcon tiktok">&nbsp;</span>
+                  </a>
+                  <a href="#">
+                    <span className="FtrSocialIcon youtube">&nbsp;</span>
+                  </a>
+                  {/* <a href="#">
                     <span className="FtrSocialIcon linkedin">&nbsp;</span>
                   </a>
                   <a href="#">
                     <span className="FtrSocialIcon twitter">&nbsp;</span>
-                  </a>
+                  </a> */}
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

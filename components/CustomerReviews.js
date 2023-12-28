@@ -73,7 +73,7 @@ const CustomerReviews = () => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2">
+              <div className="CrT2 color-gold">
                 Feras Sweets uses only the highest quality ingredients. We don’t
                 use chemicals or add preservatives to our products, as we
                 believe fresh products have the best taste! Our team

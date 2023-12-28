@@ -234,6 +234,9 @@ header{
   width: 20px;
   background-image: url(../public/rightarrow.png);
 }
+.color-gold {
+  color: #c18f5c;
+}
 .BannerBtns a:hover{
   background-color: #bf9b5f;
   border-color: #fff;
@@ -457,8 +460,8 @@ img{
     padding-bottom: 70px;
   }
   .bg1{
-    background-color: #232A59;
-    background-image: url(../public/bg1.png);
+    /* background-color: #232A59; */
+    background-image: url(../public/bg3.png);
     background-repeat: repeat;
   }
   .bg2{
@@ -1045,6 +1048,7 @@ background-color: #1D1D1B;
   }
   .MenuLinkItem{
     color: #fff;
+    background: #1c2b60;
     border: 2px solid #fff;
     padding: 10px;
     margin: 35px 8px;
@@ -1508,7 +1512,7 @@ background-color: rgba(255,255,255,0.1);
   }
 
   .branchList li {
-    color: #fff;
+    color: #AA6F38;
     padding: 15px 25px;
     border-left: 1px solid #0492E5;
     cursor: pointer;
