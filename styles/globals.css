@@ -1542,7 +1542,8 @@ background-color: rgba(255,255,255,0.1);
   .branchWhiteBox .branchName {
     font-size: 18px;
     color: #AA6F38;
-    min-width: 200px;
+    min-width: 35%;
+
   }
 
   .branchWhiteBox .branchNo img , .branchWhiteBox .branchTime img {
@@ -1559,6 +1560,7 @@ background-color: rgba(255,255,255,0.1);
   .branchWhiteBox .branchNo, .branchWhiteBox .branchTime  {
     font-size: 18px;
     color: #707070;
+    min-width: 30%;
   }
 
   .branchWhiteBox .branchBtn button {

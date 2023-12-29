@@ -109,7 +109,7 @@ const BranchBox = () => {
                           <img src="/icons/branchTime.png" alt="Branch Time" />
                           &nbsp; {i.time}
                         </div>
-                        <div className="branchBtn">
+                        {/* <div className="branchBtn">
                           <a
                             href={i.url}
                             target="_blank"
@@ -123,7 +123,7 @@ const BranchBox = () => {
                               />
                             </button>
                           </a>
-                        </div>
+                        </div> */}
                       </div>
                     ))}
 
