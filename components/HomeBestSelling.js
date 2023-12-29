@@ -66,7 +66,7 @@ const HomeBestSeller = (props) => {
             >
               Feras Best Selling
             </div>
-            <div className={`HdrT2 text-center ${!props.lp && "color-fff"}`}>
+            <div className={`HdrT2 text-center `}>
               Feras Sweets uses only the highest quality ingredients. We don’t
               use chemicals or add preservatives to our products, as we believe
               fresh products have the best taste! Our team continuously

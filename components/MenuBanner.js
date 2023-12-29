@@ -38,6 +38,26 @@ const MenuBanner = (props) => {
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
   };
+
+  const handleButtonClick = () => {
+    // Define the path to your PDF file in the public folder
+    const pdfFilePath = "/TawasiMenu.pdf";
+
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = pdfFilePath;
+    link.download = "downloaded-file.pdf";
+
+    // Append the link to the document body
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document body
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="HomeBannerBox position-relative overlayr1">
       {isDesktop && (
@@ -70,9 +90,15 @@ const MenuBanner = (props) => {
           </div>
           <div className="HbCt2"></div>
           <div className="HbCt1"></div>
-          {/* <Link href={"/"} className="HbCLink">
-            Explore More
-          </Link> */}
+          {props.button ? (
+            <button
+              onClick={handleButtonClick}
+              style={{ cursor: "pointer" }}
+              className="HbCLink"
+            >
+              Explore More
+            </button>
+          ) : null}
         </div>
       </div>
     </div>

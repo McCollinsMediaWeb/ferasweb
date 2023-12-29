@@ -47,6 +47,26 @@ const HomeMenuListing = (props) => {
     whileInView: ["visible", "slideEnd"],
     transition: { type: "tween", duration: 1.5 },
   };
+
+  const handleButtonClick = () => {
+    // Define the path to your PDF file in the public folder
+    const pdfFilePath = "/TawasiMenu.pdf";
+
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = pdfFilePath;
+    link.download = "downloaded-file.pdf";
+
+    // Append the link to the document body
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document body
+    document.body.removeChild(link);
+  };
+
   return (
     <div
       className="sectionBox pd-common bg2"
@@ -68,7 +88,7 @@ const HomeMenuListing = (props) => {
               Our Menu
             </div>
             <div
-              className="HdrT2 text-center color-fff"
+              className="HdrT2 text-center color-gold"
               style={{ color: props.bg && "#000" }}
             >
               Feras Sweets uses only the highest quality ingredients. We don’t
@@ -156,9 +176,18 @@ const HomeMenuListing = (props) => {
                         transition={{ delay: 0.3, type: "spring" }}
                       >
                         <div className="MenuItemTitle">Tawasi</div>
-                        <Link href={"/restaurantmenu"} className="MenuItemLink">
+                        {/* <Link href={"/restaurantmenu"} className="MenuItemLink">
                           View Menu
-                        </Link>
+                        </Link> */}
+                        {props.button ? (
+                          <button
+                            onClick={handleButtonClick}
+                            style={{ cursor: "pointer" }}
+                            className="MenuItemLink"
+                          >
+                            View Menu
+                          </button>
+                        ) : null}
                       </motion.div>
                     </div>
                   </div>
@@ -213,6 +242,37 @@ const HomeMenuListing = (props) => {
                         <Link href={"/sweetmenu"} className="MenuItemLink">
                           View Menu
                         </Link>
+                      </motion.div>
+                    </div>
+                  </div>
+                </div>
+                <div className="SliderMenuItem">
+                  <div className="MenuItem">
+                    <Image
+                      src="/menu3.jpg"
+                      layout={isDesktop ? "responsive" : "fill"}
+                      height={isDesktop ? "245" : ""}
+                      width={isDesktop ? "583" : ""}
+                      priority={true}
+                      className=""
+                    />
+                    <div className="MenuItemDetails">
+                      <motion.div
+                        initial={{ y: 60 }}
+                        whileInView={{ y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3, type: "spring" }}
+                      >
+                        <div className="MenuItemTitle">Tawasi</div>
+                        {props.button ? (
+                          <button
+                            onClick={handleButtonClick}
+                            style={{ cursor: "pointer" }}
+                            className="MenuItemLink"
+                          >
+                            View Menu
+                          </button>
+                        ) : null}
                       </motion.div>
                     </div>
                   </div>

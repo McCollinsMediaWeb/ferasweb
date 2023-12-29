@@ -1644,8 +1644,8 @@ background-color: rgba(255,255,255,0.1);
   .cateringCall {
     padding: 100px;
     text-align: center;
-    background-image: url("/bg3.png");
-    background-repeat: repeat;
+    /* background-image: url("/bg3.png");
+    background-repeat: repeat; */
   }
 
   .cateringCall button {

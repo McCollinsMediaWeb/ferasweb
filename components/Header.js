@@ -204,7 +204,7 @@ const Header = () => {
           className="MobileHeaderWrap"
           style={{ display: isDesktop ? "none" : "block" }}
         >
-          <div className="MobileHeaderFlex">
+          <div className="MobileHeaderFlex" style={{ padding: "15px" }}>
             <div className="MobileLang">
               {/* <div className="font-arabic color-fff">
                 <Link href={"/"} className="">
@@ -233,7 +233,7 @@ const Header = () => {
                 </>
               )}
             </div>
-            <div className="MobileLogoBox">
+            {/* <div className="MobileLogoBox">
               <Link href={"/"} className="">
                 <Image
                   src="/mobilelogo1.png"
@@ -244,7 +244,7 @@ const Header = () => {
                   className=""
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="MobileMenuLink">
               <div className="HamberMenu" onClick={() => setOpen(true)}>
                 <div className="HamberMenuLine">&nbsp;</div>
@@ -402,6 +402,25 @@ const Header = () => {
                           </Link>
                         </div>
                       </motion.div>
+                      <motion.div
+                        initial={{ x: -60 }}
+                        whileInView={{ x: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ delay: 0.3, type: "spring" }}
+                      >
+                        <div onClick={() => setOpen(false)}>
+                          <Link
+                            href={"/contactus"}
+                            className={
+                              router.pathname == "/contactus"
+                                ? "hover1 active"
+                                : "hover1"
+                            }
+                          >
+                            Contact Us
+                          </Link>
+                        </div>
+                      </motion.div>
                     </div>
                   </div>
                   <motion.div
@@ -415,7 +434,7 @@ const Header = () => {
                         <div className="row HdrRow1">
                           <div className="col-md-4">
                             <Image
-                              src="/heromobile1.jpg"
+                              src="/heromobile5.jpg"
                               layout="responsive"
                               width={"400"}
                               height={"449"}
@@ -424,7 +443,7 @@ const Header = () => {
                           </div>
                           <div className="col-md-4">
                             <Image
-                              src="/heromobile1.jpg"
+                              src="/heromobile6.jpg"
                               layout="responsive"
                               width={"400"}
                               height={"449"}
@@ -433,7 +452,7 @@ const Header = () => {
                           </div>
                           <div className="col-md-4">
                             <Image
-                              src="/heromobile1.jpg"
+                              src="/heromobile7.jpg"
                               layout="responsive"
                               width={"400"}
                               height={"449"}

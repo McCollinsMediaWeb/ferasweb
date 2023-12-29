@@ -10,40 +10,42 @@ const Footer = () => {
       <footer>
         <div className="container color-fff pd-common">
           <div className="row">
-            <div className="col-md-3">
-              <div className="FtrLogoBx">
-                <Link href={"/"} className="">
-                  {router.pathname === "/sweetmenu" ? (
-                    <Image
-                      src="/icons/ferassweet.png"
-                      layout="responsive"
-                      height={"240"}
-                      width={"240"}
-                      priority={true}
-                      className=""
-                    />
-                  ) : router.pathname === "/restaurantmenu" ? (
-                    <Image
-                      src="/icons/FerasRes.png"
-                      layout="responsive"
-                      height={"240"}
-                      width={"240"}
-                      priority={true}
-                      className=""
-                    />
-                  ) : (
-                    <Image
-                      src="/icons/ferassweet.png"
-                      layout="responsive"
-                      height={"268"}
-                      width={"272"}
-                      priority={true}
-                      className=""
-                    />
-                  )}
-                </Link>
+            {isDesktop && (
+              <div className="col-md-3">
+                <div className="FtrLogoBx">
+                  <Link href={"/"} className="">
+                    {router.pathname === "/sweetmenu" ? (
+                      <Image
+                        src="/icons/ferassweet.png"
+                        layout="responsive"
+                        height={"240"}
+                        width={"240"}
+                        priority={true}
+                        className=""
+                      />
+                    ) : router.pathname === "/restaurantmenu" ? (
+                      <Image
+                        src="/icons/FerasRes.png"
+                        layout="responsive"
+                        height={"240"}
+                        width={"240"}
+                        priority={true}
+                        className=""
+                      />
+                    ) : (
+                      <Image
+                        src="/icons/ferassweet.png"
+                        layout="responsive"
+                        height={"268"}
+                        width={"272"}
+                        priority={true}
+                        className=""
+                      />
+                    )}
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
             <div className="col-md-6">
               <div className="FtrT1">USEFUL LINKS</div>
               <div className="FooterLinksBox">

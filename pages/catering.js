@@ -22,7 +22,7 @@ export default function catering() {
           MenuName=""
           MenuLink="#cateringDiv"
         />
-        <HomeMenuListing bg={true} />
+        <HomeMenuListing bg={true} button={true} />
         <HomeBestSeller />
         <CateringCall />
         <InstagramBox restInsta={true} />

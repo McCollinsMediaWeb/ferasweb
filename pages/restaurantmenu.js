@@ -27,6 +27,7 @@ export default function ourmenu() {
           DesktopBanner="/JordanianMansaf.jpg"
           MobileBanner="/JordanianMansaf.jpg"
           title="Tawasi Menu "
+          button={true}
         />
         <CustomerReviews />
         <InstagramBox restInsta={true} />
