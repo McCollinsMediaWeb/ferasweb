@@ -103,7 +103,7 @@ function App({ Component, pageProps }) {
   });
   return (
     <>
-      <div className={locale === "ar" && "arclass"}>
+      <div className={locale === "ar" ? "arclass" : "enclass"}>
         <Header />
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />

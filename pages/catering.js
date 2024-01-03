@@ -3,6 +3,7 @@ import CoomonHeader from "@/components/CommonHeader";
 import HomeBestSeller from "@/components/HomeBestSelling";
 import HomeMenuListing from "@/components/HomeMenuListing";
 import InstagramBox from "@/components/InstagramBox";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function catering() {
   const container = {
@@ -29,4 +30,13 @@ export default function catering() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

@@ -3,7 +3,11 @@ import CoomonHeader from "@/components/CommonHeader";
 import ContactForm from "@/components/ContactForm";
 import OurGallery from "@/components/OurGallery";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
+
 export default function locations() {
+  const { t: translate } = useTranslation("common");
   const container = {
     visible: {
       transition: {
@@ -18,7 +22,7 @@ export default function locations() {
         <CoomonHeader
           desktopBanner="/herodesk4.jpg"
           MobileBanner="/heromobile3.jpg"
-          Title="LOCATIONS"
+          Title={translate("locations")}
           MenuName=""
           MenuLink=""
         />
@@ -29,4 +33,13 @@ export default function locations() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

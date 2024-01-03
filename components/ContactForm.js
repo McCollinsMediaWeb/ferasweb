@@ -1,8 +1,10 @@
+import { useTranslation } from "next-i18next";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
+  const { t: translate } = useTranslation("common");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,7 +60,7 @@ const ContactForm = () => {
       <div className="sectionBox pd-common bg1">
         <div className="container">
           <div className="contactForm">
-            <h3>GET IN TOUCH</h3>
+            <h3>{translate("GETouch")}</h3>
             <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-12">
@@ -66,7 +68,7 @@ const ContactForm = () => {
                     name="name"
                     type="text"
                     required
-                    placeholder="Your Name"
+                    placeholder={translate("name")}
                     value={formData.name}
                     onChange={handleChange}
                   />
@@ -76,7 +78,7 @@ const ContactForm = () => {
                     name="phone"
                     type="text"
                     required
-                    placeholder="Your Phone"
+                    placeholder={translate("phone")}
                     value={formData.phone}
                     onChange={handleChange}
                   />
@@ -86,7 +88,7 @@ const ContactForm = () => {
                     name="email"
                     type="email"
                     required
-                    placeholder="Your Email"
+                    placeholder={translate("email")}
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -98,13 +100,13 @@ const ContactForm = () => {
                     type="text"
                     name="message"
                     required
-                    placeholder="Your Message (optional)"
+                    placeholder={translate("message")}
                     value={formData.message}
                     onChange={handleChange}
                   />
                 </div>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit">{translate("submit")}</button>
             </form>
             <ToastContainer />
           </div>

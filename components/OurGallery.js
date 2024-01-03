@@ -4,8 +4,10 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 const OurGallery = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
   var settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -64,11 +66,11 @@ const OurGallery = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.3, type: "spring" }}
         >
-          <div className="HdrT1 text-center color-fff">Our Gallery</div>
+          <div className="HdrT1 text-center color-fff">
+            {translate("gallery")}
+          </div>
           <div className="HdrT2 text-center color-fff">
-            Feras Sweets uses only the highest quality ingredients. We don’t use
-            chemicals or add preservatives to our products, as we believe fresh
-            products have the best taste!
+            {translate("galleryDesc")}
           </div>
         </motion.div>
       </div>

@@ -1,7 +1,10 @@
 import CoomonHeader from "@/components/CommonHeader";
 import ContactForm from "@/components/ContactForm";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
 
 export default function contactus() {
+  const { t: translate } = useTranslation("common");
   const container = {
     visible: {
       transition: {
@@ -15,7 +18,7 @@ export default function contactus() {
         <CoomonHeader
           desktopBanner="/herodesk3.jpg"
           MobileBanner="/heromobile3.jpg"
-          Title="CONTACT FERAS"
+          Title={translate("connectFeras")}
           MenuName=""
           MenuLink=""
         />
@@ -24,4 +27,13 @@ export default function contactus() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

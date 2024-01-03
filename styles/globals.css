@@ -1730,8 +1730,15 @@ background-color: rgba(255,255,255,0.1);
 
 
 
+.MenuItemDetails {
+  text-align: left;
+}
 
 
+.enclass {
+      direction: ltr;
+    text-align: left;
+}
 
 
   .arclass {
