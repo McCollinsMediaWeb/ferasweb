@@ -3,7 +3,11 @@ import CustomerReviews from "@/components/CustomerReviews";
 import MenuBox from "@/components/MenuBox";
 import MenuBanner from "@/components/MenuBanner";
 import InstagramBox from "@/components/InstagramBox";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
+
 export default function ourmenu() {
+  const { t: translate } = useTranslation("common");
   const container = {
     visible: {
       transition: {
@@ -17,10 +21,10 @@ export default function ourmenu() {
         <CoomonHeader
           desktopBanner="/herodesk3.jpg"
           MobileBanner="/heromobile3.jpg"
-          Title="Restaurant MENU"
+          Title={translate("restaurant")}
           MenuName=""
           MenuLink="/restaurantmenu/#menu"
-          Desc="Engage your senses in a culinary symphony, where every dish is a harmonious blend of flavors, aromas, and textures."
+          Desc={translate("restDesc")}
         />
         <MenuBox Title="Restaurant MENU" />
         <MenuBanner
@@ -34,4 +38,13 @@ export default function ourmenu() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

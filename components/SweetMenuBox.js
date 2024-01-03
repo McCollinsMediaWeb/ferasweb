@@ -99,10 +99,7 @@ const SweetMenuBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="MenuHeaderT2 color-gold">
-                Our menu spans timeless classics and innovative creations,
-                ensuring there's a sweet surprise for every palate
-              </div>
+              <div className="MenuHeaderT2 color-gold">{props.desc}</div>
             </div>
           </div>
         </div>

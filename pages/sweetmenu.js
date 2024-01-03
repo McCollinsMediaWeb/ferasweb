@@ -4,8 +4,11 @@ import MenuBox from "@/components/MenuBox";
 import MenuBanner from "@/components/MenuBanner";
 import InstagramBox from "@/components/InstagramBox";
 import SweetMenuBox from "@/components/SweetMenuBox";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
 
 export default function sweetmenu() {
+  const { t: translate } = useTranslation("common");
   const container = {
     visible: {
       transition: {
@@ -19,12 +22,15 @@ export default function sweetmenu() {
         <CoomonHeader
           desktopBanner="/herodesk4.jpg"
           MobileBanner="/heromobile4.jpg"
-          Title="SWEETS MENU"
-          Desc="Step into a world where every bite of narrates the story of UAE’s culinary heritage. "
+          Title={translate("sweets")}
+          Desc={translate("sweetDesc")}
           MenuName=""
           MenuLink="/sweetmenu/#menu"
         />
-        <SweetMenuBox Title="SWEETS MENU" />
+        <SweetMenuBox
+          Title={translate("sweets")}
+          desc={translate("sweerDesc2")}
+        />
         <MenuBanner
           DesktopBanner="/banner3.jpg"
           MobileBanner="/bannermobile3.jpg"
@@ -36,4 +42,13 @@ export default function sweetmenu() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }
