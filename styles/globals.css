@@ -1738,3 +1738,9 @@ background-color: rgba(255,255,255,0.1);
     direction: rtl;
     text-align: right;
   }
+
+
+  .arclass .InstaIcon {
+    direction: ltr;
+    text-align: left;
+  }

@@ -4,9 +4,11 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Slider from "react-slick";
+import { useTranslation } from "next-i18next";
 
 const InstagramBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
   var settings = {
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -64,11 +66,7 @@ const InstagramBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2 color-gold">
-                Discover the daily extravaganza of deliciousness! Follow our
-                Instagram page for a delectable journey through the irresistible
-                flavors served from the highest quality ingredients.
-              </div>
+              <div className="CrT2 color-gold">{translate("cfsDesc")}</div>
             </div>
           </div>
           {props.restInsta ? (
