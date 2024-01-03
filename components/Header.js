@@ -5,7 +5,9 @@ import Image from "next/image";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { useTranslation } from "next-i18next";
 const Header = () => {
+  const { t: translate } = useTranslation("common");
   const { height, width } = useWindowDimensions();
   const router = useRouter();
   const { locale, locales, push } = useRouter();
@@ -60,7 +62,7 @@ const Header = () => {
                 href={"/"}
                 className={router.pathname == "/" ? "link1 active" : "link1"}
               >
-                Home
+                {translate("home")}
               </Link>
             </div>
             <div className="HeaderItem">
@@ -70,7 +72,7 @@ const Header = () => {
                   router.pathname == "/aboutus" ? "link1 active" : "link1"
                 }
               >
-                About Us
+                {translate("about")}
               </Link>
             </div>
             <div className="HeaderItem">
@@ -80,7 +82,7 @@ const Header = () => {
                   router.pathname == "/catering" ? "link1 active" : "link1"
                 }
               >
-                Catering
+                {translate("catering")}
               </Link>
             </div>
             <div className="HeaderItem LogoLink">
@@ -134,14 +136,14 @@ const Header = () => {
                     : "link1"
                 }
               >
-                Our Menu
+                {translate("menu")}
               </Link>
               <div className="SubNaBox">
                 <Link href={"/restaurantmenu"} className="link1">
-                  Restaurant Menu
+                  {translate("restaurant")}
                 </Link>
                 <Link href={"/sweetmenu"} className="link1">
-                  Sweets Menu
+                  {translate("sweets")}
                 </Link>
               </div>
             </div>
@@ -153,7 +155,7 @@ const Header = () => {
                   router.pathname == "/locations" ? "link1 active" : "link1"
                 }
               >
-                Locations
+                {translate("locations")}
               </Link>
             </div>
             <div className="HeaderItem">
@@ -163,7 +165,7 @@ const Header = () => {
                   router.pathname == "/contactus" ? "link1 active" : "link1"
                 }
               >
-                Contact Us
+                {translate("contact")}
               </Link>
             </div>
             {/* <div className="HeaderItem font-arabic">
@@ -301,7 +303,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Home
+                            {translate("home")}
                           </Link>
                         </div>
                       </motion.div>
@@ -320,7 +322,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            About Us
+                            {translate("about")}
                           </Link>
                         </div>
                       </motion.div>
@@ -340,7 +342,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Restaurant Menu
+                            {translate("restaurant")}
                           </Link>
                         </div>
                       </motion.div>
@@ -360,7 +362,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Sweets Menu
+                            {translate("sweets")}
                           </Link>
                         </div>
                       </motion.div>
@@ -379,7 +381,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Catering
+                            {translate("catering")}
                           </Link>
                         </div>
                       </motion.div>
@@ -398,7 +400,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Our Locations
+                            {translate("locations")}
                           </Link>
                         </div>
                       </motion.div>
@@ -417,7 +419,7 @@ const Header = () => {
                                 : "hover1"
                             }
                           >
-                            Contact Us
+                            {translate("contact")}
                           </Link>
                         </div>
                       </motion.div>
@@ -460,10 +462,7 @@ const Header = () => {
                             />
                           </div>
                         </div>
-                        <div className="T4">
-                          Follow us for mouthwatering food photos, special
-                          offers, and a taste of our vibrant dining experience
-                        </div>
+                        <div className="T4">{translate("follow")}</div>
                       </div>
                     </div>
                   </motion.div>
