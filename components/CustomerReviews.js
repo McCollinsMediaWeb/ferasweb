@@ -4,9 +4,12 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Slider from "react-slick";
+import { useTranslation } from "next-i18next";
 
 const CustomerReviews = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
+
   var settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -60,7 +63,7 @@ const CustomerReviews = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="CrT1" style={{ color: "#c18f5c" }}>
-                Food Lovers feedback
+                {translate("flf")}
               </div>
               <div className="RevRow">
                 <div className="RevRowFlex">
@@ -73,13 +76,7 @@ const CustomerReviews = () => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2 color-gold">
-                Feras Sweets uses only the highest quality ingredients. We don’t
-                use chemicals or add preservatives to our products, as we
-                believe fresh products have the best taste! Our team
-                continuously supervises the quality, which helps keep our
-                products to the highest standards
-              </div>
+              <div className="CrT2 color-gold">{translate("flfDesc")}</div>
             </div>
           </div>
         </div>
@@ -98,14 +95,11 @@ const CustomerReviews = () => {
                   <div className="ReviewItem">
                     {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
                     <div className="ReviewItemT2">
-                      “One of the best Konafa you can have . My favourite is the
-                      "kunafa kheshna" كنافه خشنه An amazing way to spend 1
-                      relaxing hour in the afternoon over a cup of black tea and
-                      fresh warm Kunafa “
+                      {translate("testi1Desc")}
                     </div>
                     <div className="ReviewAddress">
-                      <div className="Rname">Hisham Darwish</div>
-                      <div className="RLocation">Duabi</div>
+                      <div className="Rname">{translate("testi1Name")}</div>
+                      <div className="RLocation">{translate("testi1Loc")}</div>
                     </div>
                   </div>
                 </div>
@@ -122,14 +116,11 @@ const CustomerReviews = () => {
                   <div className="ReviewItem">
                     {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
                     <div className="ReviewItemT2">
-                      “Feras Aldiyafa Sweets in Dubai is a must-visit! The best
-                      Kunafa in town with a secret cheese ingredient that makes
-                      it incredibly delicious. Friendly staff and a delightful
-                      dining experience. Highly recommended! “
+                      {translate("testi2Desc")}
                     </div>
                     <div className="ReviewAddress">
-                      <div className="Rname">Bassam Sh</div>
-                      <div className="RLocation">Duabi</div>
+                      <div className="Rname">{translate("testi2Name")}</div>
+                      <div className="RLocation">{translate("testi2Loc")}</div>
                     </div>
                   </div>
                 </div>
@@ -146,14 +137,11 @@ const CustomerReviews = () => {
                   <div className="ReviewItem">
                     {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
                     <div className="ReviewItemT2">
-                      “Pretty much visible from the Shaikh Zayed Road just after
-                      the Mashreq Metro station enroute Dubai, this place has
-                      one of the best and recommended Manakesh ( Veg and Non Veg
-                      ) and Kunafa ( sweet dish loaded with cheese and honey )“
+                      {translate("testi3Desc")}
                     </div>
                     <div className="ReviewAddress">
-                      <div className="Rname">Farhan Syed</div>
-                      <div className="RLocation">Duabi</div>
+                      <div className="Rname">{translate("testi3Name")}</div>
+                      <div className="RLocation">{translate("testi3Loc")}</div>
                     </div>
                   </div>
                 </div>
@@ -170,14 +158,11 @@ const CustomerReviews = () => {
                   <div className="ReviewItem">
                     {/* <div className="ReviewItemT1">Lorem ipsum dolo</div> */}
                     <div className="ReviewItemT2">
-                      “Feras has always served my favorite kunafa and is a great
-                      simple spot to drop by at night with friends. We even had
-                      them serve at a relative's wedding and they provided a
-                      grand experience “
+                      {translate("testi4Desc")}
                     </div>
                     <div className="ReviewAddress">
-                      <div className="Rname">Stephen Marone</div>
-                      <div className="RLocation">Duabi</div>
+                      <div className="Rname">{translate("testi4Name")}</div>
+                      <div className="RLocation">{translate("testi4Loc")}</div>
                     </div>
                   </div>
                 </div>

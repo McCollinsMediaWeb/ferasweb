@@ -3,8 +3,10 @@ import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
+import { useTranslation } from "next-i18next";
 const HomeAboutUs = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("about");
 
   const container = {
     visible: {
@@ -64,7 +66,7 @@ const HomeAboutUs = (props) => {
                 >
                   <AnimatedHeaderText
                     color="#c18f5c"
-                    text="We Are Feras Hanoun Sweets..."
+                    text={translate("weFeras")}
                   />
                 </motion.div>
               </div>
@@ -75,17 +77,10 @@ const HomeAboutUs = (props) => {
                 transition={{ delay: 0.3, type: "spring" }}
               >
                 <div className={`ft2 ${!props.lp && "color-gold"}`}>
-                  Feras Hanoun Sweets is well known for making the world’s best
-                  Kunafa Nabulsiya. The Kunafa Nabulsiya is an Arabic Sweet
-                  which was originated in Nablus, a famous city in Palestine.
-                  Feras Hanoun Sweets is honored to introduce this product to
-                  the U.A.E. since 1984.
+                  {translate("desc1")}
                   <br />
                   <br />
-                  With the progressively increasing number of outlets in the
-                  country, Feras Hanoun Sweets is presently serving a vast scope
-                  of mainstream Arabic desserts, pastries, and fast foods to the
-                  people of the U.A.E.
+                  {translate("desc2")}
                 </div>
               </motion.div>
               {isDesktop && (
@@ -97,7 +92,10 @@ const HomeAboutUs = (props) => {
                       variants={container}
                       viewport={{ once: true }}
                     >
-                      <AnimatedHeaderText color="#c18f5c" text="MISSION" />
+                      <AnimatedHeaderText
+                        color="#c18f5c"
+                        text={translate("missionh1")}
+                      />
                     </motion.div>
                   </div>
                   <motion.div
@@ -107,11 +105,7 @@ const HomeAboutUs = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className={`ft2 ${!props.lp && "color-gold"}`}>
-                      Feras Hanoun Sweets inspires and innovates with a unique &
-                      wide range of sweets along with bakery and fast food
-                      items. This allows us to accommodate consumer wishes and
-                      expectations through high-quality products with authentic
-                      Arabic flavours, appearances and taste sensations.
+                      {translate("mission")}
                     </div>
                   </motion.div>
                   <div className={`ft1 ${!props.lp && "color-gold"} TxtBx2`}>
@@ -121,7 +115,10 @@ const HomeAboutUs = (props) => {
                       variants={container}
                       viewport={{ once: true }}
                     >
-                      <AnimatedHeaderText color="#c18f5c" text="VISION" />
+                      <AnimatedHeaderText
+                        color="#c18f5c"
+                        text={translate("visionh1")}
+                      />
                     </motion.div>
                   </div>
                   <motion.div
@@ -131,10 +128,7 @@ const HomeAboutUs = (props) => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className={`ft2 ${!props.lp && "color-gold"}`}>
-                      To build a leading organization passionate about sweets
-                      with the drive to grow and develop the confectionery
-                      market in the U.A.E., through our longstanding traditional
-                      expertise, innovation and empowered talent.
+                      {translate("vision")}
                     </div>
                   </motion.div>
                 </div>

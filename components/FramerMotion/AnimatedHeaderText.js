@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 // Word wrapper
 const Wrapper = (props) => {
@@ -19,6 +20,7 @@ const tagMap = {
 // Handles the deconstruction of each word and character to setup for the
 // individual character animations
 const AnimatedHeaderText = (props) => {
+  const { locale, locales, push } = useRouter();
   // Framer Motion variant object, for controlling animation
   const item = {
     hidden: {
@@ -50,37 +52,40 @@ const AnimatedHeaderText = (props) => {
   });
 
   // Get the tag name from tagMap
-
-  return (
-    <div>
-      {words.map((word, index) => {
-        return (
-          // Wrap each word in the Wrapper component
-          <Wrapper key={index}>
-            {words[index].flat().map((element, index) => {
-              return (
-                <span
-                  style={{
-                    overflow: "hidden",
-                    display: "inline-block",
-                  }}
-                  key={index}
-                >
-                  <motion.span
-                    style={{ display: "inline-block" }}
-                    variants={item}
+  if (locale === "ar") {
+    return <span style={{ color: props.color }}>{props.text}</span>;
+  } else {
+    return (
+      <div>
+        {words.map((word, index) => {
+          return (
+            // Wrap each word in the Wrapper component
+            <Wrapper key={index}>
+              {words[index].flat().map((element, index) => {
+                return (
+                  <span
+                    style={{
+                      overflow: "hidden",
+                      display: "inline-block",
+                    }}
+                    key={index}
                   >
-                    {element}
-                  </motion.span>
-                </span>
-              );
-            })}
-          </Wrapper>
-        );
-      })}
-      {/* {} */}
-    </div>
-  );
+                    <motion.span
+                      style={{ display: "inline-block" }}
+                      variants={item}
+                    >
+                      {element}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </Wrapper>
+          );
+        })}
+        {/* {} */}
+      </div>
+    );
+  }
 };
 
 export default AnimatedHeaderText;

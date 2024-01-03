@@ -24,7 +24,7 @@ export default function aboutus() {
           Title={translate("banner_title")}
           MenuName=""
           MenuLink=""
-          Desc="Indulge in a symphony of sweetness with Feras Sweets, where every bite tells a delicious story"
+          Desc={translate("banner_text")}
         />
         <HomeAboutUs />
         <CustomerReviews />
@@ -37,7 +37,7 @@ export default function aboutus() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["about"])),
+      ...(await serverSideTranslations(locale, ["about", "common"])),
       // Will be passed to the page component as props
     },
   };

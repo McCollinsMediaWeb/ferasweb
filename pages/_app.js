@@ -87,6 +87,8 @@ function Loading() {
   );
 }
 function App({ Component, pageProps }) {
+  const { locale, locales, push } = useRouter();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 100;
@@ -101,7 +103,7 @@ function App({ Component, pageProps }) {
   });
   return (
     <>
-      <div>
+      <div className={locale === "ar" && "arclass"}>
         <Header />
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
