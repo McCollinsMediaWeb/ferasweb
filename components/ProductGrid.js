@@ -4,7 +4,9 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const ProductGid = (props) => {
+  const { locale, locales, push } = useRouter();
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 2,
@@ -63,7 +65,8 @@ const ProductGid = (props) => {
               <div className="ReviewColumn gold">&nbsp;</div>
               <div className="ReviewColumn gold">&nbsp;</div>
               <div className="ReviewColumn gold">&nbsp;</div>
-              <div className="ReviewColumn">&nbsp;</div>
+              <div className="ReviewColumn gold">&nbsp;</div>
+              {/* <div className="ReviewColumn">&nbsp;</div> */}
             </div>
           </div>
           <div className="col-md-3 text-right">
@@ -73,7 +76,9 @@ const ProductGid = (props) => {
       </div>
       <div className="ProductGridBottom">
         <div className="row align-items-center">
-          <div className="col-md-8">{props.productname}</div>
+          <div className="col-md-8">
+            {locale === "en" ? props.productname : props.arname}
+          </div>
           {/* <div className="col-md-4 text-right">
               {props.price && (
                 <span className="PriceBox1">AED {props.price}</span>

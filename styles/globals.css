@@ -1296,9 +1296,9 @@ background-color: rgba(255,255,255,0.1);
     .ExploreMoreBtn::after{
       top: 8px;
     }
-    .bg1.abtBoxHome{
+    /* .bg1.abtBoxHome{
       background-color: #003554;
-    }
+    } */
     .ProductGridTop .col-md-9{
       flex: 0 0 77%;
       max-width: 77%;

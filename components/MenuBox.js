@@ -128,6 +128,7 @@ const MenuBox = (props) => {
                         <ProductGid
                           imageurl={p.img}
                           productname={p.name}
+                          arname={p.arname}
                           price={p.price}
                         />
                       </div>
