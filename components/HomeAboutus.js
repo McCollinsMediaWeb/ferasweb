@@ -64,10 +64,23 @@ const HomeAboutUs = (props) => {
                   variants={container}
                   viewport={{ once: true }}
                 >
-                  <AnimatedHeaderText
-                    color="#c18f5c"
-                    text={translate("weFeras")}
-                  />
+                  {isDesktop ? (
+                    <AnimatedHeaderText
+                      color="#c18f5c"
+                      text={translate("weFeras")}
+                    />
+                  ) : (
+                    <>
+                      <AnimatedHeaderText
+                        color="#c18f5c"
+                        text={translate("weFeras1")}
+                      />
+                      <AnimatedHeaderText
+                        color="#c18f5c"
+                        text={translate("weFeras2")}
+                      />
+                    </>
+                  )}
                 </motion.div>
               </div>
               <motion.div

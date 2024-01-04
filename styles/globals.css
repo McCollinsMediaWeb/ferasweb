@@ -301,6 +301,7 @@ img{
   }
   
   .SideNavHeader {
+      text-align: left;
     padding: 25px;
     color: #242424;
     font-weight: 600;
@@ -391,17 +392,17 @@ img{
     background-image: url(../public/icons/wfacebook.png);
   }
   
-  /* .SocialItem .Icon.youtube {
+  .SocialItem .Icon.youtube {
     background-image: url(../public/icons/wyoutube.png);
-  } */
+  }
   
   .SocialItem .Icon.whatsapp {
     background-image: url(../public/icons/wwhatsapp.png);
   }
   
-  /* .SocialItem .Icon.twitter {
-    background-image: url(../public/icons/wtwitter.png);
-  } */
+  .SocialItem .Icon.tiktok {
+    background-image: url(../public/ftiktok.png);
+  }
   
   .socialItems {
     display: flex;
@@ -946,6 +947,12 @@ background-color: #1D1D1B;
   }
   .FtrSocialIcon.twitter{
     background-image: url(../public/ftwitter.png);
+  }
+  .FtrSocialIcon.tiktok{
+    background-image: url(../public/ftiktok.png);
+  }
+  .FtrSocialIcon.youtube{
+    background-image: url(../public/fyoutube.png);
   }
   .FtrSocialMediaFlex a{
     display: inline-block;
