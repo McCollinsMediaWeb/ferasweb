@@ -3,6 +3,7 @@ import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 const MenuBanner = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
