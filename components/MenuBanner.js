@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const MenuBanner = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
   var settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -96,7 +97,7 @@ const MenuBanner = (props) => {
               style={{ cursor: "pointer" }}
               className="HbCLink"
             >
-              Explore More
+              {translate("eMore")}
             </button>
           ) : null}
         </div>
