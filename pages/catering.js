@@ -3,9 +3,11 @@ import CoomonHeader from "@/components/CommonHeader";
 import HomeBestSeller from "@/components/HomeBestSelling";
 import HomeMenuListing from "@/components/HomeMenuListing";
 import InstagramBox from "@/components/InstagramBox";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function catering() {
+  const { t: translate } = useTranslation("catering");
   const container = {
     visible: {
       transition: {
@@ -19,7 +21,7 @@ export default function catering() {
         <CoomonHeader
           desktopBanner="/herodesk2.jpg"
           MobileBanner="/heromobile2.jpg"
-          Title="CATERING SERVICES"
+          Title={translate("bnr_heading")}
           MenuName=""
           MenuLink="#cateringDiv"
         />
@@ -35,7 +37,7 @@ export default function catering() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["catering", "common"])),
       // Will be passed to the page component as props
     },
   };

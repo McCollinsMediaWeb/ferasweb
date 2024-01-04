@@ -38,7 +38,7 @@ export default function locations() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["location", "common"])),
       // Will be passed to the page component as props
     },
   };

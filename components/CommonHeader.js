@@ -5,8 +5,10 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
+import { useTranslation } from "next-i18next";
 const CoomonHeader = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
   var settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -96,7 +98,7 @@ const CoomonHeader = (props) => {
                           }
                           className="BannerBtn"
                         >
-                          View Menu
+                          {translate("vMenu")}
                         </Link>
                       )}
                     </div>

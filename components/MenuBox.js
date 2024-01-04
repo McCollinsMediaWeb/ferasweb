@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import ProductGid from "./ProductGrid";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 import axios from "axios";
+import { useTranslation } from "next-i18next";
 const MenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("common");
   const [selectedName, setSelectedName] = useState("Main Course");
   const [menu, setMenu] = useState();
   var settings = {
@@ -82,9 +84,7 @@ const MenuBox = (props) => {
             </div>
             <div className="col-md-7">
               <div className="MenuHeaderT2" style={{ color: "#c18f5c" }}>
-                Taste the difference that passion makes with our menu, where
-                each dish is a reflection of our commitment to exceptional
-                dining.
+                {translate("restMenuDesc")}
               </div>
             </div>
           </div>

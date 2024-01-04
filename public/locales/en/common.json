@@ -4,7 +4,7 @@
   "catering":"Catering",
   "menu":"Our Menu",
   "locations":"Locations",
-  "contact":"اContact Us",
+  "contact":"Contact Us",
   "restaurant":"Restaurant Menu",
   "sweets":"Sweets Menu",
   "ourlocations":"Our locations",
@@ -43,5 +43,9 @@
   "connectFeras":"CONTACT FERAS",
   "restDesc":"Engage your senses in a culinary symphony, where every dish is a harmonious blend of flavors, aromas, and textures.",
   "sweetDesc":"Step into a world where every bite of narrates the story of UAE’s culinary heritage. ",
-  "sweerDesc2":"Our menu spans timeless classics and innovative creations, ensuring there's a sweet surprise for every palate"
+  "sweerDesc2":"Our menu spans timeless classics and innovative creations, ensuring there's a sweet surprise for every palate",
+  "usefull":"USEFUL LINKS",
+  "vMenu":"View Menu",
+  "restMenuDesc":"Taste the difference that passion makes with our menu, where each dish is a reflection of our commitment to exceptional dining.",
+  "tawasiMenu":"Tawasi Menu"
 }

@@ -26,11 +26,11 @@ export default function ourmenu() {
           MenuLink="/restaurantmenu/#menu"
           Desc={translate("restDesc")}
         />
-        <MenuBox Title="Restaurant MENU" />
+        <MenuBox Title={translate("restaurant")} />
         <MenuBanner
           DesktopBanner="/JordanianMansaf.jpg"
           MobileBanner="/JordanianMansaf.jpg"
-          title="Tawasi Menu "
+          title={translate("tawasiMenu")}
           button={true}
         />
         <CustomerReviews />
@@ -43,7 +43,7 @@ export default function ourmenu() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["location", "common"])),
       // Will be passed to the page component as props
     },
   };

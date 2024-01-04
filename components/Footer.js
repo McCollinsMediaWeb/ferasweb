@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             )}
             <div className="col-md-6">
-              <div className="FtrT1">USEFUL LINKS</div>
+              <div className="FtrT1">{translate("usefull")}</div>
               <div className="FooterLinksBox">
                 <div className="row">
                   <div className="col-md-6">

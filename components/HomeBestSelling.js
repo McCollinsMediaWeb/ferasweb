@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import Link from "next/link";
 import ProductGid from "./ProductGrid";
 import axios from "axios";
+import { useTranslation } from "next-i18next";
 const HomeBestSeller = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("catering");
   const [menu, setMenu] = useState();
   var settings = {
     slidesToShow: 2,
@@ -64,15 +66,9 @@ const HomeBestSeller = (props) => {
               className={`HdrT1 text-center ${!props.lp && "color-fff"}`}
               style={{ color: "#c18f5c" }}
             >
-              Feras Best Selling
+              {translate("fbs")}
             </div>
-            <div className={`HdrT2 text-center `}>
-              Feras Sweets uses only the highest quality ingredients. We don’t
-              use chemicals or add preservatives to our products, as we believe
-              fresh products have the best taste! Our team continuously
-              supervises the quality, which helps keep our products to the
-              highest standards
-            </div>
+            <div className={`HdrT2 text-center `}>{translate("desc2")}</div>
           </motion.div>
         </div>
 
@@ -82,7 +78,11 @@ const HomeBestSeller = (props) => {
               {menu &&
                 menu.map((item) => (
                   <div className="col-md-3">
-                    <ProductGid imageurl={item.img} productname={item.name} />
+                    <ProductGid
+                      imageurl={item.img}
+                      arName={item.arName}
+                      productname={item.name}
+                    />
                   </div>
                 ))}
               {/* <div className="col-md-3">
@@ -95,7 +95,7 @@ const HomeBestSeller = (props) => {
           </div>
           <div className="ExpBtn">
             <Link href={"/restaurantmenu"} className="ExploreMoreBtn">
-              Explore More
+              {translate("eMore")}
             </Link>
           </div>
         </div>

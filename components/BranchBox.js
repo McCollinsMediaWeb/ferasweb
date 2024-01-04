@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import { useTranslation } from "next-i18next";
 
 const BranchBox = () => {
+  const { t: translate } = useTranslation("location");
   const [data, setData] = useState();
   const [data2, setData2] = useState();
   const [data3, setData3] = useState();
@@ -54,12 +56,12 @@ const BranchBox = () => {
               viewport={{ once: false }}
               transition={{ delay: 0.3, type: "spring" }}
             >
-              <div className="HdrT1 text-center color-gold">Our Branches</div>
+              <div className="HdrT1 text-center color-gold">
+                {translate("oBranch")}
+              </div>
 
               <div className="HdrT2 text-center color-gold">
-                Feras Sweets uses only the highest quality ingredients. Our team
-                continuously supervises the quality, which helps keep our
-                products to the highest standards
+                {translate("branchDesc")}
               </div>
             </motion.div>
             <div className="locBtn">
@@ -67,13 +69,13 @@ const BranchBox = () => {
                 onClick={sweetFun}
                 className={selectedType == "sweet" ? "active" : null}
               >
-                Feras Sweets Location
+                {translate("fsl")}
               </button>
               <button
                 onClick={restFun}
                 className={selectedType != "sweet" ? "active" : null}
               >
-                Restaurants Location
+                {translate("frl")}
               </button>
             </div>
           </div>
@@ -95,7 +97,7 @@ const BranchBox = () => {
             </div>
             <div className="col-md-10">
               <div className="branchWhiteBox">
-                <h3>Branches in Dubai</h3>
+                {/* <h3>Branches in Dubai</h3> */}
                 <div className="bracnhListBox" id="bracnh-style-2">
                   {selectedData &&
                     selectedData.prd.map((i) => (

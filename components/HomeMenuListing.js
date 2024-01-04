@@ -4,8 +4,10 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 const HomeMenuListing = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const { t: translate } = useTranslation("catering");
   var settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -85,17 +87,13 @@ const HomeMenuListing = (props) => {
               className="HdrT1 text-center color-fff"
               style={{ color: props.bg && "#AA6F38" }}
             >
-              Our Menu
+              {translate("oMenu")}
             </div>
             <div
               className="HdrT2 text-center color-gold"
               style={{ color: props.bg && "#000" }}
             >
-              Feras Sweets uses only the highest quality ingredients. We don’t
-              use chemicals or add preservatives to our products, as we believe
-              fresh products have the best taste! Our team continuously
-              supervises the quality, which helps keep our products to the
-              highest standards
+              {translate("desc1")}
             </div>
           </motion.div>
         </div>
@@ -125,9 +123,11 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Restaurant</div>
+                        <div className="MenuItemTitle">
+                          {translate("restaurant")}
+                        </div>
                         <Link href={"/restaurantmenu"} className="MenuItemLink">
-                          View Menu
+                          {translate("vMenu")}
                         </Link>
                       </motion.div>
                     </div>
@@ -150,9 +150,11 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Sweets</div>
+                        <div className="MenuItemTitle">
+                          {translate("sweets")}
+                        </div>
                         <Link href={"/sweetmenu"} className="MenuItemLink">
-                          View Menu
+                          {translate("vMenu")}
                         </Link>
                       </motion.div>
                     </div>
@@ -175,7 +177,9 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Tawasi</div>
+                        <div className="MenuItemTitle">
+                          {translate("tawasi")}
+                        </div>
                         {/* <Link href={"/restaurantmenu"} className="MenuItemLink">
                           View Menu
                         </Link> */}
@@ -185,7 +189,7 @@ const HomeMenuListing = (props) => {
                             style={{ cursor: "pointer" }}
                             className="MenuItemLink"
                           >
-                            View Menu
+                            {translate("vMenu")}
                           </button>
                         ) : null}
                       </motion.div>
@@ -213,9 +217,11 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Restaurant</div>
+                        <div className="MenuItemTitle">
+                          {translate("restaurant")}
+                        </div>
                         <Link href={"/restaurantmenu"} className="MenuItemLink">
-                          View Menu
+                          {translate("vMenu")}
                         </Link>
                       </motion.div>
                     </div>
@@ -238,9 +244,11 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Sweets</div>
+                        <div className="MenuItemTitle">
+                          {translate("sweets")}
+                        </div>
                         <Link href={"/sweetmenu"} className="MenuItemLink">
-                          View Menu
+                          {translate("vMenu")}
                         </Link>
                       </motion.div>
                     </div>
@@ -263,14 +271,16 @@ const HomeMenuListing = (props) => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, type: "spring" }}
                       >
-                        <div className="MenuItemTitle">Tawasi</div>
+                        <div className="MenuItemTitle">
+                          {translate("tawasi")}
+                        </div>
                         {props.button ? (
                           <button
                             onClick={handleButtonClick}
                             style={{ cursor: "pointer" }}
                             className="MenuItemLink"
                           >
-                            View Menu
+                            {translate("vMenu")}
                           </button>
                         ) : null}
                       </motion.div>
