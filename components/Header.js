@@ -280,7 +280,7 @@ const Header = () => {
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="SideNavHeader">
-                      Explore Our{" "}
+                      {translate("eOur")}
                       <span className="CloseBtn" onClick={() => setOpen(false)}>
                         &nbsp;
                       </span>
