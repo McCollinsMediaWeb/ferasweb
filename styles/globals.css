@@ -1765,6 +1765,11 @@ background-color: rgba(255,255,255,0.1);
   }
 
 
+  @font-face {
+    font-family: 'KFGQPC';
+    src: url('/KFGQPC.otf') format('opentype');
+  }
+
   .arclass {
     font-family: 'KFGQPC', sans-serif;
   }
