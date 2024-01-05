@@ -1770,7 +1770,7 @@ background-color: rgba(255,255,255,0.1);
     src: url('/Bahij.ttf') format('truetype');
   }
 
-  .arclass , .font-arabic , .arclass a {
+  .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'Bahij', sans-serif !important;
     letter-spacing:0 !important;
   }
