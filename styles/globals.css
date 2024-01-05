@@ -1770,6 +1770,7 @@ background-color: rgba(255,255,255,0.1);
     src: url('/KFGQPC.otf') format('opentype');
   }
 
-  .arclass , .font-arabic {
-    font-family: 'KFGQPC', sans-serif;
+  .arclass , .font-arabic , .arclass a {
+    font-family: 'KFGQPC', sans-serif !important;
+    letter-spacing:0 !important;
   }
