@@ -1763,3 +1763,8 @@ background-color: rgba(255,255,255,0.1);
   .restSlide .slick-slider .slick-prev:before, .restSlide .slick-slider  .slick-next:before {
     color: #1c2b60;
   }
+
+
+  .arclass {
+    font-family: 'KFGQPC', sans-serif;
+  }
