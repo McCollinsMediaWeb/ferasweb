@@ -1759,3 +1759,7 @@ background-color: rgba(255,255,255,0.1);
     direction: ltr;
     text-align: left;
   }
+
+  .restSlide .slick-slider .slick-prev:before, .restSlide .slick-slider  .slick-next:before {
+    color: #1c2b60;
+  }

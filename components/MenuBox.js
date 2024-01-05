@@ -7,10 +7,12 @@ import ProductGid from "./ProductGrid";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 import axios from "axios";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 const MenuBox = (props) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const { t: translate } = useTranslation("common");
   const [selectedName, setSelectedName] = useState("Main Course");
+  const { locale, locales, push } = useRouter();
   const [menu, setMenu] = useState();
   var settings = {
     slidesToShow: 5,
@@ -89,7 +91,7 @@ const MenuBox = (props) => {
             </div>
           </div>
         </div>
-        <div className="MobileMargin1">
+        <div className="MobileMargin1 restSlide">
           <motion.div
             className="SliderWrt1"
             {...animation}
@@ -108,7 +110,7 @@ const MenuBox = (props) => {
                         }`}
                         onClick={() => setSelectedName(item.catName)}
                       >
-                        {item.catName}
+                        {locale === "en" ? item.catName : item.catArName}
                       </div>
                     </div>
                   ))}
