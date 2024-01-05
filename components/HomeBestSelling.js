@@ -80,7 +80,7 @@ const HomeBestSeller = (props) => {
                   <div className="col-md-3">
                     <ProductGid
                       imageurl={item.img}
-                      arName={item.arName}
+                      arname={item.arname}
                       productname={item.name}
                     />
                   </div>
