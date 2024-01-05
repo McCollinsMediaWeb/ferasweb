@@ -80,12 +80,12 @@ const Footer = () => {
                       {translate("customerR")}
                     </Link>
                   </div>
-                  <div className="col-md-6">
+                  {/* <div className="col-md-6">
                     <Link href={"/"}>{translate("pp")}</Link>
                   </div>
                   <div className="col-md-6">
                     <Link href={"/"}>{translate("tc")}</Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
