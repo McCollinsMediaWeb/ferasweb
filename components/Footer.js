@@ -75,11 +75,11 @@ const Footer = () => {
                   <div className="col-md-6">
                     <Link href={"/contactus"}>{translate("contact")}</Link>
                   </div>
-                  <div className="col-md-6">
+                  {/* <div className="col-md-6">
                     <Link href={"/customerreviews"}>
                       {translate("customerR")}
                     </Link>
-                  </div>
+                  </div> */}
                   {/* <div className="col-md-6">
                     <Link href={"/"}>{translate("pp")}</Link>
                   </div>
