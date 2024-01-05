@@ -1768,8 +1768,6 @@ background-color: rgba(255,255,255,0.1);
   @font-face {
     font-family: 'Bahij';
     src: url('/Bahij.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
   }
 
   .arclass , .font-arabic , .arclass a {
