@@ -109,7 +109,11 @@ const SweetMenuBox = (props) => {
             {menu &&
               menu.map((item) => (
                 <div className="col-md-3">
-                  <ProductGid imageurl={item.img} productname={item.name} />
+                  <ProductGid
+                    imageurl={item.img}
+                    productname={item.name}
+                    arname={item.arname}
+                  />
                 </div>
               ))}
           </div>

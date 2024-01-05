@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 const BranchBox = () => {
   const { t: translate } = useTranslation("location");
+  const { locale, locales, push } = useRouter();
   const [data, setData] = useState();
   const [data2, setData2] = useState();
   const [data3, setData3] = useState();
@@ -90,7 +92,7 @@ const BranchBox = () => {
                         setSelectedState(item.catName);
                       }}
                     >
-                      {item.catName}
+                      {locale === "en" ? item.catName : item.catArName}
                     </li>
                   ))}
               </ul>
@@ -102,7 +104,9 @@ const BranchBox = () => {
                   {selectedData &&
                     selectedData.prd.map((i) => (
                       <div className="d-flex">
-                        <div className="branchName">{i.name}</div>
+                        <div className="branchName">
+                          {locale === "en" ? i.name : i.arName}
+                        </div>
                         <div className="branchNo">
                           <img src="/icons/branchNo.png" alt="Branch Number" />
                           &nbsp;{i.phone}
