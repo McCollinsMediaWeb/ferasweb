@@ -107,13 +107,15 @@ const BranchBox = () => {
                         <div className="branchName">
                           {locale === "en" ? i.name : i.arName}
                         </div>
-                        <div className="branchNo">
+                        <div className="branchNo" style={{ direction: "ltr" }}>
                           <img src="/icons/branchNo.png" alt="Branch Number" />
                           &nbsp;{i.phone}
                         </div>
                         <div className="branchTime">
                           <img src="/icons/branchTime.png" alt="Branch Time" />
-                          &nbsp; {i.time}
+                          &nbsp;{" "}
+                          {locale === "en" ? "Mon - Sun " : "  الاثنين - الأحد"}
+                          &nbsp;{i.time}
                         </div>
                         {/* <div className="branchBtn">
                           <a
