@@ -12,9 +12,12 @@ const OurGallery = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
+    autoplay: true,
     infinite: true,
     arrows: false,
     centerMode: true,
+    speed: 1000,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 786,
@@ -82,6 +85,66 @@ const OurGallery = () => {
       >
         <div className="MenuSlider gallerySlider">
           <Slider {...settings}>
+            <div className="SliderMenuItem">
+              <div className="MenuItem">
+                <Image
+                  src="/gall/gall (1).jpg"
+                  layout={isDesktop ? "responsive" : "fill"}
+                  height={isDesktop ? "245" : ""}
+                  width={isDesktop ? "583" : ""}
+                  priority={true}
+                  className=""
+                />
+              </div>
+            </div>
+            <div className="SliderMenuItem">
+              <div className="MenuItem">
+                <Image
+                  src="/gall/gall (2).jpg"
+                  layout={isDesktop ? "responsive" : "fill"}
+                  height={isDesktop ? "245" : ""}
+                  width={isDesktop ? "583" : ""}
+                  priority={true}
+                  className=""
+                />
+              </div>
+            </div>
+            <div className="SliderMenuItem">
+              <div className="MenuItem">
+                <Image
+                  src="/gall/gall (3).jpg"
+                  layout={isDesktop ? "responsive" : "fill"}
+                  height={isDesktop ? "245" : ""}
+                  width={isDesktop ? "583" : ""}
+                  priority={true}
+                  className=""
+                />
+              </div>
+            </div>
+            <div className="SliderMenuItem">
+              <div className="MenuItem">
+                <Image
+                  src="/gall/gall (4).jpg"
+                  layout={isDesktop ? "responsive" : "fill"}
+                  height={isDesktop ? "245" : ""}
+                  width={isDesktop ? "583" : ""}
+                  priority={true}
+                  className=""
+                />
+              </div>
+            </div>
+            <div className="SliderMenuItem">
+              <div className="MenuItem">
+                <Image
+                  src="/gall/gall (5).jpg"
+                  layout={isDesktop ? "responsive" : "fill"}
+                  height={isDesktop ? "245" : ""}
+                  width={isDesktop ? "583" : ""}
+                  priority={true}
+                  className=""
+                />
+              </div>
+            </div>
             <div className="SliderMenuItem">
               <div className="MenuItem">
                 <Image

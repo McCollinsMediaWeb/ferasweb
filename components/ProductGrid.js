@@ -76,7 +76,7 @@ const ProductGid = (props) => {
       </div>
       <div className="ProductGridBottom">
         <div className="row align-items-center">
-          <div className="col-md-8">
+          <div className="col-md-12">
             {locale === "en" ? props.productname : props.arname}
           </div>
           {/* <div className="col-md-4 text-right">

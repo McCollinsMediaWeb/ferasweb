@@ -47,6 +47,7 @@ const CoomonHeader = (props) => {
             {isDesktop && (
               <Image
                 src={props.desktopBanner}
+                style={{ objectPosition: props.top ? "top" : "unset" }}
                 layout="fill"
                 priority={true}
                 className="MainBanner"
@@ -76,14 +77,14 @@ const CoomonHeader = (props) => {
                       <AnimatedHeaderText text={props.Title} />
                     </motion.div>
                   </div>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ y: 60 }}
                     whileInView={{ y: 0 }}
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
                     <div className="HbT2">{props.Desc ? props.Desc : ""}</div>
-                  </motion.div>
+                  </motion.div> */}
                   <motion.div
                     initial={{ y: 60 }}
                     whileInView={{ y: 0 }}

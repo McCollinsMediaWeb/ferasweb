@@ -5,6 +5,8 @@ import InstagramBox from "@/components/InstagramBox";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 
 export default function aboutus() {
   const { t: translate } = useTranslation("about");
@@ -18,14 +20,29 @@ export default function aboutus() {
   return (
     <>
       <div>
-        <CoomonHeader
+        {/* <CoomonHeader
           desktopBanner="/herodesk4.png"
           MobileBanner="/herodesk4.png"
           Title={translate("banner_title")}
           MenuName=""
           MenuLink=""
           Desc={translate("banner_text")}
-        />
+        /> */}
+        <div className="aboutBnr">
+          <div className="HbT1 font-p">
+            <motion.div
+              initial="hidden"
+              whileInView={"visible"}
+              variants={container}
+              viewport={{ once: false }}
+            >
+              <AnimatedHeaderText
+                text={translate("banner_title")}
+                color="#c18f5c"
+              />
+            </motion.div>
+          </div>
+        </div>
         <HomeAboutUs />
         <CustomerReviews />
         <InstagramBox />

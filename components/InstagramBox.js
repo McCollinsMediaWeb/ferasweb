@@ -66,7 +66,7 @@ const InstagramBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2 color-gold">{translate("cfsDesc")}</div>
+              <div className="CrT2">{translate("cfsDesc")}</div>
             </div>
           </div>
           {props.restInsta ? (

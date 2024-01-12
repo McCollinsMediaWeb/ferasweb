@@ -21,7 +21,7 @@ export default function sweetmenu() {
       <div>
         <CoomonHeader
           desktopBanner="/herodesk4.jpg"
-          MobileBanner="/heromobile4.jpg"
+          MobileBanner="/herodesk4.jpg"
           Title={translate("sweets")}
           Desc={translate("sweetDesc")}
           MenuName=""
@@ -34,7 +34,7 @@ export default function sweetmenu() {
         <MenuBanner
           DesktopBanner="/banner3.jpg"
           MobileBanner="/bannermobile3.jpg"
-          title="Mix Baklawa"
+          title=""
           mb="100px"
         />
         <CustomerReviews />

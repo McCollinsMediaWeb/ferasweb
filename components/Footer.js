@@ -28,6 +28,7 @@ const Footer = () => {
                     ) : router.pathname === "/restaurantmenu" ? (
                       <Image
                         src="/icons/FerasRes.png"
+                        style={{ backgroundColor: "unset" }}
                         layout="responsive"
                         height={"240"}
                         width={"240"}
@@ -48,7 +49,7 @@ const Footer = () => {
                 </div>
               </div>
             )}
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <div className="FtrT1">{translate("usefull")}</div>
               <div className="FooterLinksBox">
                 <div className="row">
@@ -75,35 +76,37 @@ const Footer = () => {
                   <div className="col-md-6">
                     <Link href={"/contactus"}>{translate("contact")}</Link>
                   </div>
-                  {/* <div className="col-md-6">
-                    <Link href={"/customerreviews"}>
-                      {translate("customerR")}
-                    </Link>
-                  </div> */}
-                  {/* <div className="col-md-6">
-                    <Link href={"/"}>{translate("pp")}</Link>
-                  </div>
-                  <div className="col-md-6">
-                    <Link href={"/"}>{translate("tc")}</Link>
-                  </div> */}
                 </div>
               </div>
-            </div>
-            <div className="col-md-3">
+            </div> */}
+            <div className="col-md-1"></div>
+            <div className="col-md-6">
               <div className="FtrT1">{translate("connectus")}</div>
               <div className="FtrT2 color-fff">{translate("discover")}</div>
               <div className="FtrSocialMedia">
                 <div className="FtrSocialMediaFlex">
-                  <a href="#">
+                  <a
+                    href={
+                      router.pathname === "/restaurantmenu"
+                        ? "https://www.instagram.com/feras.restaurant/"
+                        : "https://www.instagram.com/ferassweets/"
+                    }
+                  >
                     <span className="FtrSocialIcon instagram">&nbsp;</span>
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/FerasSweets">
                     <span className="FtrSocialIcon facebook">&nbsp;</span>
                   </a>
-                  <a href="#">
+                  <a
+                    href={
+                      router.pathname === "/restaurantmenu"
+                        ? "https://www.tiktok.com/@feras.restaurant?_t=8it5WPAoVGy&_r=1"
+                        : "https://www.tiktok.com/@ferassweets?_t=8it6BvSfcxO&_r=1"
+                    }
+                  >
                     <span className="FtrSocialIcon tiktok">&nbsp;</span>
                   </a>
-                  <a href="#">
+                  <a href="https://www.youtube.com/@ferassweets8402">
                     <span className="FtrSocialIcon youtube">&nbsp;</span>
                   </a>
                   {/* <a href="#">

@@ -111,6 +111,7 @@ const LPHeroBanner = () => {
                       >
                         <img
                           src="/icons/FerasRes.png"
+                          style={{ backgroundColor: "unset" }}
                           width={isDesktop ? "200px" : "100px"}
                         />
                       </motion.div>

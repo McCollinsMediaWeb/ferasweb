@@ -99,7 +99,7 @@ const SweetMenuBox = (props) => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="MenuHeaderT2 color-gold">{props.desc}</div>
+              <div className="MenuHeaderT2 ">{props.desc}</div>
             </div>
           </div>
         </div>

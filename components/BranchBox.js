@@ -58,13 +58,9 @@ const BranchBox = () => {
               viewport={{ once: false }}
               transition={{ delay: 0.3, type: "spring" }}
             >
-              <div className="HdrT1 text-center color-gold">
-                {translate("oBranch")}
-              </div>
+              <div className="HdrT1 text-center">{translate("oBranch")}</div>
 
-              <div className="HdrT2 text-center color-gold">
-                {translate("branchDesc")}
-              </div>
+              <div className="HdrT2 text-center">{translate("branchDesc")}</div>
             </motion.div>
             <div className="locBtn">
               <button
@@ -117,7 +113,7 @@ const BranchBox = () => {
                           {locale === "en" ? "Mon - Sun " : "  الاثنين - الأحد"}
                           &nbsp;{i.time}
                         </div>
-                        {/* <div className="branchBtn">
+                        <div className="branchBtn">
                           <a
                             href={i.url}
                             target="_blank"
@@ -131,7 +127,7 @@ const BranchBox = () => {
                               />
                             </button>
                           </a>
-                        </div> */}
+                        </div>
                       </div>
                     ))}
 

@@ -76,7 +76,7 @@ const CustomerReviews = () => {
               </div>
             </div>
             <div className="col-md-8">
-              <div className="CrT2 color-gold">{translate("flfDesc")}</div>
+              <div className="CrT2">{translate("flfDesc")}</div>
             </div>
           </div>
         </div>

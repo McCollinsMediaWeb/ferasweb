@@ -89,7 +89,7 @@ const HomeAboutUs = (props) => {
                 viewport={{ once: false }}
                 transition={{ delay: 0.3, type: "spring" }}
               >
-                <div className={`ft2 ${!props.lp && "color-gold"}`}>
+                <div className={`ft2 `}>
                   {translate("desc1")}
                   <br />
                   <br />
@@ -98,7 +98,7 @@ const HomeAboutUs = (props) => {
               </motion.div>
               {isDesktop && (
                 <div>
-                  <div className={`ft1 ${!props.lp && "color-gold"} TxtBx2`}>
+                  <div className={`ft1 TxtBx2`}>
                     <motion.div
                       initial="hidden"
                       whileInView={"visible"}
@@ -117,11 +117,9 @@ const HomeAboutUs = (props) => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
-                    <div className={`ft2 ${!props.lp && "color-gold"}`}>
-                      {translate("mission")}
-                    </div>
+                    <div className={`ft2`}>{translate("mission")}</div>
                   </motion.div>
-                  <div className={`ft1 ${!props.lp && "color-gold"} TxtBx2`}>
+                  <div className={`ft1 TxtBx2`}>
                     <motion.div
                       initial="hidden"
                       whileInView={"visible"}
@@ -140,9 +138,7 @@ const HomeAboutUs = (props) => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
-                    <div className={`ft2 ${!props.lp && "color-gold"}`}>
-                      {translate("vision")}
-                    </div>
+                    <div className={`ft2`}>{translate("vision")}</div>
                   </motion.div>
                 </div>
               )}

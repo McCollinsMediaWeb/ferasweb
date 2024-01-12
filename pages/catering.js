@@ -28,7 +28,7 @@ export default function catering() {
         <HomeMenuListing bg={true} button={true} />
         <HomeBestSeller />
         <CateringCall />
-        <InstagramBox restInsta={true} />
+        {/* <InstagramBox restInsta={true} /> */}
       </div>
     </>
   );

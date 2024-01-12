@@ -85,9 +85,7 @@ const MenuBox = (props) => {
               </div>
             </div>
             <div className="col-md-7">
-              <div className="MenuHeaderT2" style={{ color: "#c18f5c" }}>
-                {translate("restMenuDesc")}
-              </div>
+              <div className="MenuHeaderT2">{translate("restMenuDesc")}</div>
             </div>
           </div>
         </div>

@@ -100,6 +100,7 @@ const Header = () => {
                   ) : router.pathname === "/restaurantmenu" ? (
                     <Image
                       src="/icons/FerasRes.png"
+                      style={{ backgroundColor: "unset" }}
                       layout="responsive"
                       height={"240"}
                       width={"240"}

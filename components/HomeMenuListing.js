@@ -14,6 +14,9 @@ const HomeMenuListing = (props) => {
     arrows: true,
     dots: true,
     infinite: true,
+    autoplay: true,
+    speed: 1000,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 786,
@@ -90,7 +93,7 @@ const HomeMenuListing = (props) => {
               {translate("oMenu")}
             </div>
             <div
-              className="HdrT2 text-center color-gold"
+              className="HdrT2 text-center"
               style={{ color: props.bg && "#000" }}
             >
               {translate("desc1")}
@@ -106,60 +109,6 @@ const HomeMenuListing = (props) => {
           <div className="MenuSlider">
             {isDesktop && (
               <Slider {...settings}>
-                <div className="SliderMenuItem">
-                  <div className="MenuItem">
-                    <Image
-                      src="/menu1.jpg"
-                      layout={isDesktop ? "responsive" : "fill"}
-                      height={isDesktop ? "245" : ""}
-                      width={isDesktop ? "583" : ""}
-                      priority={true}
-                      className=""
-                    />
-                    <div className="MenuItemDetails">
-                      <motion.div
-                        initial={{ y: 60 }}
-                        whileInView={{ y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.3, type: "spring" }}
-                      >
-                        <div className="MenuItemTitle">
-                          {translate("restaurant")}
-                        </div>
-                        <Link href={"/restaurantmenu"} className="MenuItemLink">
-                          {translate("vMenu")}
-                        </Link>
-                      </motion.div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderMenuItem">
-                  <div className="MenuItem">
-                    <Image
-                      src="/menu2.jpg"
-                      layout={isDesktop ? "responsive" : "fill"}
-                      height={isDesktop ? "245" : ""}
-                      width={isDesktop ? "583" : ""}
-                      priority={true}
-                      className=""
-                    />
-                    <div className="MenuItemDetails">
-                      <motion.div
-                        initial={{ y: 60 }}
-                        whileInView={{ y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.3, type: "spring" }}
-                      >
-                        <div className="MenuItemTitle">
-                          {translate("sweets")}
-                        </div>
-                        <Link href={"/sweetmenu"} className="MenuItemLink">
-                          {translate("vMenu")}
-                        </Link>
-                      </motion.div>
-                    </div>
-                  </div>
-                </div>
                 <div className="SliderMenuItem">
                   <div className="MenuItem">
                     <Image
@@ -196,10 +145,6 @@ const HomeMenuListing = (props) => {
                     </div>
                   </div>
                 </div>
-              </Slider>
-            )}
-            {!isDesktop && (
-              <div className="MobileMenuListing">
                 <div className="SliderMenuItem">
                   <div className="MenuItem">
                     <Image
@@ -254,6 +199,10 @@ const HomeMenuListing = (props) => {
                     </div>
                   </div>
                 </div>
+              </Slider>
+            )}
+            {!isDesktop && (
+              <div className="MobileMenuListing">
                 <div className="SliderMenuItem">
                   <div className="MenuItem">
                     <Image
@@ -283,6 +232,60 @@ const HomeMenuListing = (props) => {
                             {translate("vMenu")}
                           </button>
                         ) : null}
+                      </motion.div>
+                    </div>
+                  </div>
+                </div>
+                <div className="SliderMenuItem">
+                  <div className="MenuItem">
+                    <Image
+                      src="/menu1.jpg"
+                      layout={isDesktop ? "responsive" : "fill"}
+                      height={isDesktop ? "245" : ""}
+                      width={isDesktop ? "583" : ""}
+                      priority={true}
+                      className=""
+                    />
+                    <div className="MenuItemDetails">
+                      <motion.div
+                        initial={{ y: 60 }}
+                        whileInView={{ y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3, type: "spring" }}
+                      >
+                        <div className="MenuItemTitle">
+                          {translate("restaurant")}
+                        </div>
+                        <Link href={"/restaurantmenu"} className="MenuItemLink">
+                          {translate("vMenu")}
+                        </Link>
+                      </motion.div>
+                    </div>
+                  </div>
+                </div>
+                <div className="SliderMenuItem">
+                  <div className="MenuItem">
+                    <Image
+                      src="/menu2.jpg"
+                      layout={isDesktop ? "responsive" : "fill"}
+                      height={isDesktop ? "245" : ""}
+                      width={isDesktop ? "583" : ""}
+                      priority={true}
+                      className=""
+                    />
+                    <div className="MenuItemDetails">
+                      <motion.div
+                        initial={{ y: 60 }}
+                        whileInView={{ y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3, type: "spring" }}
+                      >
+                        <div className="MenuItemTitle">
+                          {translate("sweets")}
+                        </div>
+                        <Link href={"/sweetmenu"} className="MenuItemLink">
+                          {translate("vMenu")}
+                        </Link>
                       </motion.div>
                     </div>
                   </div>

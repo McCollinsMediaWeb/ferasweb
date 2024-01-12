@@ -1,7 +1,6 @@
 import BranchBox from "@/components/BranchBox";
 import CoomonHeader from "@/components/CommonHeader";
 import ContactForm from "@/components/ContactForm";
-import OurGallery from "@/components/OurGallery";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "react-i18next";
@@ -20,16 +19,17 @@ export default function locations() {
     <>
       <div>
         <CoomonHeader
-          desktopBanner="/herodesk4.jpg"
-          MobileBanner="/heromobile3.jpg"
+          desktopBanner="/loc.jpg"
+          MobileBanner="/loc.jpg"
+          top={true}
           Title={translate("locations")}
           MenuName=""
           MenuLink=""
         />
         <BranchBox />
-        <OurGallery />
-        <ContactForm />
         <img src="/icons/map.png" width={"100%"} />
+        {/* <ContactForm /> */}
+        {/* <img src="/icons/map.png" width={"100%"} /> */}
       </div>
     </>
   );
