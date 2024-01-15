@@ -120,7 +120,7 @@ const HomeAboutUs = (props) => {
                     <div className={`ft2`}>{translate("mission")}</div>
                   </motion.div>
                   <div className={`ft1 TxtBx2`}>
-                    <motion.div
+                    {/* <motion.div
                       initial="hidden"
                       whileInView={"visible"}
                       variants={container}
@@ -130,7 +130,7 @@ const HomeAboutUs = (props) => {
                         color="#c18f5c"
                         text={translate("visionh1")}
                       />
-                    </motion.div>
+                    </motion.div> */}
                   </div>
                   <motion.div
                     initial={{ y: 60 }}
@@ -138,6 +138,7 @@ const HomeAboutUs = (props) => {
                     viewport={{ once: false }}
                     transition={{ delay: 0.3, type: "spring" }}
                   >
+                    <br />
                     <div className={`ft2`}>{translate("vision")}</div>
                   </motion.div>
                 </div>

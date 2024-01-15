@@ -55,7 +55,7 @@ const LPHeroBanner = () => {
             )}
             {!isDesktop && (
               <Image
-                src="/in12.png"
+                src="/heromobile8.jpg"
                 layout="responsive"
                 height="900"
                 width="708"
