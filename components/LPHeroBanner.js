@@ -287,6 +287,12 @@ const LPHeroBanner = () => {
           </div>
         </div> */}
       </Slider>
+      <div className="lpHomeBtm">
+        <button>Order Now</button>
+      </div>
+      <div className="lpHomeBtm2">
+        <img src="/plate.png" className="lpImgBtm" />
+      </div>
     </div>
   );
 };

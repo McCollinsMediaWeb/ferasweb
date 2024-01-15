@@ -1797,3 +1797,81 @@ background-color: rgba(255,255,255,0.1);
     object-position: center;
     object-fit: cover;
   }
+
+
+  .lpHomeBtm {
+    border-top: 10px solid #BE8C5B;
+    border-bottom: 15px solid #BE8C5B;
+    min-height: 400px;
+    background-image: url("/bg3.png");
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lpHomeBtm2 {
+    background: #1F2B5D;
+    min-height: 500px;
+    position: relative;
+  }
+
+  .lpHomeBtm button {
+    width: 225px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 45px;
+    background: #1F2B5D;
+    border: none;
+    border-bottom: 10px solid #BE8C5B ;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .lpHomeBtm button:focus {
+    outline: none;
+  }
+
+  .lpHomeBtm button:hover {
+    background-color: #fff;
+    color: #1F2B5D;
+    border:1px solid #BE8C5B;
+    border-bottom: 10px solid #BE8C5B ;
+  }
+  .lpImgBtm {
+    position: absolute;
+    width: 700px;
+    margin-top: -150px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .lpHomeBtm button {
+    text-align: center;
+  }
+
+  
+  @media only screen and (max-width: 960px) {
+    .lpImgBtm {
+      width: 300px;
+      margin-top: -60px;
+    }
+
+    
+  .lpHomeBtm {
+    min-height: 200px;
+  }
+  
+  .lpHomeBtm2 {
+    min-height: 200px;
+  }
+  
+  .lpHomeBtm button {
+    width: 150px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  }
