@@ -57,7 +57,7 @@ const HomeAboutUs = (props) => {
           </div>
           <div className="col-md-8">
             <div className="PdLft40">
-              <div className={`ft1  ${!props.lp && "color-fff"} `}>
+              {/* <div className={`ft1  ${!props.lp && "color-fff"} `}>
                 <motion.div
                   initial="hidden"
                   whileInView={"visible"}
@@ -82,7 +82,7 @@ const HomeAboutUs = (props) => {
                     </>
                   )}
                 </motion.div>
-              </div>
+              </div> */}
               <motion.div
                 initial={{ y: 60 }}
                 whileInView={{ y: 0 }}
