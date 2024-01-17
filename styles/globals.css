@@ -8,7 +8,7 @@ body {
   line-height: 1.3;
   font-weight: 400;
   color: #1c2b60;
-  letter-spacing: 1.2px;
+  letter-spacing: 0;
 }
 .StickyHeader header{
   position: fixed;
@@ -36,7 +36,7 @@ a:hover{
 }
 .font-arabic{    
   font-family: 'GEHili', sans-serif !important;
-  letter-spacing:unset !important;
+  letter-spacing:0 !important;
 }
 .HeaderItem.font-arabic{
   font-weight: 500;
@@ -213,7 +213,7 @@ header{
   color: #fff;
   text-transform: capitalize;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   transition: .4s;
   border: 2px solid transparent;
   display: inline-block;
@@ -534,7 +534,7 @@ img{
     color: #fff;
     text-transform: capitalize;
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 0;
     transition: .4s;
     border: 2px solid transparent;
     display: inline-block;
@@ -624,7 +624,7 @@ opacity: 1;
   .ExploreMoreBtn {
     color: #fff;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 0;
     transition: .4s;
     border: 2px solid transparent;
     display: inline-block;
@@ -737,7 +737,7 @@ background-image: url(../public/goldenreview.png);
   .HbCLink{
     color: #fff;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 0;
     transition: .4s;
     border: 2px solid transparent;
     display: inline-block;
@@ -1776,7 +1776,7 @@ background-color: rgba(255,255,255,0.1);
 
   .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:unset !important;
+    letter-spacing:0 !important;
   }
 
   .aboutBnr {
@@ -1882,11 +1882,11 @@ background-color: rgba(255,255,255,0.1);
 
   .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:unset !important;
+    letter-spacing:0 !important;
   }
 
   .arclass .HbT1, .arclass .font-p {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:unset !important;
+    letter-spacing:0 !important;
   }
 }
