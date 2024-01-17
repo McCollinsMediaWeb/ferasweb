@@ -1774,6 +1774,11 @@ background-color: rgba(255,255,255,0.1);
     src: url('/GEHili.ttf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'Khebrat';
+    src: url('/Khebrat.ttf') format('truetype');
+  }
+
   .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'GEHili', sans-serif !important;
     letter-spacing:0 !important;
@@ -1893,4 +1898,10 @@ background-color: rgba(255,255,255,0.1);
   .arclass {
     letter-spacing: -1;
   }
+}
+
+
+.arclass .HbT1 , .arclass .MenuHeaderT1 , .arclass .HbCt1 , .arclass .HdrT1 {
+  font-family: 'Khebrat','sans-serif' !important;
+  font-weight: 100;
 }
