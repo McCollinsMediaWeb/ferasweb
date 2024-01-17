@@ -36,7 +36,7 @@ a:hover{
 }
 .font-arabic{    
   font-family: 'GEHili', sans-serif !important;
-  letter-spacing:0 !important;
+  letter-spacing:-1 !important;
 }
 .HeaderItem.font-arabic{
   font-weight: 500;
@@ -1882,11 +1882,15 @@ background-color: rgba(255,255,255,0.1);
 
   .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:0 !important;
+    letter-spacing:-1 !important;
   }
 
   .arclass .HbT1, .arclass .font-p {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:0 !important;
+    letter-spacing:-1 !important;
+  }
+
+  .arclass {
+    letter-spacing: -1;
   }
 }
