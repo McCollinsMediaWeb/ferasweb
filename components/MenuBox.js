@@ -16,7 +16,7 @@ const MenuBox = (props) => {
   const [menu, setMenu] = useState();
   var settings = {
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: true,
     dots: false,
     infinite: true,
@@ -25,7 +25,7 @@ const MenuBox = (props) => {
         breakpoint: 786,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
           dots: false,
           centerMode: true,
