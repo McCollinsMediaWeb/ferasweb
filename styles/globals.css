@@ -34,9 +34,10 @@ a:hover{
 * {
   box-sizing: border-box;
 }
-/* .font-arabic{
-  font-family: 'Cairo', sans-serif;
-} */
+.font-arabic{    
+  font-family: 'GEHili', sans-serif !important;
+  letter-spacing:unset !important;
+}
 .HeaderItem.font-arabic{
   font-weight: 500;
   padding-right: 25px;
@@ -1775,7 +1776,7 @@ background-color: rgba(255,255,255,0.1);
 
   .arclass , .font-arabic , .arclass a , .arclass .HbCLink {
     font-family: 'GEHili', sans-serif !important;
-    letter-spacing:0 !important;
+    letter-spacing:unset !important;
   }
 
   .aboutBnr {
