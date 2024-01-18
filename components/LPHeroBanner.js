@@ -6,8 +6,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimatedHeaderText from "@/components/FramerMotion/AnimatedHeaderText";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 const LPHeroBanner = () => {
   const { t: translate } = useTranslation("home");
+
+  const { locale, locales, push } = useRouter();
   const isDesktop = useMediaQuery("(min-width: 960px)");
   var settings = {
     slidesToShow: 1,
@@ -289,10 +292,42 @@ const LPHeroBanner = () => {
       </Slider>
       <div className="lpHomeBtm">
         <button>Order Now</button>
+        <div className="lpGallery">
+          <div style={{ position: "relative" }}>
+            <img src="/lpGallery (3).jpg" />
+            <div className="ProductGridBottom">
+              <div className="row align-items-center">
+                <div className="col-md-12">
+                  {locale === "en" ? "PALESTINIAN MUSAKHAN" : "مسخن فلسطيني"}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ position: "relative" }}>
+            <img src="/lpGallery (1).jpg" />
+            <div className="ProductGridBottom">
+              <div className="row align-items-center">
+                <div className="col-md-12">
+                  {locale === "en" ? "Mixed Baklawah" : "بقلاوة مشكلة"}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ position: "relative" }}>
+            <img src="/lpGallery (2).jpg" />
+            <div className="ProductGridBottom">
+              <div className="row align-items-center">
+                <div className="col-md-12">
+                  {locale === "en" ? "JORDANIAN MANSAF" : "منسف أردنى"}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="lpHomeBtm2">
+      {/* <div className="lpHomeBtm2">
         <img src="/plate.png" className="lpImgBtm" />
-      </div>
+      </div> */}
     </div>
   );
 };

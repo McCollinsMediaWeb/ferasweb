@@ -34,7 +34,12 @@ const Header = () => {
           style={{ display: isDesktop ? "block" : "none" }}
         >
           <div className="HeaderFlex">
-            <div style={{ visibility: "hidden" }}>
+            <div
+              style={{
+                visibility: "hidden",
+                width: locale === "en" ? "85px" : "106px",
+              }}
+            >
               {locale === "en" ? (
                 <div
                   className="HeaderItem font-arabic"
