@@ -292,7 +292,10 @@ const LPHeroBanner = () => {
       </Slider>
       <div className="lpHomeBtm">
         <button>Order Now</button>
-        <div className="lpGallery">
+        <div
+          className="lpGallery"
+          style={{ flexDirection: isDesktop ? "row" : "column" }}
+        >
           <div style={{ position: "relative" }}>
             <img src="/lpGallery (3).jpg" />
             <div className="ProductGridBottom">
