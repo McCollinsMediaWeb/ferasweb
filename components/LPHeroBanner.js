@@ -311,7 +311,7 @@ const LPHeroBanner = () => {
             <div className="ProductGridBottom">
               <div className="row align-items-center">
                 <div className="col-md-12">
-                  {locale === "en" ? "Mixed Baklawah" : "بقلاوة مشكلة"}
+                  {locale === "en" ? "Baklawah" : "بقلاوة"}
                 </div>
               </div>
             </div>
