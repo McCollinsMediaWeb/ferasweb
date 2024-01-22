@@ -58,7 +58,7 @@ const OurGallery = () => {
       className="sectionBox pd-common"
       style={{
         backgroundImage: "none",
-        background: "#00263C",
+        background: "#1d2e61",
         padding: "50px 0",
       }}
     >
