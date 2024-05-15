@@ -110,7 +110,7 @@ const LPHeroBanner = () => {
                           </button>
                         ) : (
                           <Link
-                            href={"/restaurantmenu"}
+                            href={"/sweetmenu"}
                             className="BannerBtn"
                             style={{
                               minWidth: !isDesktop && "fit-content",
