@@ -100,6 +100,27 @@ const LPHeroBanner = () => {
                         >
                           {translate("button")}
                         </Link>
+                        <br />
+                        {isDesktop ? (
+                          <button
+                            className="homOdBtn"
+                            style={{ borderRadius: "20px", marginTop: "20px" }}
+                          >
+                            Order Now
+                          </button>
+                        ) : (
+                          <Link
+                            href={"/restaurantmenu"}
+                            className="BannerBtn"
+                            style={{
+                              minWidth: !isDesktop && "fit-content",
+                              marginTop: "10px",
+                              background: "#131f47",
+                            }}
+                          >
+                            Order Now
+                          </Link>
+                        )}
                       </div>
                     </motion.div>
                   </div>
@@ -134,6 +155,27 @@ const LPHeroBanner = () => {
                         >
                           {translate("button")}
                         </Link>
+                        <br />
+                        {isDesktop ? (
+                          <button
+                            className="homOdBtn"
+                            style={{ borderRadius: "20px", marginTop: "20px" }}
+                          >
+                            Order Now
+                          </button>
+                        ) : (
+                          <Link
+                            href={"/restaurantmenu"}
+                            className="BannerBtn"
+                            style={{
+                              minWidth: !isDesktop && "fit-content",
+                              marginTop: "10px",
+                              background: "#131f47",
+                            }}
+                          >
+                            Order Now
+                          </Link>
+                        )}
                       </div>
                     </motion.div>
                   </div>
@@ -291,7 +333,6 @@ const LPHeroBanner = () => {
         </div> */}
       </Slider>
       <div className="lpHomeBtm">
-        <button>Order Now</button>
         <div
           className="lpGallery"
           style={{ flexDirection: isDesktop ? "row" : "column" }}

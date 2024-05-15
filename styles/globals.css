@@ -1931,3 +1931,16 @@ background-color: rgba(255,255,255,0.1);
       padding-right: 25px;
     }
   }
+
+  .homOdBtn {
+    width: 225px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 45px;
+    background: #1F2B5D;
+    border: none;
+    border-bottom: 10px solid #BE8C5B;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
