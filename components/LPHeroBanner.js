@@ -105,12 +105,20 @@ const LPHeroBanner = () => {
                           <button
                             className="homOdBtn"
                             style={{ borderRadius: "20px", marginTop: "20px" }}
+                            onClick={() =>
+                              window.open(
+                                "hhttps://www.talabat.com/uae/firas-al-diyafa-sweets2",
+                                "_blank"
+                              )
+                            }
                           >
                             Order Now
                           </button>
                         ) : (
                           <Link
-                            href={"/sweetmenu"}
+                            href={
+                              "https://www.talabat.com/uae/firas-al-diyafa-sweets2"
+                            }
                             className="BannerBtn"
                             style={{
                               minWidth: !isDesktop && "fit-content",
@@ -160,12 +168,20 @@ const LPHeroBanner = () => {
                           <button
                             className="homOdBtn"
                             style={{ borderRadius: "20px", marginTop: "20px" }}
+                            onClick={() =>
+                              window.open(
+                                "https://www.talabat.com/uae/firas-restaurant",
+                                "_blank"
+                              )
+                            }
                           >
                             Order Now
                           </button>
                         ) : (
                           <Link
-                            href={"/restaurantmenu"}
+                            href={
+                              "https://www.talabat.com/uae/firas-restaurant"
+                            }
                             className="BannerBtn"
                             style={{
                               minWidth: !isDesktop && "fit-content",
