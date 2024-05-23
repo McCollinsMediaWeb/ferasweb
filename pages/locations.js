@@ -27,7 +27,12 @@ export default function locations() {
           MenuLink=""
         />
         <BranchBox />
-        <img src="/icons/map.png" width={"100%"} />
+        <iframe
+          src="https://snazzymaps.com/embed/610419"
+          width="100%"
+          height="600px"
+          style={{ border: "none" }}
+        ></iframe>
         {/* <ContactForm /> */}
         {/* <img src="/icons/map.png" width={"100%"} /> */}
       </div>
