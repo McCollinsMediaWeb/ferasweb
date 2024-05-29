@@ -41,52 +41,56 @@ const ProductGid = (props) => {
     transition: { type: "tween", duration: 1.5 },
   };
   return (
+    <a href={props.target1} target="_blank" className="ProLink1">
     <div className="ProductGrid">
-      <motion.div
-        className="SliderWrt1"
-        {...animation}
-        viewport={{ once: true }}
-      >
-        <div className="ImageBox">
-          <img
-            src={props.imageurl}
-            height={"410px"}
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            className="imgprdH"
-          />
-        </div>
-      </motion.div>
-      <div className="ProductGridTop">
-        <div className="row">
-          <div className="col-md-9">
-            <div className="ReviewRow">
-              <div className="ReviewColumn gold">&nbsp;</div>
-              <div className="ReviewColumn gold">&nbsp;</div>
-              <div className="ReviewColumn gold">&nbsp;</div>
-              <div className="ReviewColumn gold">&nbsp;</div>
-              <div className="ReviewColumn gold">&nbsp;</div>
-              {/* <div className="ReviewColumn">&nbsp;</div> */}
+      
+        <motion.div
+          className="SliderWrt1"
+          {...animation}
+          viewport={{ once: true }}
+        >
+          <div className="ImageBox">
+            <img
+              src={props.imageurl}
+              height={"410px"}
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              className="imgprdH"
+            />
+          </div>
+        </motion.div>
+        <div className="ProductGridTop">
+          <div className="row">
+            <div className="col-md-9">
+              <div className="ReviewRow">
+                <div className="ReviewColumn gold">&nbsp;</div>
+                <div className="ReviewColumn gold">&nbsp;</div>
+                <div className="ReviewColumn gold">&nbsp;</div>
+                <div className="ReviewColumn gold">&nbsp;</div>
+                <div className="ReviewColumn gold">&nbsp;</div>
+                {/* <div className="ReviewColumn">&nbsp;</div> */}
+              </div>
+            </div>
+            <div className="col-md-3 text-right">
+              <div className="LikeBtn">&nbsp;</div>
             </div>
           </div>
-          <div className="col-md-3 text-right">
-            <div className="LikeBtn">&nbsp;</div>
+        </div>
+        <div className="ProductGridBottom">
+          <div className="row align-items-center">
+            <div className="col-md-12">
+              {locale === "en" ? props.productname : props.arname}
+            </div>
+            {/* <div className="col-md-4 text-right">
+                {props.price && (
+                  <span className="PriceBox1">AED {props.price}</span>
+                )}
+              </div> */}
           </div>
         </div>
-      </div>
-      <div className="ProductGridBottom">
-        <div className="row align-items-center">
-          <div className="col-md-12">
-            {locale === "en" ? props.productname : props.arname}
-          </div>
-          {/* <div className="col-md-4 text-right">
-              {props.price && (
-                <span className="PriceBox1">AED {props.price}</span>
-              )}
-            </div> */}
-        </div>
-      </div>
+     
     </div>
+    </a>
   );
 };
 export default ProductGid;

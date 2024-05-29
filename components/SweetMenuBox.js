@@ -113,6 +113,7 @@ const SweetMenuBox = (props) => {
                     imageurl={item.img}
                     productname={item.name}
                     arname={item.arname}
+                    target1={"https://www.talabat.com/uae/firas-al-diyafa-sweets2"}
                   />
                 </div>
               ))}

@@ -130,6 +130,7 @@ const MenuBox = (props) => {
                           productname={p.name}
                           arname={p.arname}
                           price={p.price}
+                          target1="https://www.talabat.com/uae/firas-restaurant"
                         />
                       </div>
                     ))}
