@@ -107,7 +107,7 @@ const LPHeroBanner = () => {
                             style={{ borderRadius: "20px", marginTop: "20px" }}
                             onClick={() =>
                               window.open(
-                                "hhttps://www.talabat.com/uae/firas-al-diyafa-sweets2",
+                                "https://www.talabat.com/uae/firas-al-diyafa-sweets2",
                                 "_blank"
                               )
                             }
